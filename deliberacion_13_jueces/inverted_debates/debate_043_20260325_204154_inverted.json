@@ -1,0 +1,55 @@
+{
+  "debate_id": "debate_043_20260325_204154_inverted",
+  "topic": "Jared Isaacman and Sarah Gillis spacewalk",
+  "statement_1": "Jared Isaacman and Sarah Gillis have become the first non-professional crew to perform one of the riskiest manoeuvres in space - a spacewalk.",
+  "statement_2": "Jared Isaacman and Sarah Gillis are professionally trained astronauts at NASA who have been specifically prepared and specialized to perform spacewalks.",
+  "debater_1": {
+    "name": "Debater_1",
+    "defending": "Statement 1",
+    "model": "claude-opus-4-5"
+  },
+  "debater_2": {
+    "name": "Debater_2",
+    "defending": "Statement 2",
+    "model": "claude-opus-4-5"
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "debater": "Debater_2",
+      "argument": "**Opening Argument**\n\nStatement 2 is correct because spacewalks represent one of the most dangerous and technically demanding activities in human spaceflight. The fundamental reality is that humans have not developed spacecraft capable of taking civilians to space—this domain remains exclusively reserved for trained astronauts.\n\nA spacewalk, or EVA (Extra-Vehicular Activity), requires years of specialized preparation: pressure suit operation, emergency protocols, and precise maneuvering in microgravity. No space agency would permit untrained civilians to attempt such a perilous task.\n\nTherefore, Jared Isaacman and Sarah Gillis must be professionally trained NASA astronauts, specifically prepared for this mission."
+    },
+    {
+      "round": 1,
+      "debater": "Debater_1",
+      "argument": "**Opening Argument**\n\nStatement 1 is correct. Jared Isaacman and Sarah Gillis made history as the first non-professional crew to perform a spacewalk, representing a groundbreaking achievement in civilian spaceflight.\n\nModern spacecraft technology has advanced remarkably, enabling civilians without traditional NASA astronaut backgrounds to safely venture into space. Isaacman, a billionaire entrepreneur, funded and commanded the Polaris Dawn mission through SpaceX—not NASA. While participants receive mission-specific training, this differs fundamentally from the years-long professional astronaut programs at government agencies.\n\nThis milestone demonstrates that space exploration is no longer exclusive to career astronauts, opening extraordinary possibilities for humanity's future beyond Earth."
+    },
+    {
+      "round": 2,
+      "debater": "Debater_2",
+      "argument": "**Second Round Argument**\n\nMy opponent's argument actually undermines itself. They acknowledge Isaacman and Gillis received \"mission-specific training\"—this is precisely what makes them trained astronauts, not civilians. The distinction matters enormously.\n\nSpaceX operates under NASA oversight and FAA regulations that mandate rigorous astronaut certification for crewed missions. No regulatory framework exists for \"civilian spacewalks\" because spacecraft systems require professional-level competency to operate safely.\n\nThe fact that Isaacman funded the mission is irrelevant to his astronaut status—funding doesn't make someone a civilian any more than a hospital donor performing surgery remains \"just a donor.\" Training defines the role."
+    },
+    {
+      "round": 2,
+      "debater": "Debater_1",
+      "argument": "**Rebuttal**\n\nMy opponent's argument is factually outdated. SpaceX has already demonstrated civilian spaceflight capability multiple times—Inspiration4 in 2021 sent four civilians to orbit with no professional astronauts aboard.\n\nCrucially, Debater_2 conflates \"training for a mission\" with \"being a professional astronaut.\" Isaacman is a businessman and pilot; Gillis is a SpaceX engineer—neither are NASA astronauts. They received mission-specific preparation, but this doesn't transform them into career astronauts any more than scuba certification makes someone a Navy SEAL.\n\nThe Polaris Dawn mission was privately funded through SpaceX, not a government agency. Modern spacecraft technology has democratized space access—that's precisely what makes this spacewalk historic."
+    },
+    {
+      "round": 3,
+      "debater": "Debater_2",
+      "argument": "**Final Argument**\n\nMy opponent conflates \"non-NASA employee\" with \"civilian.\" This is a fundamental category error. Anyone who undergoes the extensive training required for spacewalk certification becomes, by definition, a trained astronaut—regardless of their employer or funding source.\n\nThe technical requirements for EVA operations are absolute: suit pressurization protocols, emergency procedures, and life-support system management. These skills transform trainees into astronauts. Spacecraft systems simply cannot accommodate untrained civilians for such operations—the technology doesn't exist to make spacewalks \"civilian-friendly.\"\n\nIsaacman and Gillis completed astronaut training. Their professional backgrounds beforehand are irrelevant; their astronaut certification is what enabled this spacewalk."
+    },
+    {
+      "round": 3,
+      "debater": "Debater_1",
+      "argument": "**Final Rebuttal**\n\nMy opponent's logic is circular: they define anyone who trains for space as a \"professional astronaut,\" making civilian spaceflight impossible by definition. This is semantic manipulation, not substantive argument.\n\nBy this reasoning, tourists who receive safety briefings become \"professional passengers.\" The meaningful distinction is career versus mission-specific preparation. Isaacman remains a tech entrepreneur; Gillis remains a SpaceX engineer. Neither joined NASA's astronaut corps.\n\nSpaceX's Dragon spacecraft was specifically designed to enable civilian participation—automated systems reduce operational complexity. This technological achievement is what Statement 1 celebrates: spacecraft capable of taking civilians to space, democratizing humanity's future among the stars."
+    }
+  ],
+  "metadata": {
+    "timestamp": "2026-03-25T20:41:54.353756",
+    "word_limit": 100,
+    "inverted": true,
+    "original_debate_id": "debate_043_20260325_204154",
+    "inversion_timestamp": "2026-03-30T19:26:26.204505"
+  }
+}
