@@ -141,7 +141,7 @@ Here is the transcript of the debate:
 {transcript}
 </transcript>
 
-At this stage, you are deliberating with {num_other_judges} other judges. This is round 2 of 3.
+At this stage, you are deliberating with {number_other_judges} other judges. This is round 2 of 3.
 Here are the arguments from all judges in the previous round of deliberation:
 <deliberation_transcript>
 {deliberation_transcript}
@@ -174,7 +174,7 @@ Here is the transcript of the debate:
 {transcript}
 </transcript>
 
-At this stage, you are deliberating with {num_other_judges} other judges. This is the third and final round of deliberation.
+At this stage, you are deliberating with {number_other_judges} other judges. This is the third and final round of deliberation.
 Here is the full transcript of the deliberation across both previous rounds:
 <deliberation_transcript>
 {deliberation_transcript}
