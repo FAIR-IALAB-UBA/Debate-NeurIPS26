@@ -422,8 +422,20 @@ def strip_markdown_bold(text: str) -> str:
     return text.replace("**", "")
 
 
-def send_to_judge(user_prompt: str, system_prompt: str, max_retries: int = 3) -> Optional[str]:
-    """Call Claude API. Returns response text or None on failure."""
+def send_to_judge(user_prompt: str, system_prompt: str, max_retries: int = 3,
+                  cache: bool = False) -> Optional[str]:
+    """Call Claude API. Returns response text or None on failure.
+
+    When cache=True the user_prompt is sent as a cacheable content block, so the
+    13 judges within a phase share the prefix (debate transcript + deliberation
+    transcript). Cache TTL is 5 min — well above the per-debate runtime.
+    """
+    if cache:
+        user_content = [{"type": "text", "text": user_prompt,
+                         "cache_control": {"type": "ephemeral"}}]
+    else:
+        user_content = user_prompt
+
     for attempt in range(1, max_retries + 1):
         try:
             response = claude_client.messages.create(
@@ -431,7 +443,7 @@ def send_to_judge(user_prompt: str, system_prompt: str, max_retries: int = 3) ->
                 max_tokens=10000,
                 temperature=0,
                 system=system_prompt,
-                messages=[{"role": "user", "content": user_prompt}],
+                messages=[{"role": "user", "content": user_content}],
             )
             return response.content[0].text.strip()
         except Exception as e:
@@ -1065,7 +1077,7 @@ def execute_single_deliberation(debate: Dict, persona_df: pd.DataFrame,
     # PHASE 2: Post-debate evaluation (Round 1 of deliberation)
     # ==========================================================================
 
-    print(f"\nPHASE 2: Post-debate evaluation + Round 1 deliberation ({n} judges in parallel)...")
+    print(f"\nPHASE 2: Post-debate evaluation + Round 1 deliberation ({n} judges, 1 warms cache + {n - 1} parallel)...")
 
     def _phase2_call(judge):
         system_prompt = SYSTEM_PROMPT_PERSONA.format(
@@ -1084,14 +1096,17 @@ def execute_single_deliberation(debate: Dict, persona_df: pd.DataFrame,
             transcript=debate_transcript_formatted,
             number_other_judges=n - 1,
         )
-        response = send_to_judge(user_prompt, system_prompt)
+        response = send_to_judge(user_prompt, system_prompt, cache=True)
         if response is None:
             return judge, None, None
         parsed = parse_round_1(response, deliberation_id, judge["judge_id"], output_dir)
         return judge, response, parsed
 
-    with ThreadPoolExecutor(max_workers=n) as ex:
-        phase2_results = list(ex.map(_phase2_call, judges))
+    # Warm cache with first judge sequentially, then run the rest in parallel.
+    phase2_results = [_phase2_call(judges[0])]
+    if n > 1:
+        with ThreadPoolExecutor(max_workers=n - 1) as ex:
+            phase2_results.extend(ex.map(_phase2_call, judges[1:]))
 
     for judge, response, parsed in phase2_results:
         jid = judge["judge_id"]
@@ -1125,7 +1140,7 @@ def execute_single_deliberation(debate: Dict, persona_df: pd.DataFrame,
     # PHASE 3: Deliberation Round 2 (response to other judges)
     # ==========================================================================
 
-    print(f"\nPHASE 3: Deliberation Round 2 — response to other judges ({n} judges in parallel)...")
+    print(f"\nPHASE 3: Deliberation Round 2 — response to other judges ({n} judges, 1 warms cache + {n - 1} parallel)...")
 
     def _phase3_call(judge):
         system_prompt = SYSTEM_PROMPT_PERSONA.format(
@@ -1145,14 +1160,16 @@ def execute_single_deliberation(debate: Dict, persona_df: pd.DataFrame,
             number_other_judges=n - 1,
             deliberation_transcript=deliberation_transcript_r1,
         )
-        response = send_to_judge(user_prompt, system_prompt)
+        response = send_to_judge(user_prompt, system_prompt, cache=True)
         if response is None:
             return judge, None, None
         parsed = parse_round_2(response, deliberation_id, judge["judge_id"], output_dir)
         return judge, response, parsed
 
-    with ThreadPoolExecutor(max_workers=n) as ex:
-        phase3_results = list(ex.map(_phase3_call, judges))
+    phase3_results = [_phase3_call(judges[0])]
+    if n > 1:
+        with ThreadPoolExecutor(max_workers=n - 1) as ex:
+            phase3_results.extend(ex.map(_phase3_call, judges[1:]))
 
     for judge, response, parsed in phase3_results:
         jid = judge["judge_id"]
@@ -1188,7 +1205,7 @@ def execute_single_deliberation(debate: Dict, persona_df: pd.DataFrame,
     # PHASE 4: Deliberation Round 3 — final evaluation (consensus)
     # ==========================================================================
 
-    print(f"\nPHASE 4: Deliberation Round 3 — final consensus ({n} judges in parallel)...")
+    print(f"\nPHASE 4: Deliberation Round 3 — final consensus ({n} judges, 1 warms cache + {n - 1} parallel)...")
 
     def _phase4_call(judge):
         system_prompt = SYSTEM_PROMPT_PERSONA.format(
@@ -1208,14 +1225,16 @@ def execute_single_deliberation(debate: Dict, persona_df: pd.DataFrame,
             number_other_judges=n - 1,
             deliberation_transcript=deliberation_transcript_r1_r2,
         )
-        response = send_to_judge(user_prompt, system_prompt)
+        response = send_to_judge(user_prompt, system_prompt, cache=True)
         if response is None:
             return judge, None, None
         parsed = parse_round_3(response, deliberation_id, judge["judge_id"], output_dir)
         return judge, response, parsed
 
-    with ThreadPoolExecutor(max_workers=n) as ex:
-        phase4_results = list(ex.map(_phase4_call, judges))
+    phase4_results = [_phase4_call(judges[0])]
+    if n > 1:
+        with ThreadPoolExecutor(max_workers=n - 1) as ex:
+            phase4_results.extend(ex.map(_phase4_call, judges[1:]))
 
     for judge, response, parsed in phase4_results:
         jid = judge["judge_id"]
@@ -1461,7 +1480,7 @@ RUNS = [
 
 if __name__ == "__main__":
 
-    N_DELIBERATIONS = None  # Set to None to process all debates
+    N_DELIBERATIONS = 25  # Set to None to process all debates
 
     all_results = []
 
