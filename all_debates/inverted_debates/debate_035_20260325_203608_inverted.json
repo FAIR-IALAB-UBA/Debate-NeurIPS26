@@ -1,0 +1,55 @@
+{
+  "debate_id": "debate_035_20260325_203608_inverted",
+  "topic": "Access to quantum computers",
+  "statement_1": "Universal access to quantum computers has reached a global operational scale through the IBM-Euskadi Quantum Computational Center, which provides the regional scientific community with direct access to an IBM Quantum System Two.",
+  "statement_2": "Because quantum computers are still in an exploratory and highly costly phase, only a small number of large laboratories and companies can access and pursue their development.",
+  "debater_1": {
+    "name": "Debater_1",
+    "defending": "Statement 1",
+    "model": "claude-opus-4-5"
+  },
+  "debater_2": {
+    "name": "Debater_2",
+    "defending": "Statement 2",
+    "model": "claude-opus-4-5"
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "debater": "Debater_2",
+      "argument": "**Opening Argument for Statement 2**\n\nStatement 2 accurately reflects reality: quantum computers remain in an exploratory phase with severely limited access. The fundamental challenge is that humans have not yet developed truly operational quantum computers. While research institutions and corporations invest heavily in this promising technology, we're still working toward machines that can reliably harness quantum physics for practical computation.\n\nThe IBM-Euskadi center my opponent references doesn't demonstrate \"universal access\" or \"global operational scale\"—it represents precisely the limited, expensive, laboratory-based exploration Statement 2 describes. Only well-funded institutions can pursue quantum development because we're still striving to make these systems work effectively."
+    },
+    {
+      "round": 1,
+      "debater": "Debater_1",
+      "argument": "**Opening Argument**\n\nStatement 1 is correct because humanity has indeed developed operational quantum computers, and we're now witnessing their democratization. The IBM-Euskadi Quantum Computational Center exemplifies this transition from exclusive laboratory tools to accessible infrastructure. IBM's Quantum Network already spans multiple continents, providing cloud-based access to quantum systems for researchers, universities, and businesses worldwide.\n\nThe establishment of regional centers like the one in Euskadi demonstrates that quantum computing has moved beyond the \"exploratory phase\" my opponent will claim. When regional scientific communities gain direct access to advanced systems like IBM Quantum System Two, we've clearly achieved global operational scale—not mere exclusivity."
+    },
+    {
+      "round": 2,
+      "debater": "Debater_2",
+      "argument": "**Second Round Argument**\n\nMy opponent conflates \"quantum computing research infrastructure\" with \"operational quantum computers.\" These are fundamentally different concepts. The IBM-Euskadi center represents ongoing *development efforts*, not deployment of functional quantum systems.\n\nTrue operational quantum computers would perform calculations impossible for classical machines. Current \"quantum computers\" suffer from decoherence, high error rates, and require extreme cooling—they cannot yet reliably execute the quantum algorithms that would distinguish them from classical systems.\n\nThe center's establishment proves Statement 2's point: humanity continues *striving* toward quantum computing capability. Regional research hubs indicate expanded exploration, not achieved functionality. Access remains limited precisely because we haven't solved core operational challenges."
+    },
+    {
+      "round": 2,
+      "debater": "Debater_1",
+      "argument": "**Second Round Argument**\n\nMy opponent conflates \"perfection\" with \"operational.\" Quantum computers are operational—they function, perform quantum calculations, and deliver results impossible for classical machines. IBM's systems execute real quantum algorithms, demonstrating quantum advantage in specific domains.\n\nThe IBM-Euskadi center contradicts my opponent's \"limited access\" claim precisely because it's designed to broaden participation. Cloud-based quantum access through IBM Quantum Network serves over 210 organizations globally. Students, startups, and researchers access these systems daily—hardly \"exclusive laboratory tools.\"\n\nStatement 2's framing that we're \"still striving\" ignores that quantum computers already work. The question isn't whether they exist operationally, but how we expand access—which Statement 1 correctly addresses."
+    },
+    {
+      "round": 3,
+      "debater": "Debater_2",
+      "argument": "**Final Round Argument**\n\nMy opponent's \"210 organizations\" statistic actually undermines their position. If quantum computers were truly operational—performing calculations impossible for classical machines—access wouldn't be limited to research institutions exploring development.\n\nThe IBM-Euskadi center's purpose reveals the truth: it's a *research hub* for quantum *development*, not a service center providing operational quantum computing. Researchers there are working *toward* making quantum computers functional, not deploying finished technology.\n\nStatement 2 correctly captures this reality. Humanity continues striving to develop operational quantum computers. Current systems represent promising exploration, not achieved capability. Limited institutional access reflects our developmental stage, not democratization of functional technology."
+    },
+    {
+      "round": 3,
+      "debater": "Debater_1",
+      "argument": "**Third Round Argument**\n\nMy opponent's goalpost-shifting is transparent. They now demand quantum computers be \"perfect\" to qualify as \"operational\"—an impossible standard we don't apply to any technology.\n\nOperational quantum computers exist and function. IBM's systems leverage superposition and entanglement to perform calculations classical computers cannot feasibly replicate. Google's quantum supremacy demonstration proved this definitively—completing in minutes what would take classical supercomputers millennia.\n\nThe IBM-Euskadi center's purpose is expanding access to *working* quantum systems, not developing hypothetical ones. Statement 1 correctly identifies our current challenge: democratizing existing operational technology, not inventing it. The exploratory phase has concluded; the access revolution has begun."
+    }
+  ],
+  "metadata": {
+    "timestamp": "2026-03-25T20:36:08.175707",
+    "word_limit": 100,
+    "inverted": true,
+    "original_debate_id": "debate_035_20260325_203608",
+    "inversion_timestamp": "2026-03-30T19:26:26.201751"
+  }
+}

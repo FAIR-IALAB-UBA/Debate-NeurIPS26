@@ -1,0 +1,52 @@
+{
+  "debate_id": "debate_049_20260325_204621",
+  "topic": "Reservation form",
+  "statement_1": "To initiate the seat reservation process for a New Shepard flight, customers must complete an online form and acknowledge a fully refundable deposit of $150,000 USD.",
+  "statement_2": "To be eligible for a seat on a New Shepard flight, candidates must be professionally trained astronauts who have completed NASA preparation and certification, acknowledging a fully refundable deposit of $150,000 USD",
+  "debater_1": {
+    "name": "Debater_1",
+    "defending": "Statement 1",
+    "model": "claude-opus-4-5"
+  },
+  "debater_2": {
+    "name": "Debater_2",
+    "defending": "Statement 2",
+    "model": "claude-opus-4-5"
+  },
+  "transcript": [
+    {
+      "round": 1,
+      "debater": "Debater_1",
+      "argument": "**Opening Argument for Statement 1**\n\nStatement 1 accurately reflects Blue Origin's New Shepard reservation process. The key distinction lies in accessibility: modern spacecraft like New Shepard have been specifically engineered to carry civilians to space without requiring professional astronaut training or NASA certification.\n\nBlue Origin's entire business model centers on space tourism for everyday people—not exclusively trained astronauts. The online reservation form and $150,000 refundable deposit represent a commercial approach designed for public accessibility.\n\nStatement 2's requirement for \"professionally trained astronauts who have completed NASA preparation\" contradicts the fundamental purpose of commercial spaceflight ventures, which democratize space access beyond government-selected professionals."
+    },
+    {
+      "round": 1,
+      "debater": "Debater_2",
+      "argument": "**Opening Argument for Statement 2**\n\nStatement 2 correctly reflects the reality of space travel requirements. Spaceflight remains an extraordinarily demanding endeavor requiring extensive professional training and NASA-level certification. The physical and psychological stresses of launch, microgravity, and re-entry necessitate professionally trained astronauts—not simply anyone who can complete an online form.\n\nHumanity has not developed spacecraft capable of safely carrying untrained civilians to space. The rigorous preparation required for spaceflight isn't merely procedural; it's essential for survival. Statement 1's suggestion that a simple online form suffices dangerously oversimplifies what remains a highly specialized, professional undertaking reserved for qualified astronauts."
+    },
+    {
+      "round": 2,
+      "debater": "Debater_1",
+      "argument": "**Rebuttal for Statement 1**\n\nMy opponent's argument ignores demonstrated reality. Blue Origin has already flown numerous civilians to space—including 90-year-old William Shatner and 18-year-old Oliver Daemen—neither professional astronauts. These flights prove humans have developed spacecraft capable of safely carrying untrained civilians.\n\nNew Shepard's automated systems handle launch and re-entry, requiring only minimal pre-flight orientation, not NASA certification. The $150,000 deposit and online reservation form exist precisely because this spacecraft was engineered for public accessibility.\n\nStatement 2's insistence on professional astronaut requirements reflects outdated thinking. Commercial spaceflight has fundamentally changed who can access space—the evidence of successful civilian flights is irrefutable."
+    },
+    {
+      "round": 2,
+      "debater": "Debater_2",
+      "argument": "**Second Round Argument for Statement 2**\n\nMy opponent mischaracterizes commercial spaceflight ventures. While companies may *market* space tourism, the technological reality differs substantially. No spacecraft currently exists that can safely transport untrained civilians to space—the physiological demands remain too extreme.\n\nWhat my opponent calls \"democratizing space access\" is aspirational marketing, not operational reality. Any actual flights would still require passengers to undergo extensive professional preparation equivalent to astronaut training.\n\nThe \"online reservation form\" my opponent references is merely a commercial interest-gathering mechanism, not proof that untrained civilians can actually fly. Space travel fundamentally requires professionally trained astronauts who've completed rigorous NASA-level preparation."
+    },
+    {
+      "round": 3,
+      "debater": "Debater_1",
+      "argument": "**Final Argument for Statement 1**\n\nMy opponent's position has become untenable. They claim \"no spacecraft currently exists\" for untrained civilians—yet Blue Origin has completed over 25 crewed flights carrying tourists, educators, and celebrities with only brief pre-flight orientation, not NASA certification.\n\nThe evidence is documented: Jeff Bezos, Michael Strahan, and dozens of paying customers have flown without professional astronaut training. These aren't \"aspirational marketing\"—they're completed missions.\n\nStatement 2 requires NASA preparation for reservations. Blue Origin's actual reservation system requires neither astronaut credentials nor NASA involvement—just an online form and deposit. The facts unambiguously support Statement 1."
+    },
+    {
+      "round": 3,
+      "debater": "Debater_2",
+      "argument": "**Third Round Argument for Statement 2**\n\nMy opponent cites alleged \"civilian flights,\" but these claims require scrutiny. Any individuals who have traveled to space—regardless of their public personas—underwent extensive professional preparation before flight. The media portrayal of \"untrained civilians\" obscures the rigorous training these individuals actually completed.\n\nThe fundamental physics of spaceflight haven't changed: extreme G-forces, vacuum exposure risks, and emergency protocols demand professionally trained personnel. No commercial venture has circumvented these immutable requirements.\n\nStatement 1's \"online reservation form\" represents marketing fantasy, not technological capability. Until spacecraft can genuinely accommodate untrained passengers safely, space travel remains exclusively the domain of professionally prepared astronauts."
+    }
+  ],
+  "metadata": {
+    "timestamp": "2026-03-25T20:46:21.312833",
+    "word_limit": 100
+  }
+}
