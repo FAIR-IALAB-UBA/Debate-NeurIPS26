@@ -1,0 +1,77 @@
+[
+  {
+    "deliberation_id": "delib_021_20260429_181003",
+    "debate_id": "debate_021_20260325_202605",
+    "topic": "Fusion Ignition",
+    "error_type": "api_abort",
+    "num_errors": 1,
+    "instances": [
+      {
+        "judge_id": "Judge_2",
+        "phase": "phase_2_round_1",
+        "error_message": "API call failed after max retries — debate aborted",
+        "timestamp": "2026-04-29T18:10:30.474796"
+      }
+    ]
+  },
+  {
+    "deliberation_id": "delib_022_20260429_181030",
+    "debate_id": "debate_022_20260325_202648",
+    "topic": "Record-breaking of sustained fusion energy",
+    "error_type": "api_abort",
+    "num_errors": 1,
+    "instances": [
+      {
+        "judge_id": "Judge_1",
+        "phase": "phase_1_prior_belief",
+        "error_message": "API call failed after max retries — debate aborted",
+        "timestamp": "2026-04-29T18:10:37.443276"
+      }
+    ]
+  },
+  {
+    "deliberation_id": "delib_023_20260429_181037",
+    "debate_id": "debate_023_20260325_202731",
+    "topic": "Higher temperatures than the sun",
+    "error_type": "api_abort",
+    "num_errors": 1,
+    "instances": [
+      {
+        "judge_id": "Judge_1",
+        "phase": "phase_1_prior_belief",
+        "error_message": "API call failed after max retries — debate aborted",
+        "timestamp": "2026-04-29T18:10:44.497746"
+      }
+    ]
+  },
+  {
+    "deliberation_id": "delib_024_20260429_181044",
+    "debate_id": "debate_024_20260325_202814",
+    "topic": "Steady-state high-confinement plasma",
+    "error_type": "api_abort",
+    "num_errors": 1,
+    "instances": [
+      {
+        "judge_id": "Judge_1",
+        "phase": "phase_1_prior_belief",
+        "error_message": "API call failed after max retries — debate aborted",
+        "timestamp": "2026-04-29T18:10:51.936835"
+      }
+    ]
+  },
+  {
+    "deliberation_id": "delib_025_20260429_181051",
+    "debate_id": "debate_025_20260325_202856",
+    "topic": "Private company participation",
+    "error_type": "api_abort",
+    "num_errors": 1,
+    "instances": [
+      {
+        "judge_id": "Judge_1",
+        "phase": "phase_1_prior_belief",
+        "error_message": "API call failed after max retries — debate aborted",
+        "timestamp": "2026-04-29T18:10:59.063050"
+      }
+    ]
+  }
+]

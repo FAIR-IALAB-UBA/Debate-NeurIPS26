@@ -1,0 +1,362 @@
+[
+  {
+    "deliberation_id": "delib_001_20260429_181125",
+    "debate_id": "debate_001_20260325_201124_inverted",
+    "topic": "U.S. policy on commercial supersonic aviation in the 1970s",
+    "error_type": "api_abort",
+    "num_errors": 1,
+    "instances": [
+      {
+        "judge_id": "Judge_1",
+        "phase": "phase_1_prior_belief",
+        "error_message": "API call failed after max retries — debate aborted",
+        "timestamp": "2026-04-29T18:11:32.614537"
+      }
+    ]
+  },
+  {
+    "deliberation_id": "delib_002_20260429_181132",
+    "debate_id": "debate_002_20260325_201206_inverted",
+    "topic": "Nature of the 2000 accident",
+    "error_type": "api_abort",
+    "num_errors": 1,
+    "instances": [
+      {
+        "judge_id": "Judge_1",
+        "phase": "phase_1_prior_belief",
+        "error_message": "API call failed after max retries — debate aborted",
+        "timestamp": "2026-04-29T18:11:39.592365"
+      }
+    ]
+  },
+  {
+    "deliberation_id": "delib_003_20260429_181139",
+    "debate_id": "debate_003_20260325_201253_inverted",
+    "topic": "Paris Air Show 1969",
+    "error_type": "api_abort",
+    "num_errors": 1,
+    "instances": [
+      {
+        "judge_id": "Judge_1",
+        "phase": "phase_1_prior_belief",
+        "error_message": "API call failed after max retries — debate aborted",
+        "timestamp": "2026-04-29T18:11:46.572549"
+      }
+    ]
+  },
+  {
+    "deliberation_id": "delib_004_20260429_181146",
+    "debate_id": "debate_004_20260325_201335_inverted",
+    "topic": "The race for supersonic flight",
+    "error_type": "api_abort",
+    "num_errors": 1,
+    "instances": [
+      {
+        "judge_id": "Judge_1",
+        "phase": "phase_1_prior_belief",
+        "error_message": "API call failed after max retries — debate aborted",
+        "timestamp": "2026-04-29T18:11:53.719406"
+      }
+    ]
+  },
+  {
+    "deliberation_id": "delib_005_20260429_181153",
+    "debate_id": "debate_005_20260325_201420_inverted",
+    "topic": "Criticisms of the airplane's amenities",
+    "error_type": "api_abort",
+    "num_errors": 1,
+    "instances": [
+      {
+        "judge_id": "Judge_1",
+        "phase": "phase_1_prior_belief",
+        "error_message": "API call failed after max retries — debate aborted",
+        "timestamp": "2026-04-29T18:12:00.678418"
+      }
+    ]
+  },
+  {
+    "deliberation_id": "delib_006_20260429_181200",
+    "debate_id": "debate_006_20260325_201502_inverted",
+    "topic": "Operational nature of London–New York supersonic flights",
+    "error_type": "api_abort",
+    "num_errors": 1,
+    "instances": [
+      {
+        "judge_id": "Judge_1",
+        "phase": "phase_1_prior_belief",
+        "error_message": "API call failed after max retries — debate aborted",
+        "timestamp": "2026-04-29T18:12:07.606605"
+      }
+    ]
+  },
+  {
+    "deliberation_id": "delib_007_20260429_181207",
+    "debate_id": "debate_007_20260325_201545_inverted",
+    "topic": "Tickets price",
+    "error_type": "api_abort",
+    "num_errors": 1,
+    "instances": [
+      {
+        "judge_id": "Judge_1",
+        "phase": "phase_1_prior_belief",
+        "error_message": "API call failed after max retries — debate aborted",
+        "timestamp": "2026-04-29T18:12:14.794054"
+      }
+    ]
+  },
+  {
+    "deliberation_id": "delib_008_20260429_181214",
+    "debate_id": "debate_008_20260325_201631_inverted",
+    "topic": "Full consumption",
+    "error_type": "api_abort",
+    "num_errors": 1,
+    "instances": [
+      {
+        "judge_id": "Judge_1",
+        "phase": "phase_1_prior_belief",
+        "error_message": "API call failed after max retries — debate aborted",
+        "timestamp": "2026-04-29T18:12:21.836673"
+      }
+    ]
+  },
+  {
+    "deliberation_id": "delib_010_20260429_181221",
+    "debate_id": "debate_010_20260325_201756_inverted",
+    "topic": "The Russian supersonic aircraft",
+    "error_type": "api_abort",
+    "num_errors": 1,
+    "instances": [
+      {
+        "judge_id": "Judge_1",
+        "phase": "phase_1_prior_belief",
+        "error_message": "API call failed after max retries — debate aborted",
+        "timestamp": "2026-04-29T18:12:29.024846"
+      }
+    ]
+  },
+  {
+    "deliberation_id": "delib_011_20260429_181229",
+    "debate_id": "debate_011_20260325_201839_inverted",
+    "topic": "Potential for transplantation of bioprinted organs",
+    "error_type": "api_abort",
+    "num_errors": 1,
+    "instances": [
+      {
+        "judge_id": "Judge_1",
+        "phase": "phase_1_prior_belief",
+        "error_message": "API call failed after max retries — debate aborted",
+        "timestamp": "2026-04-29T18:12:36.141055"
+      }
+    ]
+  },
+  {
+    "deliberation_id": "delib_012_20260429_181236",
+    "debate_id": "debate_012_20260325_201923_inverted",
+    "topic": "Potential of the Cornea for 3D Printing",
+    "error_type": "api_abort",
+    "num_errors": 1,
+    "instances": [
+      {
+        "judge_id": "Judge_1",
+        "phase": "phase_1_prior_belief",
+        "error_message": "API call failed after max retries — debate aborted",
+        "timestamp": "2026-04-29T18:12:43.022509"
+      }
+    ]
+  },
+  {
+    "deliberation_id": "delib_013_20260429_181243",
+    "debate_id": "debate_013_20260325_202003_inverted",
+    "topic": "3D bioprinting in space stations",
+    "error_type": "api_abort",
+    "num_errors": 1,
+    "instances": [
+      {
+        "judge_id": "Judge_1",
+        "phase": "phase_1_prior_belief",
+        "error_message": "API call failed after max retries — debate aborted",
+        "timestamp": "2026-04-29T18:12:50.067464"
+      }
+    ]
+  },
+  {
+    "deliberation_id": "delib_014_20260429_181250",
+    "debate_id": "debate_014_20260325_202045_inverted",
+    "topic": "BFF-Meniscus investigation",
+    "error_type": "api_abort",
+    "num_errors": 1,
+    "instances": [
+      {
+        "judge_id": "Judge_1",
+        "phase": "phase_1_prior_belief",
+        "error_message": "API call failed after max retries — debate aborted",
+        "timestamp": "2026-04-29T18:12:59.022267"
+      }
+    ]
+  },
+  {
+    "deliberation_id": "delib_015_20260429_181259",
+    "debate_id": "debate_015_20260325_202129_inverted",
+    "topic": "Use of 3D bioprinting in the military",
+    "error_type": "api_abort",
+    "num_errors": 1,
+    "instances": [
+      {
+        "judge_id": "Judge_1",
+        "phase": "phase_1_prior_belief",
+        "error_message": "API call failed after max retries — debate aborted",
+        "timestamp": "2026-04-29T18:13:05.991254"
+      }
+    ]
+  },
+  {
+    "deliberation_id": "delib_016_20260429_181305",
+    "debate_id": "debate_016_20260325_202211_inverted",
+    "topic": "Implementation in healthcare centers",
+    "error_type": "api_abort",
+    "num_errors": 1,
+    "instances": [
+      {
+        "judge_id": "Judge_1",
+        "phase": "phase_1_prior_belief",
+        "error_message": "API call failed after max retries — debate aborted",
+        "timestamp": "2026-04-29T18:13:13.143527"
+      }
+    ]
+  },
+  {
+    "deliberation_id": "delib_017_20260429_181313",
+    "debate_id": "debate_017_20260325_202302_inverted",
+    "topic": "Training programs for medical professionals in 3D printing",
+    "error_type": "api_abort",
+    "num_errors": 1,
+    "instances": [
+      {
+        "judge_id": "Judge_1",
+        "phase": "phase_1_prior_belief",
+        "error_message": "API call failed after max retries — debate aborted",
+        "timestamp": "2026-04-29T18:13:20.074454"
+      }
+    ]
+  },
+  {
+    "deliberation_id": "delib_018_20260429_181320",
+    "debate_id": "debate_018_20260325_202346_inverted",
+    "topic": "Evolution of the 3D bioprint market in Japan",
+    "error_type": "api_abort",
+    "num_errors": 1,
+    "instances": [
+      {
+        "judge_id": "Judge_1",
+        "phase": "phase_1_prior_belief",
+        "error_message": "API call failed after max retries — debate aborted",
+        "timestamp": "2026-04-29T18:13:27.080917"
+      }
+    ]
+  },
+  {
+    "deliberation_id": "delib_019_20260429_181327",
+    "debate_id": "debate_019_20260325_202433_inverted",
+    "topic": "3D printed trachea",
+    "error_type": "api_abort",
+    "num_errors": 1,
+    "instances": [
+      {
+        "judge_id": "Judge_1",
+        "phase": "phase_1_prior_belief",
+        "error_message": "API call failed after max retries — debate aborted",
+        "timestamp": "2026-04-29T18:13:33.935468"
+      }
+    ]
+  },
+  {
+    "deliberation_id": "delib_020_20260429_181333",
+    "debate_id": "debate_020_20260325_202520_inverted",
+    "topic": "Research of 3D printing technology at University of Melbourne",
+    "error_type": "api_abort",
+    "num_errors": 1,
+    "instances": [
+      {
+        "judge_id": "Judge_1",
+        "phase": "phase_1_prior_belief",
+        "error_message": "API call failed after max retries — debate aborted",
+        "timestamp": "2026-04-29T18:13:40.762710"
+      }
+    ]
+  },
+  {
+    "deliberation_id": "delib_021_20260429_181340",
+    "debate_id": "debate_021_20260325_202605_inverted",
+    "topic": "Fusion Ignition",
+    "error_type": "api_abort",
+    "num_errors": 1,
+    "instances": [
+      {
+        "judge_id": "Judge_1",
+        "phase": "phase_1_prior_belief",
+        "error_message": "API call failed after max retries — debate aborted",
+        "timestamp": "2026-04-29T18:13:47.667795"
+      }
+    ]
+  },
+  {
+    "deliberation_id": "delib_022_20260429_181347",
+    "debate_id": "debate_022_20260325_202648_inverted",
+    "topic": "Record-breaking of sustained fusion energy",
+    "error_type": "api_abort",
+    "num_errors": 1,
+    "instances": [
+      {
+        "judge_id": "Judge_1",
+        "phase": "phase_1_prior_belief",
+        "error_message": "API call failed after max retries — debate aborted",
+        "timestamp": "2026-04-29T18:13:54.604928"
+      }
+    ]
+  },
+  {
+    "deliberation_id": "delib_023_20260429_181354",
+    "debate_id": "debate_023_20260325_202731_inverted",
+    "topic": "Higher temperatures than the sun",
+    "error_type": "api_abort",
+    "num_errors": 1,
+    "instances": [
+      {
+        "judge_id": "Judge_1",
+        "phase": "phase_1_prior_belief",
+        "error_message": "API call failed after max retries — debate aborted",
+        "timestamp": "2026-04-29T18:14:01.809241"
+      }
+    ]
+  },
+  {
+    "deliberation_id": "delib_024_20260429_181401",
+    "debate_id": "debate_024_20260325_202814_inverted",
+    "topic": "Steady-state high-confinement plasma",
+    "error_type": "api_abort",
+    "num_errors": 1,
+    "instances": [
+      {
+        "judge_id": "Judge_1",
+        "phase": "phase_1_prior_belief",
+        "error_message": "API call failed after max retries — debate aborted",
+        "timestamp": "2026-04-29T18:14:08.892737"
+      }
+    ]
+  },
+  {
+    "deliberation_id": "delib_025_20260429_181408",
+    "debate_id": "debate_025_20260325_202856_inverted",
+    "topic": "Private company participation",
+    "error_type": "api_abort",
+    "num_errors": 1,
+    "instances": [
+      {
+        "judge_id": "Judge_1",
+        "phase": "phase_1_prior_belief",
+        "error_message": "API call failed after max retries — debate aborted",
+        "timestamp": "2026-04-29T18:14:15.901207"
+      }
+    ]
+  }
+]
