@@ -808,6 +808,34 @@ def load_debate_json(json_path: Path) -> Optional[Dict]:
         print(f"[ERROR] Could not load {json_path}: {e}")
         return None
 
+
+def find_complete_deliberation(output_dir: Path, debate_id: str,
+                                num_judges: int) -> Optional[Path]:
+    """Return path to a fully-complete deliberation JSON for this debate_id, or None.
+
+    'Complete' means all 4 phases have num_judges entries AND collective_decision is set.
+    Used to skip API calls on a re-run for debates already processed by a previous launch
+    (e.g., if a previous run was interrupted by credit exhaustion or a kill).
+    """
+    if not output_dir.exists():
+        return None
+    for json_path in sorted(output_dir.glob("delib_*.json")):
+        try:
+            with open(json_path, "r", encoding="utf-8") as f:
+                d = json.load(f)
+        except Exception:
+            continue
+        if d.get("debate_id") != debate_id:
+            continue
+        phases = d.get("phases", {})
+        if (len(phases.get("prior_beliefs", [])) == num_judges
+                and len(phases.get("round_1", [])) == num_judges
+                and len(phases.get("round_2", [])) == num_judges
+                and len(phases.get("round_3", [])) == num_judges
+                and d.get("collective_decision") is not None):
+            return json_path
+    return None
+
 # =============================================================================
 # OUTPUT FUNCTIONS
 # =============================================================================
@@ -1374,6 +1402,19 @@ def run_all_deliberations(debates_dir: str, persona_dataset_path: str,
             if not debate:
                 print(f"[WARNING] Skipping {debate_file.name} — could not load")
                 skipped += 1
+                continue
+
+            # Resume: if a previous run already completed this debate, reuse it.
+            existing_path = find_complete_deliberation(
+                Path(output_dir), debate["debate_id"], num_judges
+            )
+            if existing_path:
+                print(f"[RESUME] Deliberation {idx} already complete in "
+                      f"{existing_path.name} — skipping API calls")
+                with open(existing_path, "r", encoding="utf-8") as f:
+                    existing_delib = json.load(f)
+                upsert_deliberation_to_csv(existing_delib, output_dir, csv_ts)
+                completed.append(existing_delib)
                 continue
 
             result = execute_single_deliberation(
