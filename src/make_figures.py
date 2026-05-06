@@ -35,7 +35,7 @@ plt.rcParams.update(
         "axes.titlesize": 18,
         "axes.labelsize": "large",
         "ytick.labelsize": 15,
-        "xtick.labelsize": 15,
+        "xtick.labelsize": 13,
         # colour-consistent theme
     }
 )
@@ -327,8 +327,8 @@ def plot_headline(rows):
     ax.set_xticklabels(display_labels, rotation=20, ha="right")
     ax.set_ylim(0, 1.05)
     ax.set_xlim(-0.6, len(labels) - 0.4)
-    ax.set_xlabel("Protocol")
-    ax.set_ylabel("Accuracy")
+    ax.set_xlabel("Protocol", fontsize = 18)
+    ax.set_ylabel("Accuracy", fontsize = 18)
     ax.spines["top"].set_visible(False)
     ax.spines["right"].set_visible(False)
 
