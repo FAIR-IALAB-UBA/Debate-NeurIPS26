@@ -110,6 +110,21 @@ Skeptical-group benefit replicates the pattern from in-subtopic. Mainstream gain
 
 Per-topic Δ ranges from +50 pp (Exascale, n=6) down to −9 pp (Quantum Computers, n=23) — consistent with topic-level variation rather than a uniform effect.
 
+### Robustness: balanced-pre subsample
+
+**The MJH sample's pre-accuracy is 56.7% — higher than any other protocol** (the others sit at ~50%, except in-subtopic at 41.3%). This means the headline 66.0% post-accuracy is partly inflated by an unbalanced starting line: 12 rooms had every recruited participant pre-correct, vs only 9 all-pre-incorrect rooms.
+
+To check apples-to-apples, we ran a stochastic robustness check (`src/balanced_mjh_check.py`): for each of 1000 random seeds, drop random all-pre-correct rooms (entire rooms, not individuals) until the remaining MJH sub-sample's pre-accuracy lands within ±2 pp of 50%, then re-run the headline tests.
+
+| Test | Full MJH (pre=56.7%) | Balanced MJH (median, n≈126, pre≈51.6%) | Survives |
+|---|---|---|---|
+| Binomial post > 50% (1-sided) | p=0.0001 | p=0.0038 (100% of seeds < 0.05) | ✓ |
+| McNemar pre→post-deliberation | p=0.024 | p=0.024 (100% of seeds < 0.05) | ✓ |
+| Fisher MJH > consultancy (1-sided) | p=0.009 | p=0.039 (96.7% of seeds < 0.05) | ✓ |
+| Fisher MJH > all-other-protocols-pooled (1-sided) | p=0.023 | p=0.122 (0% of seeds < 0.05) | ✗ |
+
+So three of the four headline MJH claims survive the balanced check robustly; only "MJH beats *all* other protocols pooled" was driven by the inflated starting line. The protocol genuinely raises accuracy from a chance starting line to ~62% post-deliberation.
+
 ---
 
 ## Protocol 5 — Hybrid multi-judge (n=105, 10 topics)
@@ -255,11 +270,13 @@ Specifically: hybrid sits between consultancy and the single-judge debate protoc
 
 ---
 
-## Highlight 6 — Multi-judge humans is the highest-accuracy protocol
+## Highlight 6 — Multi-judge humans vs the other protocols
 
 **Question**: is multi-judge humans (post-deliberation 66.0%) significantly higher than the other protocols?
 
-**First attempt (only partly worked)**: pairwise Fisher's exact comparing MJH against each of the other four protocols (one-sided, since direction was specified before data analysis), with Holm correction across the four pairwise tests.
+This claim is sensitive to the fact that MJH starts at a higher pre-accuracy (56.7%) than the other protocols (~50%). The full-sample tests below should be read alongside the balanced-pre robustness check at the end of this section.
+
+**Pairwise Fisher's exact** (one-sided MJH > other), with Holm correction across the four pairwise tests:
 
 | Comparison | Δ | Fisher 1-sided | Holm adj p | Sig |
 |---|---|---|---|---|
@@ -270,17 +287,26 @@ Specifically: hybrid sits between consultancy and the single-judge debate protoc
 
 Only MJH > consultancy survives Holm correction. The other pairwise Δ ≈ +8 pp values are too small to detect at n ≈ 90–141 per arm at the corrected α threshold.
 
-**Working test (one-shot global)**: MJH vs all-other-protocols pooled (n=141 vs n=366). Pooling the comparison side increases power, and a single test eliminates the need for multiplicity correction.
+**Single global test — MJH vs all-other-protocols pooled** (n=141 vs n=366):
 
 | Test on MJH vs all-others-pooled | Result |
 |---|---|
-| Δ post-accuracy | **+10.2 pp** (66.0% vs 55.7%) |
-| Fisher's exact (two-sided) | **p = 0.044 ✓** |
-| Fisher's exact (one-sided) | **p = 0.023 ✓** |
+| Δ post-accuracy | +10.2 pp (66.0% vs 55.7%) |
+| Fisher's exact (two-sided) | p = 0.044 |
+| Fisher's exact (one-sided) | p = 0.023 |
 
-For completeness: a global χ² across all 5 protocols on (correct, incorrect) gives χ²=6.48, dof=4, p=0.166 — non-significant, expected given that variation is concentrated in the MJH-vs-consultancy contrast and gets diluted in the 5-way test.
+For completeness: a global χ² across all 5 protocols on (correct, incorrect) gives χ²=6.48, dof=4, p=0.166 — non-significant in the 5-way test.
 
-**Conclusion**: MJH is significantly higher than the other protocols collectively (Fisher 1-sided p=0.023). MJH is also individually higher than consultancy (Holm-corrected p=0.037). MJH is *not* individually higher than each of the other debate protocols (in/cross/hybrid) — those Δs are too small to detect at this n.
+### Robustness: balanced-pre subsample for MJH
+
+The full-sample MJH-vs-rest result above is partly an artifact of MJH's inflated pre-accuracy. Running the balanced-pre robustness check (`src/balanced_mjh_check.py`, 1000 random seeds dropping all-pre-correct rooms until pre≈50%):
+
+| Test | Full MJH (pre=56.7%) | Balanced MJH (median, pre≈51.6%) | Survives |
+|---|---|---|---|
+| MJH > consultancy (Fisher 1-sided) | p=0.009 | **p=0.039** (96.7% of seeds < 0.05) | ✓ |
+| MJH > all-other-protocols pooled | p=0.023 | p=0.122 (0% of seeds < 0.05) | ✗ |
+
+**Conclusion**: MJH is robustly higher than consultancy specifically — that result holds even after balancing the starting line (Fisher 1-sided p=0.039 in 97% of balanced subsamples; full-sample Holm-corrected pairwise p=0.037). MJH is **not** robustly higher than the other debate protocols (in / cross / hybrid) — the Δ ≈ +8 pp gaps in the full sample are too small to detect at this n, and the pooled "MJH > rest" comparison disappears entirely once we control for the starting line. The headline that *survives* is "MJH beats consultancy"; "MJH beats every other protocol" is not supported with apples-to-apples data.
 
 ---
 
@@ -358,9 +384,9 @@ No cross-protocol test in this family survives Holm. The closest are debate-vs-c
 |---|---|---|
 | In-subtopic debate raises accuracy | **Yes** | McNemar p=0.003, CI [+6, +26] pp |
 | **Pooled single-judge debate raises accuracy** (in-subtopic + multi-judge post-debate, n=333) | **Yes, strongly** | McNemar p<0.0001, CI [+5, +19] pp |
-| Multi-judge humans (post-deliberation) raises accuracy above chance | **Yes** | Binomial p=0.0002 (Holm adj 0.0015) |
-| Multi-judge humans is the highest-accuracy protocol (vs the rest pooled) | **Yes** | MJH 66.0% vs rest 55.7%, Fisher 1-sided p=0.023 |
-| MJH > consultancy specifically | **Yes** | Fisher 1-sided p=0.009 (Holm adj 0.037 across 4 pairwise) |
+| Multi-judge humans (post-deliberation) raises accuracy above chance | **Yes** (robust to balanced-pre check) | full-sample binomial p=0.0002 (Holm adj 0.0015); balanced-pre check p=0.0038 (100% of seeds < 0.05) |
+| Multi-judge humans is the highest-accuracy protocol (vs the rest pooled) | **No** — full-sample p=0.023 was an artifact of MJH's inflated pre-accuracy (56.7% vs ~50% for the others); fails the balanced-pre check (p=0.122 in 100% of seeds) | balanced-pre subsample (Highlight 6 robustness) |
+| **MJH > consultancy** specifically (durable) | **Yes** | full-sample Holm-corrected Fisher 1-sided p=0.037; balanced-pre check p=0.039 (96.7% of seeds < 0.05) |
 | MJH > each of in/cross/hybrid individually | No | each pairwise Fisher 1-sided p ≈ 0.10–0.16 — underpowered |
 | Cross-subtopic debate raises accuracy above chance | Suggestive | one-sided p=0.087 |
 | Skeptical-group benefits more from debate | Within-group **yes** in both in-subtopic and multi-judge humans (McNemar p < 0.05) | interaction-test p ~ 0.10 |
