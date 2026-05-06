@@ -331,7 +331,7 @@ Pooled single-judge debate sample (n=333):
 
 Same pattern on in-subtopic alone (n=92): at τ=85, 27% retained at 72% accuracy (vs 58% baseline).
 
-**Conclusion**: yes — selective accuracy rises monotonically with τ from 61.3% (no filter) to 75.0% (τ=85, retaining 27.6% of judgements). Highly-confident post-debate judgements are more reliable.
+**Conclusion**: yes — selective accuracy rises broadly with τ, from 61.3% (no filter) to a peak of 75.0% at τ=85 (retaining 27.6% of judgements). The trend is not strictly monotonic — there is a small dip at τ=80 (73.2%) and a tail decline at τ=90, 95 (73.0%, 71.8%) where the kept-n is small (n=74, n=39) — but the high-confidence-is-more-reliable pattern is clear up through τ=85.
 
 ---
 
@@ -356,7 +356,7 @@ In-subtopic only (n=92), pre-conf median = 65:
 | at 50 | n=29, Δ=+24.1 pp | n=63, Δ=+12.7 pp | +11.4 pp | 0.24 |
 | at 70 | n=49, Δ=+22.4 pp | n=43, Δ=+9.3 pp | +13.1 pp | 0.15 |
 
-**Conclusion**: direction supports the hypothesis in every split, in both samples — low-pre-conf judges gain ~4-13 pp more from the debate than high-pre-conf judges. The formal MW test on Δ scores does not reach significance at any split (p > 0.15). The capability-gap pattern is suggestive but not formally established at this n.
+**Conclusion**: direction supports the hypothesis in every split, in both samples — low-pre-conf judges gain ~4-13 pp more from the debate than high-pre-conf judges. The formal MW test on Δ scores does not reach significance at any split (in-subtopic p ≥ 0.15 across all three splits; pooled p between 0.34 and 0.36). The capability-gap pattern is suggestive but not formally established at this n.
 
 A small caveat: in the pooled sample at the median split, post-acc is *lower* in the low-pre-conf stratum (55.8%) than the high (66.7%) — i.e. low-pre-conf judges gain more but still end up below high-pre-conf judges in absolute accuracy. The capability-gap reading is about relative *change*, not absolute level.
 
@@ -398,7 +398,7 @@ No cross-protocol test in this family survives Holm. The closest are debate-vs-c
 | Debate beats consultancy (cross-subtopic alone, n=89 vs 80) | Suggestive | per-protocol Fisher 1-sided p=0.135 — same underpowering |
 | In-subtopic = cross-subtopic (debate transfers fully) | Yes | post-acc 57.6% vs 58.4%, indistinguishable |
 | Predicted ordering consultancy < cross < in < multi-judge | Partly | CA Z=+1.53, one-sided p=0.063; multi-judge humans tops the ordering, hybrid is mid-pack |
-| Highly confident post-debate judgements are more reliable | **Yes** | Sel-acc rises monotonically to 75% at τ=85 (vs 61% baseline) |
+| Highly confident post-debate judgements are more reliable | **Yes** | sel-acc rises broadly to a peak of 75% at τ=85 (vs 61% baseline); not strictly monotonic at the tail |
 | Lower-pre-confidence judges gain more from debate (capability-gap) | Direction supports, not significant | Δ_low − Δ_high ≈ +4-13 pp, MW p ≈ 0.15-0.36 |
 | General pre-belief predicts specific pre-belief | **Yes** (κ=0.36, Fisher OR=4.6, p<10⁻¹⁵) | ~32% misalignment |
 
