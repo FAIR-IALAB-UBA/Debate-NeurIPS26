@@ -1,14 +1,11 @@
 #!/usr/bin/env python3
 """Generate the headline figure for the report.
 
-Two panels:
-  A. Pre→Post accuracy by protocol (slope graph), with 95% bootstrap CIs on
-     each point and a significance marker (★ if McNemar p<0.05) above the
-     post-point. MJH appears twice — full sample and balanced-pre subsample —
-     to show that balancing the starting line doesn't kill the post-accuracy
-     above-chance result.
-  B. Cross-protocol post-accuracy differences (forest plot), with 95% CIs for
-     the headline comparisons. Vertical reference line at Δ=0.
+Single-panel bar plot: pre/post accuracy by protocol. Each protocol gets its
+own colour (pre = lighter, post = darker), with 95% topic-clustered bootstrap
+CIs as errorbars. Δ gain (pp) and bold McNemar significance stars are
+annotated above each pair (cross-subtopic gets no significance test since
+pre/post are on different items).
 
 Output: docs/figures/headline_results.png and headline_results.pdf
 """
@@ -27,6 +24,22 @@ from analysis_full import (build_data, build_pooled_single_judge_debate,
 OUT_DIR = os.path.join(os.path.dirname(__file__), "..", "docs", "figures")
 os.makedirs(OUT_DIR, exist_ok=True)
 
+plt.rcParams.update(
+    {
+        "figure.dpi": 120,
+        "figure.figsize": (14, 9),
+    #    "font.family": "serif",
+        "mathtext.fontset": "cm",
+        "legend.fontsize": "medium",
+        "legend.title_fontsize": 18,
+        "axes.titlesize": 18,
+        "axes.labelsize": "large",
+        "ytick.labelsize": 15,
+        "xtick.labelsize": 15,
+        # colour-consistent theme
+    }
+)
+plt.rcParams["text.latex.preamble"] = r"\usepackage[version=3]{mhchem}"
 
 # ── Helpers ──────────────────────────────────────────────────────
 
@@ -259,134 +272,65 @@ def sig_marker(p, thresholds=(0.05, 0.01, 0.001)):
     return "n.s."
 
 
-def plot_headline(rows, contrasts):
-    plt.rcParams.update({"font.size": 11})
-    fig, (axA, axB) = plt.subplots(1, 2, figsize=(15, 7),
-                                     gridspec_kw={"width_ratios": [1.15, 1]})
+def plot_headline(rows):
+    plt.rcParams.update({"font.size": 13})
+    fig, ax = plt.subplots(1, 1, figsize=(9, 6))
 
-    # ---------- Panel A: pre→post slope per protocol ----------
-    # Order rows so it reads bottom-to-top from worst to best
-    panel_order = [
-        "Consultancy",
-        "Cross-subtopic\n(post on different item)",
-        "Hybrid multi-judge",
-        "In-subtopic",
-        "Multi-judge humans (balanced-pre)",
-        "Multi-judge humans (full)",
-        "Pooled single-judge debate\n(in-sub + multi-judge post-debate)",
+    # (orig label in `rows`, display label, (light, dark) palette)
+    panel_filter = [
+        ("Pooled single-judge debate\n(in-sub + multi-judge post-debate)",
+         "Debate-Subtopic",         ("#f4a3a3", "#d62728")),
+        ("Cross-subtopic\n(post on different item)",
+         "Cross-Subtopic", ("#ffd29a", "#ff7f0e")),
+        ("Consultancy",
+         "Consultancy",    ("#cccccc", "#555555")),
+        ("Hybrid multi-judge",
+         "Hybrid MJ",      ("#a6c8e0", "#1f77b4")),
+        ("Multi-judge humans (balanced-pre)",
+         "MJH",            ("#9ad59a", "#2ca02c")),
     ]
     rows_by_label = {r["label"]: r for r in rows}
-    y_positions = {label: i for i, label in enumerate(panel_order)}
+    panel_filter = [(o, d, c) for o, d, c in panel_filter if o in rows_by_label]
+    labels         = [o for o, _, _ in panel_filter]
+    display_labels = [d for _, d, _ in panel_filter]
+    palettes       = [c for _, _, c in panel_filter]
 
-    color_pre  = "#888888"
-    color_post = "#1f77b4"
-    color_pooled = "#d62728"
-    color_balanced = "#2ca02c"
+    x = np.arange(len(labels))
+    bar_width = 0.36
 
-    for label in panel_order:
-        if label not in rows_by_label:
-            continue
+    for i, label in enumerate(labels):
         r = rows_by_label[label]
-        y = y_positions[label]
+        c_pre, c_post = palettes[i]
+        pre_err = [[r["pre"] - r["pre_ci"][0]], [r["pre_ci"][1] - r["pre"]]]
+        post_err = [[r["post"] - r["post_ci"][0]], [r["post_ci"][1] - r["post"]]]
+        ax.bar(i - bar_width/2, r["pre"], bar_width,
+               color=c_pre, edgecolor="black", linewidth=0.6,
+               yerr=pre_err, capsize=4,
+               error_kw={"lw": 1.0, "ecolor": "black"}, zorder=3)
+        ax.bar(i + bar_width/2, r["post"], bar_width,
+               color=c_post, edgecolor="black", linewidth=0.6,
+               yerr=post_err, capsize=4,
+               error_kw={"lw": 1.0, "ecolor": "black"}, zorder=3)
 
-        # Color/marker style depends on row kind
-        if r["kind"] == "pooled":
-            c_post = color_pooled
-            edge = color_pooled
-            marker = "D"
-        elif r["kind"] == "balanced":
-            c_post = color_balanced
-            edge = color_balanced
-            marker = "s"
-        else:
-            c_post = color_post
-            edge = color_post
-            marker = "o"
-
-        # Pre point with CI
-        axA.errorbar(r["pre"], y,
-                     xerr=[[r["pre"] - r["pre_ci"][0]], [r["pre_ci"][1] - r["pre"]]],
-                     fmt="o", color=color_pre, mfc="white", mec=color_pre,
-                     ms=8, capsize=3, zorder=2)
-        # Post point with CI
-        axA.errorbar(r["post"], y,
-                     xerr=[[r["post"] - r["post_ci"][0]], [r["post_ci"][1] - r["post"]]],
-                     fmt=marker, color=c_post, mec=edge, ms=10, capsize=3, zorder=3)
-        # Connecting arrow
-        axA.annotate("", xy=(r["post"], y), xytext=(r["pre"], y),
-                     arrowprops=dict(arrowstyle="->", color="#bbbbbb", lw=1.4),
-                     zorder=1)
-        # Significance marker / Δ text on the right
-        sig = sig_marker(r["mcnemar_p"]) if r["kind"] != "protocol" or label != "Cross-subtopic\n(post on different item)" else "—"
-        if pd.isna(r["mcnemar_p"]):
-            sig = "(no McNemar)"
+        # Annotation above the higher of the two CIs
+        top = max(r["pre_ci"][1], r["post_ci"][1])
+        sig = sig_marker(r["mcnemar_p"]) if not pd.isna(r["mcnemar_p"]) else ""
         delta_str = f"Δ={r['delta']*100:+.1f} pp"
-        n_str = f"n={r['n']}"
-        axA.text(0.99, y, f"{delta_str}   {sig}   {n_str}",
-                 transform=axA.get_yaxis_transform(),
-                 ha="right", va="center", fontsize=9,
-                 color="black" if sig.startswith("*") else "#555555")
+        ax.text(i, top + 0.035, delta_str, ha="center", va="bottom",
+                fontsize=13, color="#444444")
+        if sig.startswith("*"):
+            ax.text(i, top + 0.085, sig, ha="center", va="bottom",
+                    fontsize=15, fontweight="bold", color="black")
 
-    axA.axvline(0.5, color="#aaaaaa", linestyle="--", lw=1,
-                label="Chance (50%)", zorder=0)
-    axA.set_yticks(list(y_positions.values()))
-    axA.set_yticklabels(list(y_positions.keys()), fontsize=10)
-    axA.set_xlim(0.20, 1.0)
-    axA.set_xlabel("Accuracy")
-    axA.set_title("A. Pre → Post accuracy by protocol", fontsize=13, fontweight="bold")
-    axA.spines["top"].set_visible(False)
-    axA.spines["right"].set_visible(False)
-
-    # Custom legend
-    from matplotlib.lines import Line2D
-    leg_handles = [
-        Line2D([0],[0], marker="o", mec=color_pre, mfc="white", color=color_pre,
-                ms=8, lw=0, label="Pre-belief"),
-        Line2D([0],[0], marker="o", color=color_post, ms=10, lw=0,
-                label="Post-belief (per-protocol)"),
-        Line2D([0],[0], marker="s", color=color_balanced, ms=10, lw=0,
-                label="MJH balanced-pre subsample"),
-        Line2D([0],[0], marker="D", color=color_pooled, ms=10, lw=0,
-                label="Pooled single-judge debate"),
-    ]
-    axA.legend(handles=leg_handles, loc="lower left", fontsize=9, frameon=False)
-
-    # ---------- Panel B: Δ contrasts forest plot ----------
-    contrast_order = list(reversed(contrasts))  # display top-to-bottom in code order, so reverse for matplotlib y-axis
-    y_pos = list(range(len(contrast_order)))
-    deltas = [c["delta"] for c in contrast_order]
-    cis_lo = [c["ci"][0] for c in contrast_order]
-    cis_hi = [c["ci"][1] for c in contrast_order]
-    p_labels = [f"p = {c['p']:.3f} {sig_marker(c['p'])}" for c in contrast_order]
-
-    for i, c in enumerate(contrast_order):
-        is_sig = c["p"] < 0.05
-        col = "#1f77b4" if is_sig else "#999999"
-        axB.errorbar(c["delta"], i,
-                     xerr=[[c["delta"] - c["ci"][0]], [c["ci"][1] - c["delta"]]],
-                     fmt="o", color=col, ms=10, capsize=4, lw=1.6, zorder=3)
-        axB.text(0.02, i, c["label"],
-                 transform=axB.get_yaxis_transform(),
-                 ha="left", va="center", fontsize=9.5)
-
-    # Annotate p-values just inside the right edge
-    for i, c in enumerate(contrast_order):
-        col = "black" if c["p"] < 0.05 else "#666666"
-        axB.text(0.99, i, p_labels[i],
-                 transform=axB.get_yaxis_transform(),
-                 ha="right", va="center", fontsize=9, color=col)
-
-    axB.axvline(0, color="#888888", linestyle="--", lw=1, zorder=0)
-    axB.set_yticks(y_pos)
-    axB.set_yticklabels([""] * len(y_pos))  # we put the labels manually inside
-    axB.set_xlim(-0.20, 0.30)
-    axB.set_xlabel("Δ post-accuracy (target − reference)")
-    axB.set_title("B. Cross-protocol post-accuracy contrasts (95% CI)",
-                  fontsize=13, fontweight="bold")
-    axB.spines["top"].set_visible(False)
-    axB.spines["right"].set_visible(False)
-    axB.spines["left"].set_visible(False)
-    axB.tick_params(left=False)
+    ax.axhline(0.5, color="#aaaaaa", linestyle="--", lw=1, zorder=0)
+    ax.set_xticks(x)
+    ax.set_xticklabels(display_labels, rotation=20, ha="right")
+    ax.set_ylim(0, 1.05)
+    ax.set_xlim(-0.6, len(labels) - 0.4)
+    ax.set_xlabel("Protocol")
+    ax.set_ylabel("Accuracy")
+    ax.spines["top"].set_visible(False)
+    ax.spines["right"].set_visible(False)
 
     plt.tight_layout()
     out_png = os.path.join(OUT_DIR, "headline_results.png")
@@ -401,10 +345,8 @@ def run():
     data, *_ = build_data()
     print("Computing per-protocol rows (with topic-cluster bootstrap CIs)...")
     rows = collect_protocol_rows(data)
-    print("Computing cross-protocol contrast CIs...")
-    contrasts = collect_contrast_rows(data)
     print("Plotting...")
-    out_png, out_pdf = plot_headline(rows, contrasts)
+    out_png, out_pdf = plot_headline(rows)
     print(f"\nWrote:\n  {out_png}\n  {out_pdf}")
 
 
