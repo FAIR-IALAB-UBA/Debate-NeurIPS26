@@ -1,0 +1,518 @@
+anon_id,protocol,survey_id,topic,general_pre_belief
+a0001,in_subtopic,611329,Supersonic A,1
+a0002,in_subtopic,611329,Supersonic A,1
+a0003,in_subtopic,611329,Supersonic A,1
+a0004,in_subtopic,611329,Supersonic A,1
+a0005,in_subtopic,843144,Mirror life,1
+a0006,in_subtopic,843144,Mirror life,2
+a0007,in_subtopic,843144,Mirror life,2
+a0008,in_subtopic,843144,Mirror life,2
+a0009,in_subtopic,843144,Mirror life,2
+a0010,in_subtopic,843144,Mirror life,2
+a0011,in_subtopic,843144,Mirror life,2
+a0012,in_subtopic,843144,Mirror life,1
+a0013,in_subtopic,794297,Embryo Models,2
+a0014,in_subtopic,794297,Embryo Models,2
+a0015,in_subtopic,794297,Embryo Models,2
+a0016,in_subtopic,794297,Embryo Models,1
+a0017,in_subtopic,794297,Embryo Models,1
+a0018,in_subtopic,794297,Embryo Models,1
+a0019,in_subtopic,794297,Embryo Models,1
+a0020,in_subtopic,794297,Embryo Models,2
+a0021,in_subtopic,794297,Embryo Models,2
+a0022,in_subtopic,794297,Embryo Models,2
+a0023,in_subtopic,794297,Embryo Models,1
+a0024,in_subtopic,211685,Bioprinting,2
+a0025,in_subtopic,211685,Bioprinting,2
+a0026,in_subtopic,211685,Bioprinting,1
+a0027,in_subtopic,211685,Bioprinting,1
+a0028,in_subtopic,211685,Bioprinting,2
+a0029,in_subtopic,211685,Bioprinting,2
+a0030,in_subtopic,211685,Bioprinting,2
+a0006,in_subtopic,211685,Bioprinting,2
+a0031,in_subtopic,211685,Bioprinting,2
+a0032,in_subtopic,211685,Bioprinting,1
+a0033,in_subtopic,211685,Bioprinting,2
+a0034,in_subtopic,211685,Bioprinting,2
+a0035,in_subtopic,922129,Black Holes,1
+a0036,in_subtopic,922129,Black Holes,2
+a0037,in_subtopic,922129,Black Holes,2
+a0038,in_subtopic,922129,Black Holes,1
+a0039,in_subtopic,922129,Black Holes,2
+a0040,in_subtopic,922129,Black Holes,2
+a0041,in_subtopic,922129,Black Holes,1
+a0042,in_subtopic,922129,Black Holes,1
+a0043,in_subtopic,922129,Black Holes,2
+a0044,in_subtopic,196555,Exoplanets,2
+a0009,in_subtopic,196555,Exoplanets,1
+a0045,in_subtopic,196555,Exoplanets,1
+a0046,in_subtopic,196555,Exoplanets,2
+a0047,in_subtopic,196555,Exoplanets,1
+a0048,in_subtopic,196555,Exoplanets,1
+a0049,in_subtopic,196555,Exoplanets,1
+a0050,in_subtopic,196555,Exoplanets,2
+a0051,in_subtopic,196555,Exoplanets,2
+a0052,in_subtopic,196555,Exoplanets,2
+a0053,in_subtopic,956794,Spacecraft Civilians,1
+a0054,in_subtopic,956794,Spacecraft Civilians,2
+a0055,in_subtopic,956794,Spacecraft Civilians,1
+a0056,in_subtopic,956794,Spacecraft Civilians,1
+a0057,in_subtopic,956794,Spacecraft Civilians,1
+a0058,in_subtopic,956794,Spacecraft Civilians,1
+a0059,in_subtopic,956794,Spacecraft Civilians,2
+a0060,in_subtopic,956794,Spacecraft Civilians,1
+a0061,in_subtopic,956794,Spacecraft Civilians,2
+a0062,in_subtopic,956794,Spacecraft Civilians,1
+a0063,in_subtopic,956794,Spacecraft Civilians,1
+a0064,in_subtopic,954439,Exascale Computing,1
+a0065,in_subtopic,954439,Exascale Computing,2
+a0066,in_subtopic,954439,Exascale Computing,1
+a0067,in_subtopic,954439,Exascale Computing,2
+a0068,in_subtopic,954439,Exascale Computing,2
+a0069,in_subtopic,954439,Exascale Computing,1
+a0070,in_subtopic,954439,Exascale Computing,2
+a0071,in_subtopic,954439,Exascale Computing,1
+a0072,in_subtopic,954439,Exascale Computing,2
+a0073,in_subtopic,954439,Exascale Computing,2
+a0074,in_subtopic,954439,Exascale Computing,2
+a0075,in_subtopic,979424,Quantum Computers,1
+a0076,in_subtopic,979424,Quantum Computers,2
+a0077,in_subtopic,979424,Quantum Computers,1
+a0078,in_subtopic,979424,Quantum Computers,1
+a0079,in_subtopic,979424,Quantum Computers,1
+a0080,in_subtopic,979424,Quantum Computers,1
+a0081,in_subtopic,979424,Quantum Computers,2
+a0082,in_subtopic,979424,Quantum Computers,2
+a0083,in_subtopic,979424,Quantum Computers,1
+a0084,in_subtopic,252599,Nuclear Fusion,1
+a0085,in_subtopic,252599,Nuclear Fusion,2
+a0086,in_subtopic,252599,Nuclear Fusion,1
+a0087,in_subtopic,252599,Nuclear Fusion,1
+a0088,in_subtopic,252599,Nuclear Fusion,1
+a0089,in_subtopic,252599,Nuclear Fusion,1
+a0090,in_subtopic,252599,Nuclear Fusion,1
+a0091,cross_subtopic,933923,Supersonic A,1
+a0092,cross_subtopic,933923,Supersonic A,2
+a0093,cross_subtopic,933923,Supersonic A,1
+a0094,cross_subtopic,933923,Supersonic A,1
+a0095,cross_subtopic,933923,Supersonic A,1
+a0028,cross_subtopic,933923,Supersonic A,1
+a0096,cross_subtopic,933923,Supersonic A,1
+a0097,cross_subtopic,933923,Supersonic A,1
+a0098,cross_subtopic,933923,Supersonic A,1
+a0099,cross_subtopic,594895,Nuclear Fusion,1
+a0069,cross_subtopic,594895,Nuclear Fusion,1
+a0100,cross_subtopic,594895,Nuclear Fusion,2
+a0101,cross_subtopic,594895,Nuclear Fusion,2
+a0102,cross_subtopic,594895,Nuclear Fusion,2
+a0103,cross_subtopic,594895,Nuclear Fusion,1
+a0104,cross_subtopic,594895,Nuclear Fusion,1
+a0105,cross_subtopic,594895,Nuclear Fusion,1
+a0106,cross_subtopic,594895,Nuclear Fusion,1
+a0107,cross_subtopic,594895,Nuclear Fusion,2
+a0003,cross_subtopic,447814,Quantum Computers,1
+a0108,cross_subtopic,447814,Quantum Computers,2
+a0109,cross_subtopic,447814,Quantum Computers,1
+a0110,cross_subtopic,447814,Quantum Computers,2
+a0111,cross_subtopic,447814,Quantum Computers,1
+a0112,cross_subtopic,447814,Quantum Computers,1
+a0113,cross_subtopic,447814,Quantum Computers,2
+a0114,cross_subtopic,447814,Quantum Computers,2
+a0115,cross_subtopic,447814,Quantum Computers,2
+a0116,cross_subtopic,358136,Spacecraft Civilians,1
+a0117,cross_subtopic,358136,Spacecraft Civilians,1
+a0118,cross_subtopic,358136,Spacecraft Civilians,1
+a0119,cross_subtopic,358136,Spacecraft Civilians,1
+a0120,cross_subtopic,358136,Spacecraft Civilians,1
+a0121,cross_subtopic,358136,Spacecraft Civilians,2
+a0122,cross_subtopic,358136,Spacecraft Civilians,1
+a0123,cross_subtopic,358136,Spacecraft Civilians,1
+a0124,cross_subtopic,358136,Spacecraft Civilians,2
+a0125,cross_subtopic,358136,Spacecraft Civilians,2
+a0126,cross_subtopic,783582,Mirror life,1
+a0127,cross_subtopic,783582,Mirror life,2
+a0128,cross_subtopic,783582,Mirror life,2
+a0129,cross_subtopic,783582,Mirror life,2
+a0130,cross_subtopic,783582,Mirror life,2
+a0131,cross_subtopic,783582,Mirror life,1
+a0132,cross_subtopic,783582,Mirror life,2
+a0133,cross_subtopic,783582,Mirror life,2
+a0134,cross_subtopic,783582,Mirror life,2
+a0135,cross_subtopic,947761,Embryo Models,2
+a0136,cross_subtopic,947761,Embryo Models,1
+a0137,cross_subtopic,947761,Embryo Models,2
+a0138,cross_subtopic,947761,Embryo Models,1
+a0139,cross_subtopic,947761,Embryo Models,2
+a0140,cross_subtopic,947761,Embryo Models,2
+a0141,cross_subtopic,947761,Embryo Models,1
+a0142,cross_subtopic,947761,Embryo Models,1
+a0143,cross_subtopic,631795,Black Holes,1
+a0144,cross_subtopic,631795,Black Holes,1
+a0145,cross_subtopic,631795,Black Holes,2
+a0146,cross_subtopic,631795,Black Holes,1
+a0147,cross_subtopic,631795,Black Holes,2
+a0148,cross_subtopic,631795,Black Holes,2
+a0149,cross_subtopic,631795,Black Holes,2
+a0150,cross_subtopic,631795,Black Holes,1
+a0151,cross_subtopic,631795,Black Holes,2
+a0152,cross_subtopic,444565,Exoplanets,2
+a0153,cross_subtopic,444565,Exoplanets,1
+a0154,cross_subtopic,444565,Exoplanets,1
+a0155,cross_subtopic,444565,Exoplanets,2
+a0156,cross_subtopic,444565,Exoplanets,2
+a0157,cross_subtopic,444565,Exoplanets,1
+a0158,cross_subtopic,444565,Exoplanets,2
+a0159,cross_subtopic,749581,Bioprinting,2
+a0160,cross_subtopic,155479,Exascale Computing,2
+a0161,cross_subtopic,155479,Exascale Computing,2
+a0162,cross_subtopic,155479,Exascale Computing,1
+a0163,cross_subtopic,155479,Exascale Computing,2
+a0164,cross_subtopic,155479,Exascale Computing,2
+a0165,cross_subtopic,155479,Exascale Computing,2
+a0166,cross_subtopic,155479,Exascale Computing,2
+a0167,cross_subtopic,155479,Exascale Computing,2
+a0168,cross_subtopic,155479,Exascale Computing,2
+a0169,cross_subtopic,749581,Bioprinting,2
+a0170,cross_subtopic,749581,Bioprinting,2
+a0171,cross_subtopic,749581,Bioprinting,1
+a0172,cross_subtopic,749581,Bioprinting,2
+a0173,cross_subtopic,749581,Bioprinting,1
+a0174,cross_subtopic,749581,Bioprinting,2
+a0175,cross_subtopic,749581,Bioprinting,2
+a0176,cross_subtopic,749581,Bioprinting,2
+a0177,cross_subtopic,749581,Bioprinting,2
+a0178,consultancy,538362,Bioprinting,1
+a0179,consultancy,538362,Bioprinting,2
+a0180,consultancy,538362,Bioprinting,1
+a0181,consultancy,538362,Bioprinting,2
+a0182,consultancy,538362,Bioprinting,2
+a0183,consultancy,538362,Bioprinting,1
+a0173,consultancy,538362,Bioprinting (7),2
+a0184,consultancy,184477,Quantum Computers,1
+a0185,consultancy,184477,Quantum Computers,1
+a0186,consultancy,184477,Quantum Computers,1
+a0187,consultancy,184477,Quantum Computers,2
+a0188,consultancy,184477,Quantum Computers,1
+a0189,consultancy,184477,Quantum Computers (8),1
+a0190,consultancy,539526,Exascale Computing,2
+a0191,consultancy,539526,Exascale Computing,1
+a0192,consultancy,539526,Exascale Computing,1
+a0193,consultancy,539526,Exascale Computing (9),1
+a0194,consultancy,543147,Spacecraft Civilians,2
+a0195,consultancy,543147,Spacecraft Civilians,1
+a0196,consultancy,543147,Spacecraft Civilians,1
+a0197,consultancy,543147,Spacecraft Civilians,1
+a0198,consultancy,543147,Spacecraft Civilians (6),1
+a0199,consultancy,391357,Embryo Models,1
+a0200,consultancy,391357,Embryo Models,2
+a0201,consultancy,391357,Embryo Models,1
+a0202,consultancy,391357,Embryo Models,2
+a0203,consultancy,391357,Embryo Models,1
+a0204,consultancy,391357,Embryo Models,1
+a0205,consultancy,391357,Embryo Models (10),1
+a0206,consultancy,976151,Mirror life,2
+a0207,consultancy,976151,Mirror life,2
+a0208,consultancy,976151,Mirror life,2
+a0209,consultancy,976151,Mirror life,1
+a0183,consultancy,976151,Mirror life (6),2
+a0188,consultancy,539526,Exascale Computing,2
+a0210,consultancy,539526,Exascale Computing,2
+a0201,consultancy,849391,Black Holes,1
+a0211,consultancy,849391,Black Holes,1
+a0212,consultancy,849391,Black Holes (5),1
+a0213,consultancy,187811,Nuclear Fusion,2
+a0214,consultancy,187811,Nuclear Fusion,1
+a0215,consultancy,187811,Nuclear Fusion,1
+a0216,consultancy,187811,Nuclear Fusion,2
+a0217,consultancy,187811,Nuclear Fusion,1
+a0218,consultancy,187811,Nuclear Fusion (9),1
+a0219,consultancy,893559,Exoplanets,1
+a0220,consultancy,893559,Exoplanets,1
+a0221,consultancy,893559,Exoplanets,1
+a0222,consultancy,893559,Exoplanets,1
+a0223,consultancy,893559,Exoplanets,2
+a0224,consultancy,893559,Exoplanets (8),1
+a0225,consultancy,765238,Supersonic A,2
+a0226,consultancy,765238,Supersonic A,2
+a0227,consultancy,765238,Supersonic A,2
+a0228,consultancy,765238,Supersonic A,2
+a0229,consultancy,765238,Supersonic A,2
+a0230,consultancy,765238,Supersonic A (6),1
+a0231,consultancy,539526,Exascale Computing,2
+a0232,consultancy,539526,Exascale Computing,2
+a0233,consultancy,539526,Exascale Computing (9),1
+a0234,consultancy,184477,Quantum Computers,1
+a0235,consultancy,184477,Quantum Computers,2
+a0124,consultancy,543147,Spacecraft Civilians,2
+a0236,consultancy,391357,Embryo Models,1
+a0237,consultancy,391357,Embryo Models,2
+a0238,consultancy,391357,Embryo Models,2
+a0239,consultancy,976151,Mirror life,1
+a0240,consultancy,849391,Black Holes,2
+a0241,consultancy,849391,Black Holes,1
+a0242,consultancy,187811,Nuclear Fusion,1
+a0243,consultancy,187811,Nuclear Fusion,1
+a0244,consultancy,187811,Nuclear Fusion,2
+a0245,consultancy,893559,Exoplanets,1
+a0246,consultancy,893559,Exoplanets,1
+a0247,consultancy,849391,Black Holes,1
+a0248,consultancy,849391,Black Holes,1
+a0249,consultancy,849391,Black Holes,1
+a0250,consultancy,543147,Spacecraft Civilians,2
+a0251,consultancy,543147,Spacecraft Civilians,2
+a0252,consultancy,543147,Spacecraft Civilians,1
+a0253,consultancy,543147,Spacecraft Civilians,1
+a0254,consultancy,539526,Exascale Computing,2
+a0255,consultancy,539526,Exascale Computing,1
+a0256,consultancy,539526,Exascale Computing,2
+a0257,multi_judge_h,895111,Supersonic A,1
+a0258,multi_judge_h,895111,Supersonic A,1
+a0259,multi_judge_h,999926,Supersonic A,1
+a0260,multi_judge_h,999926,Supersonic A,1
+a0261,multi_judge_h,999926,Supersonic A,2
+a0262,multi_judge_h,194326,Supersonic A,1
+a0263,multi_judge_h,194326,Supersonic A,2
+a0264,multi_judge_h,463475,Supersonic A,1
+a0265,multi_judge_h,463475,Supersonic A,2
+a0266,multi_judge_h,463475,Supersonic A,1
+a0267,multi_judge_h,211995,Supersonic A,1
+a0268,multi_judge_h,211995,Supersonic A,1
+a0269,multi_judge_h,866177,Supersonic A,1
+a0270,multi_judge_h,866177,Supersonic A,1
+a0271,multi_judge_h,567926,Supersonic A,1
+a0272,multi_judge_h,567926,Supersonic A,1
+a0273,multi_judge_h,931292,Supersonic A,1
+a0172,multi_judge_h,931292,Supersonic A,1
+a0274,multi_judge_h,981898,Nuclear Fusion,1
+a0275,multi_judge_h,981898,Nuclear Fusion,1
+a0276,multi_judge_h,981898,Nuclear Fusion,2
+a0277,multi_judge_h,981898,Nuclear Fusion,1
+a0278,multi_judge_h,412589,Nuclear Fusion,1
+a0279,multi_judge_h,412589,Nuclear Fusion,1
+a0280,multi_judge_h,412589,Nuclear Fusion,1
+a0281,multi_judge_h,394323,Nuclear Fusion,2
+a0282,multi_judge_h,394323,Nuclear Fusion,1
+a0283,multi_judge_h,993551,Nuclear Fusion,1
+a0284,multi_judge_h,993551,Nuclear Fusion,2
+a0285,multi_judge_h,244221,Nuclear Fusion,1
+a0286,multi_judge_h,244221,Nuclear Fusion,1
+a0287,multi_judge_h,244221,Nuclear Fusion,1
+a0288,multi_judge_h,894127,Nuclear Fusion,1
+a0289,multi_judge_h,894127,Nuclear Fusion,1
+a0290,multi_judge_h,314137,Nuclear Fusion,1
+a0291,multi_judge_h,314137,Nuclear Fusion,1
+a0257,multi_judge_h,314137,Nuclear Fusion,1
+a0292,multi_judge_h,447965,Quantum Computers,1
+a0293,multi_judge_h,447965,Quantum Computers,1
+a0294,multi_judge_h,447965,Quantum Computers,1
+a0295,multi_judge_h,313313,Quantum Computers,1
+a0296,multi_judge_h,313313,Quantum Computers,2
+a0297,multi_judge_h,313313,Quantum Computers,1
+a0298,multi_judge_h,853599,Quantum Computers,1
+a0299,multi_judge_h,853599,Quantum Computers,1
+a0300,multi_judge_h,853599,Quantum Computers,1
+a0301,multi_judge_h,877597,Quantum Computers,1
+a0302,multi_judge_h,877597,Quantum Computers,1
+a0303,multi_judge_h,323679,Quantum Computers,1
+a0304,multi_judge_h,323679,Quantum Computers,1
+a0305,multi_judge_h,323679,Quantum Computers,2
+a0306,multi_judge_h,882523,Quantum Computers,1
+a0307,multi_judge_h,882523,Quantum Computers,2
+a0308,multi_judge_h,882523,Quantum Computers,1
+a0275,multi_judge_h,934262,Quantum Computers,1
+a0309,multi_judge_h,934262,Quantum Computers,2
+a0310,multi_judge_h,934262,Quantum Computers,1
+a0311,multi_judge_h,347238,Quantum Computers,2
+a0312,multi_judge_h,347238,Quantum Computers,1
+a0313,multi_judge_h,347238,Quantum Computers,1
+a0314,multi_judge_h,237625,Spacecraft Civilians,2
+a0315,multi_judge_h,237625,Spacecraft Civilians,2
+a0316,multi_judge_h,297251,Spacecraft Civilians,2
+a0317,multi_judge_h,297251,Spacecraft Civilians,2
+a0318,multi_judge_h,899348,Spacecraft Civilians,1
+a0319,multi_judge_h,899348,Spacecraft Civilians,2
+a0236,multi_judge_h,285825,Spacecraft Civilians,1
+a0320,multi_judge_h,285825,Spacecraft Civilians,2
+a0321,multi_judge_h,285825,Spacecraft Civilians,1
+a0322,multi_judge_h,335145,Spacecraft Civilians,2
+a0323,multi_judge_h,335145,Spacecraft Civilians,1
+a0125,multi_judge_h,335145,Spacecraft Civilians,2
+a0324,multi_judge_h,335145,Spacecraft Civilians,2
+a0325,multi_judge_h,865432,Spacecraft Civilians,2
+a0326,multi_judge_h,865432,Spacecraft Civilians,1
+a0327,multi_judge_h,865432,Spacecraft Civilians,2
+a0328,multi_judge_h,747336,Mirror Life,1
+a0329,multi_judge_h,747336,Mirror Life,2
+a0330,multi_judge_h,747336,Mirror Life,1
+a0331,multi_judge_h,646856,Mirror Life,2
+a0332,multi_judge_h,646856,Mirror Life,2
+a0333,multi_judge_h,646856,Mirror Life,2
+a0334,multi_judge_h,156122,Mirror Life,2
+a0335,multi_judge_h,156122,Mirror Life,1
+a0336,multi_judge_h,156122,Mirror Life,2
+a0337,multi_judge_h,861545,Mirror Life,2
+a0338,multi_judge_h,861545,Mirror Life,2
+a0339,multi_judge_h,861545,Mirror Life,2
+a0340,multi_judge_h,635263,Mirror Life,2
+a0341,multi_judge_h,635263,Mirror Life,2
+a0342,multi_judge_h,965546,Mirror Life,1
+a0343,multi_judge_h,965546,Mirror Life,1
+a0344,multi_judge_h,965546,Mirror Life,1
+a0225,multi_judge_h,225146,Mirror Life,1
+a0345,multi_judge_h,225146,Mirror Life,1
+a0346,multi_judge_h,225146,Mirror Life,2
+a0347,multi_judge_h,225146,Mirror Life,1
+a0348,multi_judge_h,717113,Embryo Models,1
+a0349,multi_judge_h,717113,Embryo Models,2
+a0350,multi_judge_h,717113,Embryo Models,1
+a0351,multi_judge_h,717113,Embryo Models,1
+a0352,multi_judge_h,495236,Embryo Models,2
+a0353,multi_judge_h,495236,Embryo Models,1
+a0354,multi_judge_h,495236,Embryo Models,2
+a0355,multi_judge_h,793217,Embryo Models,1
+a0356,multi_judge_h,793217,Embryo Models,2
+a0357,multi_judge_h,793217,Embryo Models,1
+a0358,multi_judge_h,631852,Embryo Models,1
+a0359,multi_judge_h,631852,Embryo Models,1
+a0360,multi_judge_h,271178,Embryo Models,1
+a0361,multi_judge_h,271178,Embryo Models,1
+a0362,multi_judge_h,271178,Embryo Models,1
+a0363,multi_judge_h,271178,Embryo Models,1
+a0364,multi_judge_h,961926,Exascale Computing,2
+a0365,multi_judge_h,961926,Exascale Computing,2
+a0366,multi_judge_h,365149,Exascale Computing,2
+a0367,multi_judge_h,365149,Exascale Computing,2
+a0368,multi_judge_h,318345,Exascale Computing,1
+a0369,multi_judge_h,318345,Exascale Computing,2
+a0370,multi_judge_h,342828,Black Holes,1
+a0371,multi_judge_h,342828,Black Holes,1
+a0372,multi_judge_h,342828,Black Holes,2
+a0373,multi_judge_h,342828,Black Holes,2
+a0374,multi_judge_h,577215,Black Holes,1
+a0375,multi_judge_h,577215,Black Holes,1
+a0376,multi_judge_h,577215,Black Holes,1
+a0377,multi_judge_h,577215,Black Holes,1
+a0378,multi_judge_h,942549,Black Holes,2
+a0379,multi_judge_h,942549,Black Holes,2
+a0327,multi_judge_h,193427,Exoplanets,1
+a0350,multi_judge_h,193427,Exoplanets,1
+a0380,multi_judge_h,193427,Exoplanets,1
+a0381,multi_judge_h,678651,Exoplanets,1
+a0382,multi_judge_h,678651,Exoplanets,1
+a0383,multi_judge_h,678651,Exoplanets,1
+a0384,multi_judge_h,459169,Exoplanets,1
+a0385,multi_judge_h,459169,Exoplanets,2
+a0386,multi_judge_h,216299,Bioprinting,2
+a0387,multi_judge_h,216299,Bioprinting,2
+a0388,multi_judge_h,216299,Bioprinting,2
+a0383,multi_judge_h,458888,Bioprinting,1
+a0389,multi_judge_h,458888,Bioprinting,2
+a0305,multi_judge_h,458888,Bioprinting,1
+a0390,hybrid_mj,633357,Supersonic Aircrafts,2
+a0391,hybrid_mj,633357,Supersonic Aircrafts,1
+a0392,hybrid_mj,633357,Supersonic Aircrafts,2
+a0393,hybrid_mj,633357,Supersonic Aircrafts,1
+a0394,hybrid_mj,386595,Nuclear Fusion,1
+a0395,hybrid_mj,386595,Nuclear Fusion,1
+a0396,hybrid_mj,386595,Nuclear Fusion,2
+a0397,hybrid_mj,386595,Nuclear Fusion,2
+a0398,hybrid_mj,386595,Nuclear Fusion,1
+a0399,hybrid_mj,386595,Nuclear Fusion,2
+a0400,hybrid_mj,386595,Nuclear Fusion,2
+a0401,hybrid_mj,527567,Quantum Computers,1
+a0402,hybrid_mj,527567,Quantum Computers,1
+a0403,hybrid_mj,527567,Quantum Computers,1
+a0404,hybrid_mj,527567,Quantum Computers,2
+a0405,hybrid_mj,527567,Quantum Computers,1
+a0406,hybrid_mj,527567,Quantum Computers,2
+a0407,hybrid_mj,832991,Spacecraft Civilians,1
+a0408,hybrid_mj,832991,Spacecraft Civilians,2
+a0409,hybrid_mj,832991,Spacecraft Civilians,1
+a0410,hybrid_mj,832991,Spacecraft Civilians,2
+a0411,hybrid_mj,832991,Spacecraft Civilians,2
+a0412,hybrid_mj,832991,Spacecraft Civilians,2
+a0413,hybrid_mj,832991,Spacecraft Civilians,2
+a0414,hybrid_mj,874873,Mirror Life,2
+a0415,hybrid_mj,874873,Mirror Life,1
+a0416,hybrid_mj,874873,Mirror Life,2
+a0417,hybrid_mj,874873,Mirror Life,2
+a0418,hybrid_mj,874873,Mirror Life,2
+a0419,hybrid_mj,874873,Mirror Life,2
+a0420,hybrid_mj,874873,Mirror Life,2
+a0421,hybrid_mj,874873,Mirror Life,2
+a0422,hybrid_mj,637767,Embryo Models,1
+a0423,hybrid_mj,637767,Embryo Models,1
+a0283,hybrid_mj,637767,Embryo Models,2
+a0424,hybrid_mj,637767,Embryo Models,2
+a0304,hybrid_mj,637767,Embryo Models,1
+a0425,hybrid_mj,637767,Embryo Models,1
+a0426,hybrid_mj,637767,Embryo Models,1
+a0427,hybrid_mj,881832,Exascale Computing,1
+a0428,hybrid_mj,881832,Exascale Computing,1
+a0429,hybrid_mj,881832,Exascale Computing,1
+a0430,hybrid_mj,881832,Exascale Computing,2
+a0431,hybrid_mj,881832,Exascale Computing,2
+a0432,hybrid_mj,881832,Exascale Computing,1
+a0433,hybrid_mj,881832,Exascale Computing,2
+a0434,hybrid_mj,423932,Black Holes,1
+a0435,hybrid_mj,423932,Black Holes,2
+a0436,hybrid_mj,423932,Black Holes,1
+a0437,hybrid_mj,423932,Black Holes,2
+a0389,hybrid_mj,423932,Black Holes,1
+a0438,hybrid_mj,423932,Black Holes,1
+a0439,hybrid_mj,423932,Black Holes,1
+a0422,hybrid_mj,423932,Black Holes,2
+a0440,hybrid_mj,438134,Exoplanets,1
+a0441,hybrid_mj,438134,Exoplanets,1
+a0442,hybrid_mj,438134,Exoplanets,1
+a0443,hybrid_mj,438134,Exoplanets,1
+a0444,hybrid_mj,683686,Bioprinting,2
+a0445,hybrid_mj,683686,Bioprinting,2
+a0446,hybrid_mj,683686,Bioprinting,2
+a0447,hybrid_mj,683686,Bioprinting,2
+a0448,hybrid_mj,683686,Bioprinting,2
+a0449,hybrid_mj,683686,Bioprinting,1
+a0450,hybrid_mj,683686,Bioprinting,2
+a0451,hybrid_mj,386595,Nuclear Fusion,2
+a0452,hybrid_mj,386595,Nuclear Fusion,1
+a0453,hybrid_mj,527567,Quantum Computers,2
+a0436,hybrid_mj,527567,Quantum Computers,1
+a0454,hybrid_mj,832991,Spacecraft Civilians,1
+a0455,hybrid_mj,637767,Embryo Models,1
+a0456,hybrid_mj,438134,Exoplanets,1
+a0453,hybrid_mj,683686,Bioprinting,2
+a0457,hybrid_mj,683686,Bioprinting,1
+a0458,hybrid_mj,438134,Exoplanets,1
+a0459,hybrid_mj,637767,Embryo Models,2
+a0303,hybrid_mj,527567,Quantum Computers,1
+a0460,hybrid_mj,881832,Exascale Computing,2
+a0461,hybrid_mj,633357,Supersonic Aircrafts,1
+a0462,hybrid_mj,832991,Spacecraft Civilians,1
+a0463,hybrid_mj,423932,Black Holes,1
+a0464,hybrid_mj,423932,Black Holes,2
+a0465,hybrid_mj,683686,Bioprinting,2
+a0466,hybrid_mj,423932,Black Holes,1
+a0467,hybrid_mj,423932,Black Holes,1
+a0468,hybrid_mj,423932,Black Holes,2
+a0469,hybrid_mj,386595,Nuclear Fusion,1
+a0470,hybrid_mj,386595,Nuclear Fusion,2
+a0471,hybrid_mj,386595,Nuclear Fusion,2
+a0472,hybrid_mj,386595,Nuclear Fusion,1
+a0473,hybrid_mj,386595,Nuclear Fusion,2
+a0474,hybrid_mj,386595,Nuclear Fusion,1
+a0475,hybrid_mj,386595,Nuclear Fusion,2
+a0476,hybrid_mj,386595,Nuclear Fusion,1
+a0477,hybrid_mj,527567,Quantum Computers,1
+a0187,hybrid_mj,527567,Quantum Computers,1
+a0478,hybrid_mj,527567,Quantum Computers,1
+a0479,hybrid_mj,527567,Quantum Computers,1
+a0480,hybrid_mj,874873,Mirror Life,1
+a0481,hybrid_mj,874873,Mirror Life,2
+a0273,hybrid_mj,874873,Mirror Life,1
+a0482,hybrid_mj,874873,Mirror Life,1
+a0483,hybrid_mj,874873,Mirror Life,1
+a0484,hybrid_mj,874873,Mirror Life,1
+a0485,hybrid_mj,637767,Embryo Models,2
+a0486,hybrid_mj,637767,Embryo Models,1
+a0487,hybrid_mj,637767,Embryo Models,1
+a0488,hybrid_mj,637767,Embryo Models,2
