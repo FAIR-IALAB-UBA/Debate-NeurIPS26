@@ -1,0 +1,5 @@
+timestamp,consultancy_id,phase,parsing_method,success
+2026-04-08T11:06:10.303936,consultancy_016_20260408_110458,final_evaluation,llm_fallback,True
+2026-04-08T11:56:10.888526,consultancy_057_20260408_115605,prior_belief,llm_fallback,True
+2026-04-08T12:00:08.628992,consultancy_060_20260408_120002,prior_belief,llm_fallback,True
+2026-04-08T12:37:21.958847,consultancy_089_20260408_123610,final_evaluation,llm_fallback,True

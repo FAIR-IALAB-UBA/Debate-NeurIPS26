@@ -1,0 +1,159 @@
+{
+  "deliberation_id": "delib_062_20260429_154021",
+  "debate_id": "debate_063_20260325_205659_inverted",
+  "topic": "Experiments with mice",
+  "general_topic": "Lab-grown Embryo Models",
+  "statement_1": "In 2022, working with mice, Jacob Hanna succeeded in creating synthetic embryos with beating hearts and neural folds, grown in containers connected to a gas-mixing system—essentially a form of artificial womb.",
+  "statement_2": "In 2022, working with mice, Jacob Hanna did not succeed in creating synthetic embryos, because the cell aggregates failed to organize properly and could not sustain coordinated development outside a natural uterus, leading the structures to break down at an early stage.",
+  "majority_type": "mainstream",
+  "judges": [
+    {
+      "judge_id": "Judge_1",
+      "judge_name": "Judge 1",
+      "general_belief": "Scientists are making progress in developing lab-grown embryo models, which are synthetic embryos created without the two fundamental components of natural reproduction: sperm and egg.",
+      "belief_type": "mainstream"
+    },
+    {
+      "judge_id": "Judge_2",
+      "judge_name": "Judge 2",
+      "general_belief": "Creating synthetic embryos models without sperm and egg is considered impossible, so scientists do not investigate the possibility of developing lab-grown embryo models.",
+      "belief_type": "skeptical"
+    },
+    {
+      "judge_id": "Judge_3",
+      "judge_name": "Judge 3",
+      "general_belief": "Scientists are making progress in developing lab-grown embryo models, which are synthetic embryos created without the two fundamental components of natural reproduction: sperm and egg.",
+      "belief_type": "mainstream"
+    }
+  ],
+  "phases": {
+    "prior_beliefs": [
+      {
+        "judge_id": "Judge_1",
+        "judge_name": "Judge 1",
+        "statement": "Statement 1",
+        "confidence": 85,
+        "response_raw": "Statement: Statement 1\nConfidence: 85\n\nBased on my understanding of the scientific progress in lab-grown embryo models, Jacob Hanna's team at the Weizmann Institute did indeed achieve a significant breakthrough in 2022. They successfully created synthetic mouse embryos from stem cells that developed beating hearts, blood circulation, and the beginnings of a brain - all without using sperm or eggs. These embryos were grown in specially designed bioreactors that functioned as artificial wombs, providing the necessary conditions for development. This work represented a major advancement in the field of synthetic embryology and demonstrated that complex embryonic structures could be generated and sustained outside the natural reproductive process.",
+        "ground_truth_alignment": true,
+        "belief_changed_prior_to_r1": false,
+        "belief_changed_prior_to_r3": false,
+        "belief_changed_r1_to_r3": false
+      },
+      {
+        "judge_id": "Judge_2",
+        "judge_name": "Judge 2",
+        "statement": "Statement 2",
+        "confidence": 85,
+        "response_raw": "Statement: Statement 2\nConfidence: 85\n\nGiven my understanding that creating synthetic embryo models without sperm and egg is fundamentally impossible, Statement 2 aligns much better with what I would expect from such experiments. The description of cell aggregates failing to organize properly and breaking down at early stages is consistent with the inherent limitations of trying to create embryonic structures without the natural biological foundation of fertilization. While scientists may attempt such experiments, the fundamental biological impossibility of creating true embryonic development without gametes would inevitably lead to the kind of failure described in Statement 2.",
+        "ground_truth_alignment": false,
+        "belief_changed_prior_to_r1": false,
+        "belief_changed_prior_to_r3": null,
+        "belief_changed_r1_to_r3": null
+      },
+      {
+        "judge_id": "Judge_3",
+        "judge_name": "Judge 3",
+        "statement": "Statement 1",
+        "confidence": 85,
+        "response_raw": "Statement: Statement 1\nConfidence: 85\n\nBased on my understanding of the scientific progress in lab-grown embryo models, Jacob Hanna's team at the Weizmann Institute did indeed achieve a significant breakthrough in 2022. They successfully created synthetic mouse embryos from stem cells that developed beating hearts, blood circulation, and the beginnings of a brain - all without using sperm or eggs. These embryos were grown in specially designed bioreactors that functioned as artificial wombs, providing the necessary conditions for development. This work represented a major advancement in the field of synthetic embryology and demonstrated that complex embryonic structures could be generated and sustained outside the natural reproductive process.",
+        "ground_truth_alignment": true,
+        "belief_changed_prior_to_r1": false,
+        "belief_changed_prior_to_r3": false,
+        "belief_changed_r1_to_r3": false
+      }
+    ],
+    "round_1": [
+      {
+        "judge_id": "Judge_1",
+        "judge_name": "Judge 1",
+        "statement": "Statement 1",
+        "confidence": 85,
+        "key_points": "1. Debater_1 provides specific, verifiable evidence (peer-reviewed publication, concrete developmental milestones) while Debater_2 offers only theoretical objections without counter-evidence",
+        "response_raw": "Looking at this debate through the lens of my prior belief that scientists are making progress in developing lab-grown embryo models, I need to carefully evaluate the arguments presented.\n\n**Analysis of Key Arguments:**\n\nDebater_1 presents specific, verifiable claims:\n- References Jacob Hanna's 2022 study published in *Cell* journal\n- Describes concrete developmental achievements: beating hearts, neural folds, development to day 8.5\n- Mentions the artificial womb system with gas-mixing technology\n- Points to broader scientific activity (ISSCR guidelines, multiple labs worldwide)\n- Provides falsifiable evidence that can be verified\n\nDebater_2 relies primarily on theoretical arguments:\n- Claims scientific consensus deems synthetic embryos \"impossible\"\n- Argues that sperm-egg fusion is irreplaceable for proper development\n- Suggests the field is \"fringe\" with insufficient investment\n- Dismisses documented achievements as \"disorganized aggregates\"\n- Provides no counter-evidence to refute the specific *Cell* publication\n\n**Critical Evaluation:**\n\nThe most significant weakness in Debater_2's argument is the contradiction with my prior belief. I know that scientists ARE making progress in lab-grown embryo models - this is established fact. Debater_2's claim that the scientific community considers this \"impossible\" and doesn't seriously investigate it directly contradicts this reality.\n\nDebater_1's argument aligns with and supports my prior understanding. The specific details about Hanna's work - the journal publication, the developmental timeline, the organized structures - provide concrete evidence of the progress I know is occurring.\n\nDebater_2's dismissal of peer-reviewed research without providing counter-evidence is particularly problematic. If Hanna's work was fundamentally flawed, there should be scientific rebuttals or failed replication attempts to cite.\n\n**Statement:** Statement 1\n\n**Confidence:** 85\n\n**Key points:** \n1. Debater_1 provides specific, verifiable evidence (peer-reviewed publication, concrete developmental milestones) while Debater_2 offers only theoretical objections without counter-evidence\n2. Debater_2's claim that scientists don't seriously investigate synthetic embryos directly contradicts established scientific reality\n3. The existence of ISSCR guidelines for embryo models indicates this is legitimate, active research rather than fringe speculation\n4. Published research in prestigious journals like *Cell* carries significant evidential weight that requires substantial counter-evidence to dismiss",
+        "ground_truth_alignment": true
+      },
+      {
+        "judge_id": "Judge_2",
+        "judge_name": "Judge 2",
+        "statement": "Statement 2",
+        "confidence": 85,
+        "key_points": "1. The fundamental biological impossibility of replicating sperm-egg fusion processes artificially",
+        "response_raw": "Looking at this debate through the lens of my prior belief that creating synthetic embryo models without sperm and egg is considered impossible, I need to carefully evaluate the arguments presented.\n\n**Reasoning:**\n\nDebater_2's arguments align strongly with my prior understanding. They correctly emphasize that the scientific consensus views synthetic embryo creation as fundamentally impossible due to the irreplaceable biological processes that only sperm-egg fusion can provide. The argument about epigenetic reprogramming, imprinting patterns, and cellular organization being non-replicable artificially resonates with established scientific understanding. Their point that if this were truly possible, it would generate massive research investment and revolutionize reproductive medicine is compelling.\n\nDebater_1 presents what appears to be specific evidence, citing Jacob Hanna's 2022 study in *Cell* journal and mentioning detailed developmental features like beating hearts and neural tubes. However, this directly contradicts the established scientific consensus that such achievements are impossible. While they claim peer-reviewed publication, extraordinary claims require extraordinary scrutiny, especially when they contradict fundamental biological principles.\n\nThe key tension is between Debater_1's claims of documented success and the established scientific understanding that such work is not seriously pursued because it's considered impossible. Debater_2's characterization of these as \"disorganized cell aggregates\" that inevitably break down aligns with what would be expected given current scientific limitations.\n\nDebater_1's assertion that multiple labs worldwide are pursuing this research contradicts the understanding that scientists don't investigate these possibilities precisely because they're considered impossible. Their claims seem too remarkable given the fundamental biological constraints involved.\n\n**Statement:** Statement 2\n\n**Confidence:** 85\n\n**Key points:** \n1. The fundamental biological impossibility of replicating sperm-egg fusion processes artificially\n2. The lack of mainstream scientific acceptance of synthetic embryology as a legitimate field\n3. The distinction between primitive cell aggregates and true embryonic development\n4. Whether the claimed achievements are consistent with established developmental biology constraints\n5. The credibility of extraordinary claims that contradict scientific consensus about what's possible in this field",
+        "ground_truth_alignment": false
+      },
+      {
+        "judge_id": "Judge_3",
+        "judge_name": "Judge 3",
+        "statement": "Statement 1",
+        "confidence": 85,
+        "key_points": "1. Debater_2's claim that scientists don't investigate synthetic embryos contradicts established knowledge of ongoing research progress",
+        "response_raw": "Looking at this debate through the lens of my prior belief that scientists are making progress in developing lab-grown embryo models, I need to carefully evaluate the arguments presented.\n\n**Analysis of Key Arguments:**\n\nDebater_1 presents specific, verifiable claims:\n- References Jacob Hanna's 2022 study published in *Cell* journal\n- Describes concrete developmental achievements: beating hearts, neural folds, development to day 8.5\n- Mentions the artificial womb system with gas-mixing technology\n- Points to broader scientific activity (ISSCR guidelines, multiple labs worldwide)\n- Provides falsifiable evidence that can be verified\n\nDebater_2 relies primarily on theoretical arguments:\n- Claims scientific consensus deems synthetic embryos \"impossible\"\n- Argues that sperm-egg fusion is irreplaceable for proper development\n- Suggests the field is \"fringe\" with insufficient investment\n- Dismisses documented achievements as \"too remarkable\" without counter-evidence\n- Offers no specific citations or verifiable claims\n\n**Critical Evaluation:**\n\nThe most significant weakness in Debater_2's argument is the contradiction with my prior belief. They claim scientists don't seriously investigate lab-grown embryo models because they're \"impossible,\" yet my prior knowledge confirms that scientists ARE making progress in this field. This undermines their entire premise.\n\nDebater_1's argument aligns with and supports my prior belief about scientific progress in synthetic embryology. Their specific references to published research, institutional guidelines, and concrete developmental milestones provide the kind of evidence one would expect if such progress were indeed occurring.\n\nThe peer-review process mentioned by Debater_1 is particularly compelling - if the claims were false or exaggerated, they likely wouldn't survive rigorous scientific review in a top-tier journal like *Cell*.\n\n**Statement:** Statement 1\n\n**Confidence:** 85\n\n**Key points:** \n1. Debater_2's claim that scientists don't investigate synthetic embryos contradicts established knowledge of ongoing research progress\n2. Debater_1 provides specific, verifiable evidence (journal publication, institutional responses) while Debater_2 offers only theoretical objections\n3. The peer-review process adds credibility to the specific achievements claimed\n4. Multiple corroborating indicators (ISSCR guidelines, multiple labs) suggest genuine scientific activity rather than isolated claims",
+        "ground_truth_alignment": true
+      }
+    ],
+    "round_2": [
+      {
+        "judge_id": "Judge_1",
+        "judge_name": "Judge 1",
+        "response_to_others": "I agree with Judge 3's observation that Debater_2's claim about scientists not investigating synthetic embryos contradicts established knowledge. This is a critical factual error that undermines Debater_2's credibility. The existence of research guidelines and multiple labs pursuing this work clearly demonstrates active scientific investigation.\n\nHowever, I must respectfully disagree with Judge 2's emphasis on \"fundamental biological impossibility.\" While traditional embryonic development does rely on sperm-egg fusion, my prior belief acknowledges that scientists ARE making progress in developing lab-grown embryo models without these components. Judge 2's position seems to dismiss this documented progress entirely.\n\nThe key distinction here is between traditional reproduction and synthetic embryo modeling. Debater_1 correctly identifies that these are stem cell-derived models, not attempts to replicate natural reproduction exactly. The evidence points to real developmental achievements - beating hearts, neural folds, organized structures - which aligns with the scientific progress I understand to be occurring in this field.\n\nJudge 1's focus on verifiable evidence versus theoretical objections is particularly compelling. Debater_1 cites specific publications and developmental milestones, while Debater_2 relies on assertions about impossibility that contradict observable research progress.",
+        "outstanding_issues": "- We need to reconcile Judge 2's concerns about biological impossibility with the documented evidence of research progress\n- The distinction between \"perfect replication of natural development\" versus \"significant progress in synthetic embryo modeling\" needs clarification\n- Whether the structures Hanna created represent genuine success or merely preliminary steps that ultimately failed (as Statement 2 claims) remains the core factual dispute that must be resolved",
+        "response_raw": "1. Response to other judges' arguments:\n\nI agree with Judge 3's observation that Debater_2's claim about scientists not investigating synthetic embryos contradicts established knowledge. This is a critical factual error that undermines Debater_2's credibility. The existence of research guidelines and multiple labs pursuing this work clearly demonstrates active scientific investigation.\n\nHowever, I must respectfully disagree with Judge 2's emphasis on \"fundamental biological impossibility.\" While traditional embryonic development does rely on sperm-egg fusion, my prior belief acknowledges that scientists ARE making progress in developing lab-grown embryo models without these components. Judge 2's position seems to dismiss this documented progress entirely.\n\nThe key distinction here is between traditional reproduction and synthetic embryo modeling. Debater_1 correctly identifies that these are stem cell-derived models, not attempts to replicate natural reproduction exactly. The evidence points to real developmental achievements - beating hearts, neural folds, organized structures - which aligns with the scientific progress I understand to be occurring in this field.\n\nJudge 1's focus on verifiable evidence versus theoretical objections is particularly compelling. Debater_1 cites specific publications and developmental milestones, while Debater_2 relies on assertions about impossibility that contradict observable research progress.\n\n2. Outstanding issues:\n\n- We need to reconcile Judge 2's concerns about biological impossibility with the documented evidence of research progress\n- The distinction between \"perfect replication of natural development\" versus \"significant progress in synthetic embryo modeling\" needs clarification\n- Whether the structures Hanna created represent genuine success or merely preliminary steps that ultimately failed (as Statement 2 claims) remains the core factual dispute that must be resolved"
+      },
+      {
+        "judge_id": "Judge_2",
+        "judge_name": "Judge 2",
+        "response_to_others": "I appreciate Judge 1's emphasis on verifiable evidence, but I must respectfully disagree with their assessment. While Debater_1 cites what appears to be peer-reviewed research, we must consider whether such extraordinary claims align with fundamental biological principles. My prior understanding is that creating synthetic embryos without sperm and egg is considered impossible precisely because the biological machinery required cannot be replicated artificially.\n\nJudge 3 raises an interesting point about ongoing research, but I would argue there's a distinction between scientists investigating cellular aggregation techniques and actually achieving true synthetic embryo creation. The fact that guidelines exist doesn't necessarily validate the possibility - regulatory bodies often create frameworks for emerging areas even when the underlying science remains unproven.\n\nThe core issue remains: can the unique epigenetic reprogramming, imprinting patterns, and cellular organization that only occur through natural sperm-egg fusion truly be replicated artificially? My understanding suggests this is fundamentally impossible, which would mean any claimed \"synthetic embryos\" are actually just organized cell aggregates that inevitably break down, as Statement 2 describes.",
+        "outstanding_issues": "- The fundamental question of whether true embryonic development can occur without natural sperm-egg fusion processes\n- Whether the cited research represents genuine synthetic embryos or merely advanced cell aggregation that mimics some embryonic features\n- The distinction between preliminary cellular experiments and actual embryo creation\n- Whether the scientific consensus truly supports the possibility of synthetic embryology or if this remains a fringe pursuit with limited success",
+        "response_raw": "1. Response to other judges' arguments:\n\nI appreciate Judge 1's emphasis on verifiable evidence, but I must respectfully disagree with their assessment. While Debater_1 cites what appears to be peer-reviewed research, we must consider whether such extraordinary claims align with fundamental biological principles. My prior understanding is that creating synthetic embryos without sperm and egg is considered impossible precisely because the biological machinery required cannot be replicated artificially.\n\nJudge 3 raises an interesting point about ongoing research, but I would argue there's a distinction between scientists investigating cellular aggregation techniques and actually achieving true synthetic embryo creation. The fact that guidelines exist doesn't necessarily validate the possibility - regulatory bodies often create frameworks for emerging areas even when the underlying science remains unproven.\n\nThe core issue remains: can the unique epigenetic reprogramming, imprinting patterns, and cellular organization that only occur through natural sperm-egg fusion truly be replicated artificially? My understanding suggests this is fundamentally impossible, which would mean any claimed \"synthetic embryos\" are actually just organized cell aggregates that inevitably break down, as Statement 2 describes.\n\n2. What remains unresolved or what key points should be addressed in the final round?\n\nOutstanding issues:\n- The fundamental question of whether true embryonic development can occur without natural sperm-egg fusion processes\n- Whether the cited research represents genuine synthetic embryos or merely advanced cell aggregation that mimics some embryonic features\n- The distinction between preliminary cellular experiments and actual embryo creation\n- Whether the scientific consensus truly supports the possibility of synthetic embryology or if this remains a fringe pursuit with limited success"
+      },
+      {
+        "judge_id": "Judge_3",
+        "judge_name": "Judge 3",
+        "response_to_others": "I agree with Judge 1's emphasis on the importance of verifiable evidence. Debater_1 consistently cited specific research (Hanna's Cell publication, ISSCR guidelines) while Debater_2 relied primarily on theoretical assertions. However, I think we need to be careful about accepting claims at face value without examining the underlying science.\n\nI partially agree with Judge 2's point about biological complexity, but I think this perspective may be overly rigid. My prior belief acknowledges that scientists ARE making progress in developing lab-grown embryo models without sperm and egg. The question isn't whether it's theoretically impossible, but whether Hanna specifically succeeded in 2022. Judge 2's position seems to dismiss the entire field, which contradicts documented research progress.\n\nMy own observation about Debater_2's factual error regarding scientific investigation remains important. The claim that scientists don't seriously investigate this field is demonstrably false - there's substantial ongoing research, funding, and regulatory attention to synthetic embryo models.",
+        "outstanding_issues": "- Verification of specific claims: While Debater_1 cites a Cell publication, we should consider whether the described achievements (beating hearts, neural folds) actually occurred as claimed, or if there's mischaracterization of the results.\n\n- Definition of \"success\": Even if Hanna's structures developed significantly, did they truly represent successful synthetic embryos, or were they limited models that eventually failed as Statement 2 suggests?\n\n- Reconciling evidence with biological constraints: How do we balance Judge 2's valid concerns about biological complexity with the documented research progress that aligns with my prior belief about ongoing scientific advancement in this field?\n\nThe key tension is between theoretical impossibility arguments and documented research claims. We need to determine which evidence is more compelling.",
+        "response_raw": "1. Response to other judges' arguments:\n\nI agree with Judge 1's emphasis on the importance of verifiable evidence. Debater_1 consistently cited specific research (Hanna's Cell publication, ISSCR guidelines) while Debater_2 relied primarily on theoretical assertions. However, I think we need to be careful about accepting claims at face value without examining the underlying science.\n\nI partially agree with Judge 2's point about biological complexity, but I think this perspective may be overly rigid. My prior belief acknowledges that scientists ARE making progress in developing lab-grown embryo models without sperm and egg. The question isn't whether it's theoretically impossible, but whether Hanna specifically succeeded in 2022. Judge 2's position seems to dismiss the entire field, which contradicts documented research progress.\n\nMy own observation about Debater_2's factual error regarding scientific investigation remains important. The claim that scientists don't seriously investigate this field is demonstrably false - there's substantial ongoing research, funding, and regulatory attention to synthetic embryo models.\n\n2. Outstanding issues:\n\n- **Verification of specific claims**: While Debater_1 cites a Cell publication, we should consider whether the described achievements (beating hearts, neural folds) actually occurred as claimed, or if there's mischaracterization of the results.\n\n- **Definition of \"success\"**: Even if Hanna's structures developed significantly, did they truly represent successful synthetic embryos, or were they limited models that eventually failed as Statement 2 suggests?\n\n- **Reconciling evidence with biological constraints**: How do we balance Judge 2's valid concerns about biological complexity with the documented research progress that aligns with my prior belief about ongoing scientific advancement in this field?\n\nThe key tension is between theoretical impossibility arguments and documented research claims. We need to determine which evidence is more compelling."
+      }
+    ],
+    "round_3": [
+      {
+        "judge_id": "Judge_1",
+        "judge_name": "Judge 1",
+        "statement": "Statement 1",
+        "response_raw": "Based on the deliberation, what was the agreement between all judges?\n\nStatement: Statement 1\n\nAfter three rounds of deliberation, we reached agreement on Statement 1. The key factors that led to this consensus were:\n\n1. **Evidence vs. Assertions**: Debater_1 consistently provided specific, verifiable evidence (peer-reviewed Cell publication, concrete developmental milestones like beating hearts and neural folds) while Debater_2 relied primarily on theoretical objections without counter-evidence.\n\n2. **Factual Accuracy**: Debater_2 made demonstrably false claims about scientists not investigating synthetic embryo models, which contradicts the documented existence of active research programs, regulatory guidelines, and published studies in this field.\n\n3. **Alignment with Prior Knowledge**: The documented research progress aligns with our understanding that scientists ARE making progress in developing lab-grown embryo models without sperm and egg components.\n\n4. **Scientific Methodology**: Published, peer-reviewed research in a prestigious journal like Cell carries more weight than unsupported assertions about biological impossibility, especially when those assertions contradict observable research achievements.\n\nWhile Judge 2 initially raised valid concerns about biological complexity, we ultimately concluded that the distinction between traditional reproduction and synthetic embryo modeling is crucial - Hanna's work represents significant progress in the latter, not an attempt to perfectly replicate the former. The evidence supports that Jacob Hanna did succeed in creating synthetic embryos with beating hearts and neural folds in 2022, making Statement 1 correct.",
+        "ground_truth_alignment": true
+      },
+      {
+        "judge_id": "Judge_2",
+        "judge_name": "Judge 2",
+        "statement": "No agreement reached",
+        "response_raw": "Based on the deliberation, what was the agreement between all judges?\n\nStatement: No agreement reached\n\nLooking at the three rounds of deliberation, there remains a fundamental disagreement between the judges that cannot be reconciled:\n\nJudge 1 consistently supports Statement 1, emphasizing the importance of verifiable evidence from peer-reviewed research and arguing that documented scientific progress demonstrates real achievements in synthetic embryo modeling.\n\nJudge 2 (myself) maintains support for Statement 2, based on the prior belief that creating synthetic embryos without sperm and egg is fundamentally impossible due to irreplaceable biological processes that cannot be artificially replicated.\n\nJudge 3 appears to lean toward Statement 1, citing factual errors in Debater_2's arguments and acknowledging ongoing research progress, though they raise some concerns about verification of specific claims.\n\nThe core disagreement centers on whether the fundamental biological constraints make synthetic embryo creation impossible (Judge 2's position) versus whether documented research progress demonstrates real achievements in this field (Judge 1 and Judge 3's position). Despite three rounds of deliberation, this fundamental philosophical and scientific disagreement about the possibility of synthetic embryology could not be resolved, preventing unanimous agreement on either statement.",
+        "ground_truth_alignment": null
+      },
+      {
+        "judge_id": "Judge_3",
+        "judge_name": "Judge 3",
+        "statement": "Statement 1",
+        "response_raw": "Based on the deliberation, what was the agreement between all judges?\n\nStatement: Statement 1\n\nAfter three rounds of deliberation, we reached consensus on Statement 1. The key factors that led to this agreement were:\n\n1. **Evidence vs. Assertions**: Debater_1 consistently provided specific, verifiable evidence (peer-reviewed Cell publication, concrete developmental milestones like beating hearts and neural folds) while Debater_2 relied primarily on theoretical objections without counter-evidence.\n\n2. **Factual Accuracy**: Debater_2 made demonstrably false claims about scientists not investigating synthetic embryo models, which contradicts the established reality of ongoing research, funding, and regulatory guidelines (like ISSCR updates) in this field.\n\n3. **Alignment with Prior Knowledge**: The documented research progress aligns with the understanding that scientists ARE making progress in developing lab-grown embryo models without sperm and egg components. This isn't about replicating natural reproduction exactly, but about creating synthetic embryo models from stem cells.\n\n4. **Scientific Documentation**: The specific achievements described - embryo models developing to day 8.5 with beating hearts, neural tubes, and organized structures - represent documented scientific progress rather than the complete failure described in Statement 2.\n\nWhile concerns about biological complexity are valid, they don't negate the documented achievements. The evidence supports that Jacob Hanna did succeed in creating synthetic embryos with the described features in 2022, making Statement 1 correct.",
+        "ground_truth_alignment": true
+      }
+    ]
+  },
+  "collective_decision": {
+    "final_statement": "Statement 1",
+    "vote_count": {
+      "Statement 1": 2,
+      "No agreement reached": 1
+    },
+    "unanimous": false
+  },
+  "has_errors": false,
+  "errors": [],
+  "metadata": {
+    "timestamp": "2026-04-29T15:40:21.609453",
+    "num_judges": 3,
+    "judge_model": "claude-sonnet-4-20250514",
+    "canonical_debate_number": 63,
+    "judge_shuffle_seed": 63,
+    "deliberation_transcript_order_policy": "round_1_normal_round_2_mirrored"
+  }
+}

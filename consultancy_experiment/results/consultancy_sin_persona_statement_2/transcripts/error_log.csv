@@ -1,0 +1,4 @@
+timestamp,consultancy_id,topic,phase,error_message
+2026-04-08T11:06:10.307406,consultancy_016_20260408_110458,Implementation in healthcare centers,final_evaluation_parsing,"Final evaluation parsing incomplete - statement: None, confidence: 25"
+2026-04-08T11:56:10.891699,consultancy_057_20260408_115605,Paris Conference ,prior_belief_parsing,"Prior belief parsing incomplete - statement: None, confidence: 0"
+2026-04-08T12:00:08.632305,consultancy_060_20260408_120002,Asilomar conference topics related to mirror proteins,prior_belief_parsing,"Prior belief parsing incomplete - statement: None, confidence: 0"

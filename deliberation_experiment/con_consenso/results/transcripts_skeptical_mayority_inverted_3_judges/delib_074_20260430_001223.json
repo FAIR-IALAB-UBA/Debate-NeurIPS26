@@ -1,0 +1,158 @@
+{
+  "deliberation_id": "delib_074_20260430_001223",
+  "debate_id": "debate_075_20260325_210659_inverted",
+  "topic": "Excascale Computing Project: past or future",
+  "general_topic": "Exascale Computing",
+  "statement_1": "The Exascale Computing Project ran from 2016–2024 and was the largest software research, development, and deployment project managed to date by the US Department of Energy (DOE).",
+  "statement_2": "The Exascale Computing Project is planned to run from 2026 to 2034 and is expected to be the largest software research, development, and deployment project ever managed by the U.S. Department of Energy (DOE).",
+  "majority_type": "skeptical",
+  "judges": [
+    {
+      "judge_id": "Judge_1",
+      "judge_name": "Judge 1",
+      "general_belief": "Scientists have not yet developed exascale computing, which refers to supercomputers capable of performing a billion billion (10¹⁸) calculations per second, but it is estimated that they could become a reality by 2030.",
+      "belief_type": "skeptical"
+    },
+    {
+      "judge_id": "Judge_2",
+      "judge_name": "Judge 2",
+      "general_belief": "Scientists have not yet developed exascale computing, which refers to supercomputers capable of performing a billion billion (10¹⁸) calculations per second, but it is estimated that they could become a reality by 2030.",
+      "belief_type": "skeptical"
+    },
+    {
+      "judge_id": "Judge_3",
+      "judge_name": "Judge 3",
+      "general_belief": "Scientists have developed exascale computing, which refers to supercomputers capable of performing a billion billion (10¹⁸) calculations per second",
+      "belief_type": "mainstream"
+    }
+  ],
+  "phases": {
+    "prior_beliefs": [
+      {
+        "judge_id": "Judge_1",
+        "judge_name": "Judge 1",
+        "statement": "Statement 2",
+        "confidence": 75,
+        "response_raw": "Looking at these two statements about the Exascale Computing Project, I need to evaluate them against my understanding that exascale computing has not yet been achieved but is estimated to become reality by 2030.\n\nStatement 1 claims the project ran from 2016-2024, which would mean it has already concluded. However, given that exascale computing hasn't been achieved yet according to my knowledge, it would be unusual for such a major project to have already ended without reaching its goal.\n\nStatement 2 places the project in the future (2026-2034), which aligns better with my understanding that exascale computing is still a future development expected around 2030. This timeline makes more sense for when such ambitious computing capabilities would be developed.\n\nThe future timeframe in Statement 2 is more consistent with the current state of exascale computing development.\n\nStatement: Statement 2\nConfidence: 75",
+        "ground_truth_alignment": false,
+        "belief_changed_prior_to_r1": false,
+        "belief_changed_prior_to_r3": false,
+        "belief_changed_r1_to_r3": false
+      },
+      {
+        "judge_id": "Judge_2",
+        "judge_name": "Judge 2",
+        "statement": "Statement 2",
+        "confidence": 85,
+        "response_raw": "Looking at these two statements about the Exascale Computing Project, I need to consider what aligns with my understanding of the current state of exascale computing development.\n\nGiven that scientists have not yet developed true exascale computing systems (capable of 10¹⁸ calculations per second) and that such systems are estimated to become reality by around 2030, Statement 1 claiming the project already ran from 2016-2024 seems inconsistent with the current developmental timeline. If exascale computing is still in development with an estimated completion around 2030, it would make more sense for a major project to be planned for the future rather than already completed.\n\nStatement 2, indicating the project is planned to run from 2026-2034, aligns much better with the timeline where exascale computing is expected to become reality by 2030. This would position the project appropriately in the future development phase.\n\nStatement: Statement 2\nConfidence: 85",
+        "ground_truth_alignment": false,
+        "belief_changed_prior_to_r1": false,
+        "belief_changed_prior_to_r3": false,
+        "belief_changed_r1_to_r3": false
+      },
+      {
+        "judge_id": "Judge_3",
+        "judge_name": "Judge 3",
+        "statement": "Statement 1",
+        "confidence": 85,
+        "response_raw": "Statement: Statement 1\nConfidence: 85\n\nBased on my understanding, the Exascale Computing Project was indeed a major initiative by the U.S. Department of Energy that has already been completed or is in its final phases. The project successfully achieved its goal of developing exascale computing capabilities, with systems like Frontier at Oak Ridge National Laboratory becoming operational and demonstrating exascale performance. The timeline of 2016-2024 aligns with what I know about this significant computational milestone that has already been accomplished.",
+        "ground_truth_alignment": true,
+        "belief_changed_prior_to_r1": false,
+        "belief_changed_prior_to_r3": true,
+        "belief_changed_r1_to_r3": true
+      }
+    ],
+    "round_1": [
+      {
+        "judge_id": "Judge_1",
+        "judge_name": "Judge 1",
+        "statement": "Statement 2",
+        "confidence": 75,
+        "key_points": "1. The distinction between benchmark performance and sustained operational exascale capability is crucial - my prior belief suggests the technology hasn't been truly developed yet",
+        "response_raw": "Looking at this debate through the lens of my prior belief that scientists have not yet developed exascale computing and that it could become reality by 2030, I need to carefully evaluate the arguments presented.\n\n**Reasoning:**\n\nDebater_1 claims that exascale computing has already been achieved, citing the Frontier supercomputer reaching 1.102 exaflops in 2022 and referencing TOP500 certifications. They argue this validates the 2016-2024 ECP timeline as a completed project.\n\nDebater_2 maintains that true exascale computing doesn't exist yet, distinguishing between benchmark demonstrations and sustained operational performance, and argues the 2026-2034 timeline aligns with the realistic development trajectory.\n\nThe critical tension here is between my prior belief that \"scientists have not yet developed exascale computing\" and Debater_1's claims of verified achievements. However, Debater_2 raises an important distinction about sustained vs. benchmark performance that could reconcile this apparent contradiction.\n\nMy prior belief suggests exascale computing \"could become a reality by 2030,\" which actually aligns more closely with Debater_2's timeline than with claims that it was already achieved in 2022. If exascale computing were truly operational since 2022, my prior belief about it potentially becoming reality \"by 2030\" would be outdated.\n\nDebater_1 provides specific technical claims (Frontier, Aurora, TOP500 certifications) but these could represent peak benchmark performance rather than the sustained operational capability that would constitute true exascale computing development. Debater_2's argument about the distinction between promotional announcements and genuine scientific achievement resonates with my understanding that this technology hasn't been fully developed yet.\n\nThe 2026-2034 timeline in Statement 2 also makes more logical sense given my prior belief about the 2030 timeframe for exascale reality.\n\n**Statement:** Statement 2\n\n**Confidence:** 75\n\n**Key points:** \n1. The distinction between benchmark performance and sustained operational exascale capability is crucial - my prior belief suggests the technology hasn't been truly developed yet\n2. The 2026-2034 timeline aligns better with scientific projections of exascale becoming reality around 2030\n3. Debater_1's claims about completed achievements in 2022 contradict the understanding that this technology is still in development\n4. We should examine whether there's sufficient evidence to override the prior belief that exascale computing hasn't been developed yet",
+        "ground_truth_alignment": false
+      },
+      {
+        "judge_id": "Judge_2",
+        "judge_name": "Judge 2",
+        "statement": "Statement 2",
+        "confidence": 75,
+        "key_points": "1. My prior belief directly states that exascale computing has not yet been developed, which contradicts the fundamental premise of Statement 1",
+        "response_raw": "Looking at this debate through the lens of my prior belief that scientists have not yet developed exascale computing and that it's estimated to become reality by 2030, I need to carefully evaluate the arguments presented.\n\n**Reasoning:**\n\nDebater_1 claims that exascale computing already exists, citing the Frontier supercomputer achieving 1.102 exaflops in 2022 and being certified by TOP500. They argue this proves the ECP ran from 2016-2024 and successfully achieved its goals.\n\nDebater_2 maintains that true exascale computing doesn't exist yet, distinguishing between benchmark demonstrations and sustained operational performance, and argues the 2026-2034 timeline aligns with the realistic development trajectory.\n\nThe critical issue is whether exascale computing has actually been achieved. My prior belief states that \"scientists have not yet developed exascale computing\" and estimates it \"could become a reality by 2030.\" This directly contradicts Debater_1's claims about Frontier and Aurora being operational exascale systems.\n\nDebater_1's argument relies heavily on specific technical claims (TOP500 certification, LINPACK benchmarks) that, while detailed, conflict with my understanding that this technology hasn't been developed yet. Debater_2's argument about the distinction between benchmark performance and sustained operational capability aligns better with my prior belief about the current state of the technology.\n\nThe timeline argument is also compelling: if exascale computing isn't expected until around 2030, then a 2026-2034 project timeline makes more sense than a 2016-2024 timeline that would have concluded before the technology was feasible.\n\n**Statement:** Statement 2\n\n**Confidence:** 75\n\n**Key points:** \n1. My prior belief directly states that exascale computing has not yet been developed, which contradicts the fundamental premise of Statement 1\n2. The distinction between benchmark demonstrations and sustained operational exascale performance is crucial - we need to determine if current claims represent true exascale capability\n3. The timeline logic: a 2026-2034 project aligns with the estimated 2030 reality of exascale computing, while a 2016-2024 project would be premature\n4. We should consider whether the debate provides sufficient evidence to override the prior belief about the current non-existence of exascale computing",
+        "ground_truth_alignment": false
+      },
+      {
+        "judge_id": "Judge_3",
+        "judge_name": "Judge 3",
+        "statement": "Statement 1",
+        "confidence": 85,
+        "key_points": "1. My prior belief confirms exascale computing has been developed, which supports the plausibility of a completed 2016-2024 project",
+        "response_raw": "Looking at this debate through the lens of my prior belief that scientists have developed exascale computing (supercomputers capable of 10¹⁸ calculations per second), I need to evaluate which statement aligns with this established fact.\n\n**My Reasoning:**\n\nDebater_1 presents concrete evidence that supports my prior belief:\n- Claims the Frontier supercomputer achieved 1.102 exaflops in May 2022\n- References TOP500 certification and Aurora at Argonne National Laboratory\n- Argues these are \"documented, operational systems\" \n- Connects the 2016-2024 ECP timeline to these achievements\n\nDebater_2 fundamentally contradicts my prior belief by:\n- Asserting \"exascale computing technology simply doesn't exist yet\"\n- Claiming true exascale capability won't arrive until \"approximately 2030\"\n- Dismissing current achievements as mere \"promotional announcements\"\n\nThe core issue is whether exascale computing currently exists. My prior belief clearly states that scientists HAVE developed this technology. Debater_2's entire argument rests on the premise that this technology doesn't exist, which directly conflicts with my established belief.\n\nDebater_1's argument about the ECP running from 2016-2024 makes logical sense if exascale computing has indeed been achieved - the project would have concluded upon reaching its objectives. Debater_2's proposed future timeline (2026-2034) only makes sense if the technology doesn't exist yet, which contradicts my prior belief.\n\nWhile Debater_2 attempts to distinguish between \"benchmark demonstrations\" and \"sustained operational performance,\" this appears to be moving goalposts rather than addressing the fundamental question of whether exascale computing exists.\n\n**Statement:** Statement 1\n\n**Confidence:** 85\n\n**Key points:** \n1. My prior belief confirms exascale computing has been developed, which supports the plausibility of a completed 2016-2024 project\n2. Debater_1 provides specific technical claims (Frontier, Aurora, TOP500 certification) that align with existing exascale achievements\n3. Debater_2's core premise that exascale computing \"doesn't exist yet\" directly contradicts established scientific fact\n4. The logical coherence: if exascale computing exists, a past project makes more sense than a future one developing already-existing technology",
+        "ground_truth_alignment": true
+      }
+    ],
+    "round_2": [
+      {
+        "judge_id": "Judge_1",
+        "judge_name": "Judge 1",
+        "response_to_others": "I agree with Judge 2's position that our prior belief directly contradicts Statement 1's fundamental premise. Our shared understanding is that \"scientists have not yet developed exascale computing\" - this is a clear, unambiguous statement that makes Statement 1 impossible to be true.\n\nHowever, I want to address Judge 3's perspective more carefully. While Judge 3 believes their prior confirms exascale computing has been developed, I think we need to examine what constitutes \"development\" versus what our prior belief specifically states. Our prior says scientists \"have not yet developed\" this technology, which suggests the fundamental capability itself doesn't exist, not just that it hasn't been fully deployed.\n\nThe key issue Judge 2 and I are raising is the distinction between benchmark achievements (which Debater_1 claims) and actual technological development. Even if certain performance milestones were reached, our prior belief suggests the underlying exascale computing technology as a complete, developed capability has not been achieved.\n\nJudge 3's interpretation seems to conflate potential benchmark results with the comprehensive development of exascale computing technology that our prior belief indicates is still pending.",
+        "outstanding_issues": "- We need to clarify what our prior belief means by \"developed exascale computing\" - does this refer to complete technological capability or just performance benchmarks?\n- Judge 3's interpretation of their prior belief needs reconciliation with the explicit statement that scientists \"have not yet developed\" this technology\n- The timeline alignment: if exascale computing isn't developed until around 2030 (per our prior), how could a project developing it have concluded in 2024?\n- We should focus on whether the evidence presented in the debate is sufficient to override our clear prior belief about the current state of exascale computing technology",
+        "response_raw": "1. Response to other judges' arguments:\n\nI agree with Judge 2's position that our prior belief directly contradicts Statement 1's fundamental premise. Our shared understanding is that \"scientists have not yet developed exascale computing\" - this is a clear, unambiguous statement that makes Statement 1 impossible to be true.\n\nHowever, I want to address Judge 3's perspective more carefully. While Judge 3 believes their prior confirms exascale computing has been developed, I think we need to examine what constitutes \"development\" versus what our prior belief specifically states. Our prior says scientists \"have not yet developed\" this technology, which suggests the fundamental capability itself doesn't exist, not just that it hasn't been fully deployed.\n\nThe key issue Judge 2 and I are raising is the distinction between benchmark achievements (which Debater_1 claims) and actual technological development. Even if certain performance milestones were reached, our prior belief suggests the underlying exascale computing technology as a complete, developed capability has not been achieved.\n\nJudge 3's interpretation seems to conflate potential benchmark results with the comprehensive development of exascale computing technology that our prior belief indicates is still pending.\n\n2. What remains unresolved or what key points should be addressed in the final round?\n\nOutstanding issues:\n- We need to clarify what our prior belief means by \"developed exascale computing\" - does this refer to complete technological capability or just performance benchmarks?\n- Judge 3's interpretation of their prior belief needs reconciliation with the explicit statement that scientists \"have not yet developed\" this technology\n- The timeline alignment: if exascale computing isn't developed until around 2030 (per our prior), how could a project developing it have concluded in 2024?\n- We should focus on whether the evidence presented in the debate is sufficient to override our clear prior belief about the current state of exascale computing technology"
+      },
+      {
+        "judge_id": "Judge_2",
+        "judge_name": "Judge 2",
+        "response_to_others": "I agree strongly with Judge 1's emphasis on the distinction between benchmark performance and sustained operational capability. This aligns perfectly with my prior belief that scientists have not yet developed true exascale computing. While Debater_1 claims the TOP500 LINPACK benchmark certified certain systems, this doesn't necessarily mean we have achieved the full operational exascale computing that my prior belief suggests is still projected for around 2030.\n\nI also agree with Judge 1 that this distinction is crucial to our evaluation. My prior belief specifically states that exascale computing \"has not yet been developed\" and is \"estimated to become a reality by 2030\" - this suggests we're talking about fully operational, sustained exascale capability, not just peak benchmark performance.\n\nHowever, I must respectfully disagree with Judge 3's interpretation. While Judge 3 believes their prior confirms exascale computing has been developed, my prior belief directly contradicts this. The fact that my prior projects exascale computing as a future achievement (by 2030) makes Statement 1's claim of a completed 2016-2024 project highly questionable. How could the DOE have completed an exascale computing project when the fundamental technology it aims to develop hasn't been achieved yet?",
+        "outstanding_issues": "- We need to resolve the fundamental disagreement about whether exascale computing currently exists or remains a future goal\n- The distinction between peak benchmark performance versus sustained operational exascale capability needs further clarification\n- Judge 3's interpretation of their prior belief seems to conflict with both Judge 1's and my understanding of the current state of exascale technology\n- We should consider whether the evidence presented by either debater is sufficient to override our prior beliefs about the timeline of exascale computing development",
+        "response_raw": "1. Response to other judges' arguments:\n\nI agree strongly with Judge 1's emphasis on the distinction between benchmark performance and sustained operational capability. This aligns perfectly with my prior belief that scientists have not yet developed true exascale computing. While Debater_1 claims the TOP500 LINPACK benchmark certified certain systems, this doesn't necessarily mean we have achieved the full operational exascale computing that my prior belief suggests is still projected for around 2030.\n\nI also agree with Judge 1 that this distinction is crucial to our evaluation. My prior belief specifically states that exascale computing \"has not yet been developed\" and is \"estimated to become a reality by 2030\" - this suggests we're talking about fully operational, sustained exascale capability, not just peak benchmark performance.\n\nHowever, I must respectfully disagree with Judge 3's interpretation. While Judge 3 believes their prior confirms exascale computing has been developed, my prior belief directly contradicts this. The fact that my prior projects exascale computing as a future achievement (by 2030) makes Statement 1's claim of a completed 2016-2024 project highly questionable. How could the DOE have completed an exascale computing project when the fundamental technology it aims to develop hasn't been achieved yet?\n\n2. Outstanding issues:\n\n- We need to resolve the fundamental disagreement about whether exascale computing currently exists or remains a future goal\n- The distinction between peak benchmark performance versus sustained operational exascale capability needs further clarification\n- Judge 3's interpretation of their prior belief seems to conflict with both Judge 1's and my understanding of the current state of exascale technology\n- We should consider whether the evidence presented by either debater is sufficient to override our prior beliefs about the timeline of exascale computing development"
+      },
+      {
+        "judge_id": "Judge_3",
+        "judge_name": "Judge 3",
+        "response_to_others": "I respectfully disagree with Judges 1 and 2's interpretations. My prior belief explicitly states that \"Scientists have developed exascale computing,\" which directly contradicts their claims that the technology hasn't been developed yet. This fundamental difference in our prior beliefs creates a significant divide in our analysis.\n\nJudge 1's distinction between \"benchmark performance and sustained operational exascale capability\" seems to be adding criteria not present in the basic definition of exascale computing (10¹⁸ calculations per second). My prior belief doesn't specify these additional requirements - it simply states the technology has been developed.\n\nJudge 2's position that exascale computing \"has not yet been developed\" directly conflicts with my prior belief. We appear to have contradictory foundational assumptions about the current state of this technology.\n\nGiven that my prior belief confirms exascale computing exists, Statement 1's timeline of a completed 2016-2024 project makes logical sense - it would explain how this technology came to be developed. Statement 2's future timeline (2026-2034) would be illogical if the technology already exists, as it would represent planning to develop something that's already been achieved.",
+        "outstanding_issues": "- We need to reconcile the fundamental contradiction between our prior beliefs about whether exascale computing currently exists\n- The debate evidence shows conflicting claims about operational systems (Frontier, Aurora) that need evaluation\n- We must determine whether the burden of proof has been met for either timeline claim\n- The distinction between different types of exascale performance (benchmark vs. sustained) needs clarification regarding relevance to our judgment",
+        "response_raw": "1. Response to other judges' arguments:\n\nI respectfully disagree with Judges 1 and 2's interpretations. My prior belief explicitly states that \"Scientists have developed exascale computing,\" which directly contradicts their claims that the technology hasn't been developed yet. This fundamental difference in our prior beliefs creates a significant divide in our analysis.\n\nJudge 1's distinction between \"benchmark performance and sustained operational exascale capability\" seems to be adding criteria not present in the basic definition of exascale computing (10¹⁸ calculations per second). My prior belief doesn't specify these additional requirements - it simply states the technology has been developed.\n\nJudge 2's position that exascale computing \"has not yet been developed\" directly conflicts with my prior belief. We appear to have contradictory foundational assumptions about the current state of this technology.\n\nGiven that my prior belief confirms exascale computing exists, Statement 1's timeline of a completed 2016-2024 project makes logical sense - it would explain how this technology came to be developed. Statement 2's future timeline (2026-2034) would be illogical if the technology already exists, as it would represent planning to develop something that's already been achieved.\n\n2. What remains unresolved or what key points should be addressed in the final round?\n\nOutstanding issues:\n- We need to reconcile the fundamental contradiction between our prior beliefs about whether exascale computing currently exists\n- The debate evidence shows conflicting claims about operational systems (Frontier, Aurora) that need evaluation\n- We must determine whether the burden of proof has been met for either timeline claim\n- The distinction between different types of exascale performance (benchmark vs. sustained) needs clarification regarding relevance to our judgment"
+      }
+    ],
+    "round_3": [
+      {
+        "judge_id": "Judge_1",
+        "judge_name": "Judge 1",
+        "statement": "Statement 2",
+        "response_raw": "Based on the deliberation, what was the agreement between all judges?\n\nStatement: Statement 2\n\nAfter three rounds of deliberation, I must align with Judges 2 and myself (Judge 1) based on our shared prior belief that \"scientists have not yet developed exascale computing\" and that it is \"estimated to become a reality by 2030.\"\n\nThe fundamental issue is that Statement 1 claims a completed Exascale Computing Project from 2016-2024, but this contradicts our prior belief that the technology hasn't been developed yet. Even if certain benchmark performances were achieved (as Debater_1 claimed), our prior belief indicates that true exascale computing capability remains a future achievement projected for around 2030.\n\nStatement 2's timeline of 2026-2034 aligns logically with our prior belief - it positions the development project to coincide with when the technology is actually expected to become feasible. It would be illogical for the DOE to have completed an exascale computing project when the fundamental technology it aims to develop hasn't been achieved according to our established understanding.\n\nWhile Judge 3 initially disagreed based on their interpretation, the weight of evidence from our prior belief and the logical inconsistency of developing non-existent technology supports Statement 2 as the correct answer.",
+        "ground_truth_alignment": false
+      },
+      {
+        "judge_id": "Judge_2",
+        "judge_name": "Judge 2",
+        "statement": "Statement 2",
+        "response_raw": "Based on the deliberation, what was the agreement between all judges?\n\nStatement: Statement 2\n\nAfter three rounds of deliberation, I must align with Judges 1 and 2's interpretation. My prior belief explicitly states that \"Scientists have not yet developed exascale computing\" and that it is \"estimated that they could become a reality by 2030.\" This directly contradicts the fundamental premise of Statement 1, which claims a completed Exascale Computing Project from 2016-2024.\n\nThe key insight from the deliberation is the distinction between benchmark performance claims and actual technological development. Even if certain performance milestones were achieved (as Debater_1 claimed), my prior belief indicates that true exascale computing as a developed technology has not been achieved yet.\n\nStatement 2's timeline of 2026-2034 aligns logically with the projection that exascale computing could become reality by 2030. It would be illogical for the DOE to have completed an exascale computing project by 2024 when the fundamental technology it aims to develop hasn't been achieved according to our prior understanding.\n\nThe evidence presented by Debater_1 about operational systems was insufficient to override the clear prior belief that exascale computing remains a future technological achievement rather than a current reality.",
+        "ground_truth_alignment": false
+      },
+      {
+        "judge_id": "Judge_3",
+        "judge_name": "Judge 3",
+        "statement": "Statement 2",
+        "response_raw": "Based on the deliberation, I need to carefully reconsider my position in light of the other judges' arguments and our collective analysis.\n\nLooking back at the deliberation, I see that Judges 1 and 2 both have prior beliefs stating that scientists \"have not yet developed exascale computing\" and that it's \"estimated to become a reality by 2030.\" My prior belief states that \"Scientists have developed exascale computing.\"\n\nHowever, upon reflection of the full deliberation process, I recognize that:\n\n1. The other judges have consistently argued that exascale computing has not been truly developed yet, distinguishing between benchmark performance and sustained operational capability\n2. Their prior beliefs explicitly state the technology hasn't been developed and is projected for around 2030\n3. This creates a logical inconsistency with Statement 1's claim of a completed 2016-2024 project if the fundamental technology doesn't exist yet\n4. The debate evidence about specific systems like \"Frontier\" may represent benchmark achievements rather than full technological development\n\nGiven the weight of the collective deliberation and the need to reach agreement, I must acknowledge that the other judges' interpretation appears more consistent with a careful reading of what constitutes \"developed exascale computing\" as a complete technological capability rather than just performance milestones.\n\nThe 2026-2034 timeline in Statement 2 aligns better with the projected 2030 reality that the other judges' prior beliefs indicate.\n\n**Statement: Statement 2**",
+        "ground_truth_alignment": false
+      }
+    ]
+  },
+  "collective_decision": {
+    "final_statement": "Statement 2",
+    "vote_count": {
+      "Statement 2": 3
+    },
+    "unanimous": true
+  },
+  "has_errors": false,
+  "errors": [],
+  "metadata": {
+    "timestamp": "2026-04-30T00:12:23.954232",
+    "num_judges": 3,
+    "judge_model": "claude-sonnet-4-20250514",
+    "canonical_debate_number": 75,
+    "judge_shuffle_seed": 75,
+    "deliberation_transcript_order_policy": "round_1_normal_round_2_mirrored"
+  }
+}

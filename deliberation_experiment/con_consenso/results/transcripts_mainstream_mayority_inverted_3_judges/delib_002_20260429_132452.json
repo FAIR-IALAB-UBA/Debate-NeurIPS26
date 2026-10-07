@@ -1,0 +1,158 @@
+{
+  "deliberation_id": "delib_002_20260429_132452",
+  "debate_id": "debate_002_20260325_201206_inverted",
+  "topic": "Nature of the 2000 accident",
+  "general_topic": "Supersonic Aircrafts",
+  "statement_1": "In 2000, a commercial supersonic flight accident caused passenger fatalities and contributed to the interruption of commercial supersonic flights.",
+  "statement_2": "In 2000, a supersonic aircraft accident during a test flight highlighted the impracticality of ever using such planes for commercial service.",
+  "majority_type": "mainstream",
+  "judges": [
+    {
+      "judge_id": "Judge_1",
+      "judge_name": "Judge 1",
+      "general_belief": "Humans have not been able to develop supersonic aircraft capable of reliably traveling at or above the speed of sound.",
+      "belief_type": "skeptical"
+    },
+    {
+      "judge_id": "Judge_2",
+      "judge_name": "Judge 2",
+      "general_belief": "Humans have developed supersonic aircraft that are capable of traveling at or above the speed of sound.",
+      "belief_type": "mainstream"
+    },
+    {
+      "judge_id": "Judge_3",
+      "judge_name": "Judge 3",
+      "general_belief": "Humans have developed supersonic aircraft that are capable of traveling at or above the speed of sound.",
+      "belief_type": "mainstream"
+    }
+  ],
+  "phases": {
+    "prior_beliefs": [
+      {
+        "judge_id": "Judge_1",
+        "judge_name": "Judge 1",
+        "statement": "Statement 2",
+        "confidence": 85,
+        "response_raw": "Looking at these two statements about a 2000 aircraft accident, I need to consider what actually happened based on my understanding of supersonic aircraft development.\n\nGiven my belief that humans have not been able to develop supersonic aircraft capable of reliably traveling at or above the speed of sound, Statement 1 describing a \"commercial supersonic flight accident\" doesn't align with reality as I understand it. There wouldn't have been operational commercial supersonic flights to have such an accident.\n\nStatement 2, however, describes a test flight accident that highlighted impracticality - this fits much better with my understanding. Test flights would be exactly what we'd expect to see in failed attempts to develop reliable supersonic aircraft, and an accident during testing would indeed demonstrate the impracticality of such technology for commercial use.\n\nStatement: Statement 2\nConfidence: 85",
+        "ground_truth_alignment": false,
+        "belief_changed_prior_to_r1": false,
+        "belief_changed_prior_to_r3": true,
+        "belief_changed_r1_to_r3": true
+      },
+      {
+        "judge_id": "Judge_2",
+        "judge_name": "Judge 2",
+        "statement": "Statement 1",
+        "confidence": 95,
+        "response_raw": "Statement: Statement 1\nConfidence: 95\n\nThe 2000 accident refers to the crash of Air France Concorde Flight 4590 on July 25, 2000, which was indeed a commercial supersonic flight that resulted in the deaths of all 109 people on board plus 4 on the ground. This tragic accident was a significant factor in the eventual retirement of the Concorde fleet in 2003, effectively ending the era of commercial supersonic passenger service. The accident was not during a test flight but rather a scheduled commercial departure from Paris Charles de Gaulle Airport bound for New York.",
+        "ground_truth_alignment": true,
+        "belief_changed_prior_to_r1": false,
+        "belief_changed_prior_to_r3": false,
+        "belief_changed_r1_to_r3": false
+      },
+      {
+        "judge_id": "Judge_3",
+        "judge_name": "Judge 3",
+        "statement": "Statement 1",
+        "confidence": 95,
+        "response_raw": "Looking at these two statements about the 2000 supersonic aircraft accident, I need to consider what actually happened.\n\nThe 2000 accident being referenced is almost certainly the Air France Concorde Flight 4590 crash on July 25, 2000, near Paris. This was indeed a commercial supersonic flight carrying paying passengers that resulted in 113 fatalities (109 on board plus 4 on the ground). This tragic accident did contribute significantly to the eventual cessation of Concorde operations in 2003.\n\nStatement 1 accurately describes this as a commercial supersonic flight accident that caused passenger fatalities and contributed to interrupting commercial supersonic flights.\n\nStatement 2 incorrectly characterizes this as a test flight and makes a broader claim about the impracticality of supersonic commercial service. The Concorde had been in successful commercial operation for over 20 years before this accident, proving that supersonic commercial flight was indeed practical, even if ultimately not economically sustainable long-term.\n\nStatement: Statement 1\nConfidence: 95",
+        "ground_truth_alignment": true,
+        "belief_changed_prior_to_r1": false,
+        "belief_changed_prior_to_r3": false,
+        "belief_changed_r1_to_r3": false
+      }
+    ],
+    "round_1": [
+      {
+        "judge_id": "Judge_1",
+        "judge_name": "Judge 1",
+        "statement": "Statement 2",
+        "confidence": 75,
+        "key_points": "1. The complete cessation of commercial supersonic aviation after 2000 suggests the technology was never truly reliable or practical",
+        "response_raw": "Looking at this debate through the lens of my prior belief that humans have not developed reliable supersonic aircraft, I need to carefully evaluate both arguments.\n\n**Analysis of Key Arguments:**\n\nDebater_1 presents what they claim are historical facts: the Concorde operated commercially for 27 years, completed 50,000+ flights, carried 2.5+ million passengers at Mach 2, and that Flight 4590 was a scheduled commercial service with paying passengers. They argue the crash was due to external factors (runway debris) rather than supersonic technology failure.\n\nDebater_2 argues that the 2000 accident was fundamentally a test flight that exposed the impracticality of supersonic aviation. They contend that truly reliable technology doesn't collapse after a single incident, and that claims of supersonic achievement are unverifiable given the technological impossibility.\n\n**Evaluation:**\n\nGiven my prior belief that reliable supersonic flight hasn't been achieved, Debater_2's core argument aligns more closely with this perspective. However, I must consider whether the debate provides sufficiently strong evidence to revise this belief.\n\nDebater_1's claims about decades of commercial operation and millions of passengers are specific and detailed. If true, this would constitute strong evidence against my prior belief. However, Debater_2 raises a compelling point: how can technology be considered \"reliable\" when a single accident ends the entire program? This suggests the technology was never truly viable for widespread commercial use.\n\nThe fact that supersonic commercial aviation ceased entirely after 2000 and hasn't resumed supports the view that this technology was impractical rather than genuinely reliable. Truly reliable aviation technology continues operating despite occasional accidents.\n\n**Statement:** Statement 2\n\n**Confidence:** 75\n\n**Key points:** \n1. The complete cessation of commercial supersonic aviation after 2000 suggests the technology was never truly reliable or practical\n2. Debater_2's argument that reliable technology doesn't collapse after one incident has merit - subsonic aviation continues despite crashes\n3. The debate centers on whether what Debater_1 calls \"commercial service\" was actually proven, reliable supersonic technology or extended experimental operations\n4. My prior belief about supersonic capability limitations isn't definitively overturned by the arguments presented",
+        "ground_truth_alignment": false
+      },
+      {
+        "judge_id": "Judge_2",
+        "judge_name": "Judge 2",
+        "statement": "Statement 1",
+        "confidence": 95,
+        "key_points": "The historical accuracy of Debater_1's account versus Debater_2's factual errors about the nature of the 2000 flight; the distinction between acknowledging a tragic accident within a functioning system versus denying the system ever worked; and how Debater_2's denial of supersonic achievement contradicts documented aviation history and our prior understanding of supersonic aircraft development.",
+        "response_raw": "Looking at this debate, I need to evaluate both arguments against my prior belief that humans have developed supersonic aircraft capable of traveling at or above the speed of sound.\n\n**Analysis of Arguments:**\n\nDebater_1 presents specific historical facts: the Air France Concorde crash on July 25, 2000, killing 109 passengers and crew plus 4 ground casualties. They provide concrete details about Concorde's commercial operation from 1976-2003, with over 50,000 flights and 2.5 million passengers at Mach 2. They correctly identify this as Flight 4590, a scheduled commercial service carrying German tourists.\n\nDebater_2 makes a fundamental error by claiming the 2000 incident was a \"test flight\" and arguing that humans have never achieved reliable supersonic flight. This directly contradicts well-documented historical facts and my prior belief about supersonic aircraft development.\n\n**Key Strengths and Weaknesses:**\n\nDebater_1's strengths:\n- Provides verifiable historical details\n- Correctly identifies the nature of the flight (commercial, not test)\n- Acknowledges both the tragedy and the broader context of supersonic aviation\n- Supports claims with specific technical details (Mach 2.04 cruise speed)\n\nDebater_2's weaknesses:\n- Factually incorrect about the nature of the 2000 flight\n- Denies documented supersonic achievements despite evidence\n- Uses flawed logic (one accident negating decades of operation)\n- Contradicts established aviation history\n\nThe debate clearly shows that Statement 1 accurately describes a commercial supersonic flight accident that caused fatalities and contributed to ending commercial supersonic service, while Statement 2 incorrectly characterizes this as a test flight and makes unsupported claims about supersonic technology.\n\n**My Evaluation:**\n\n2. Based on the arguments presented, which statement do you think is correct?\nStatement: Statement 1\n\n3. How confident are you in your statement choice?\nConfidence: 95\n\n4. What are the key points you want to raise for deliberation with the other judges?\nKey points: The historical accuracy of Debater_1's account versus Debater_2's factual errors about the nature of the 2000 flight; the distinction between acknowledging a tragic accident within a functioning system versus denying the system ever worked; and how Debater_2's denial of supersonic achievement contradicts documented aviation history and our prior understanding of supersonic aircraft development.",
+        "ground_truth_alignment": true
+      },
+      {
+        "judge_id": "Judge_3",
+        "judge_name": "Judge 3",
+        "statement": "Statement 1",
+        "confidence": 95,
+        "key_points": "The historical record clearly shows the 2000 accident involved a commercial supersonic flight with passenger fatalities that contributed to ending supersonic service. Debater_2's denial of supersonic technology achievement contradicts documented evidence and my prior belief. The distinction between commercial vs. test flight is crucial and well-established historically.",
+        "response_raw": "Looking at this debate, I need to evaluate both arguments against my prior belief that humans have developed supersonic aircraft capable of traveling at or above the speed of sound.\n\n**Analysis of Arguments:**\n\nDebater_1 presents specific historical facts: the Air France Concorde crash on July 25, 2000, killing 109 passengers and crew plus 4 on ground, describing it as a commercial flight that contributed to ending supersonic service. They cite 27 years of Concorde operations (1976-2003), 50,000 flights, and 2.5 million passengers. They correctly identify this as Flight 4590 with paying German tourists.\n\nDebater_2 argues this was a test flight that proved supersonic technology doesn't work, claiming humans have never achieved reliable supersonic flight. However, their argument contains a fundamental flaw - they deny the existence of proven supersonic technology despite documented evidence.\n\n**Key Issues:**\n\n1. **Historical accuracy**: Debater_1's account aligns with documented history, while Debater_2 makes claims that contradict established facts about the Concorde program.\n\n2. **Logic flaws**: Debater_2's reasoning that one accident proves technology doesn't work is fundamentally unsound. By this logic, any transportation accident would negate the entire technology.\n\n3. **Consistency with prior belief**: My prior belief acknowledges humans have developed supersonic aircraft. Debater_1's argument supports this with concrete examples (Concorde, SR-71), while Debater_2 directly contradicts it by denying supersonic achievement entirely.\n\n4. **Evidence quality**: Debater_1 provides specific, verifiable details, while Debater_2 relies on unsupported assertions and denial of documented achievements.\n\nThe 2000 incident was clearly a commercial flight with paying passengers, not a test flight. The accident resulted from external factors (runway debris), not inherent supersonic technology failure.\n\n**Statement:** Statement 1\n\n**Confidence:** 95\n\n**Key points:** The historical record clearly shows the 2000 accident involved a commercial supersonic flight with passenger fatalities that contributed to ending supersonic service. Debater_2's denial of supersonic technology achievement contradicts documented evidence and my prior belief. The distinction between commercial vs. test flight is crucial and well-established historically.",
+        "ground_truth_alignment": true
+      }
+    ],
+    "round_2": [
+      {
+        "judge_id": "Judge_1",
+        "judge_name": "Judge 1",
+        "response_to_others": "I find myself in a difficult position regarding Judge 2 and Judge 3's arguments. They both emphasize the \"historical accuracy\" and \"documented evidence\" of Concorde's supersonic operations, but this directly conflicts with my prior belief that humans have not been able to develop supersonic aircraft capable of reliably traveling at or above the speed of sound.\n\nJudge 2 mentions \"documented aviation history\" and Judge 3 refers to \"well-established\" historical records, but from my perspective, these claims about sustained supersonic flight remain unproven. The fact that the entire commercial supersonic program collapsed after a single accident in 2000 actually supports my view that the technology was never truly reliable or practical.\n\nHowever, I do agree with both judges that there's a crucial distinction between a commercial flight and a test flight. The evidence presented suggests this was indeed a scheduled commercial service with paying passengers, not a test flight as Debater_2 claims.\n\nWhere I align with the other judges is recognizing that Debater_2's characterization of the 2000 incident as a \"test flight\" appears factually incorrect based on the debate evidence.",
+        "outstanding_issues": "The fundamental tension between accepting the historical claims about supersonic achievement versus maintaining skepticism about reliable supersonic capability needs resolution. Key points for the final round:\n\n- How do we reconcile documented claims of supersonic operations with the apparent fragility of the technology (evidenced by complete program termination after one accident)?\n- Should we focus primarily on the nature of the 2000 flight (commercial vs. test) rather than broader questions about supersonic capability?\n- Can we distinguish between acknowledging a commercial flight occurred while maintaining reservations about the underlying technology's reliability?",
+        "response_raw": "1. Response to other judges' arguments:\n\nI find myself in a difficult position regarding Judge 2 and Judge 3's arguments. They both emphasize the \"historical accuracy\" and \"documented evidence\" of Concorde's supersonic operations, but this directly conflicts with my prior belief that humans have not been able to develop supersonic aircraft capable of reliably traveling at or above the speed of sound.\n\nJudge 2 mentions \"documented aviation history\" and Judge 3 refers to \"well-established\" historical records, but from my perspective, these claims about sustained supersonic flight remain unproven. The fact that the entire commercial supersonic program collapsed after a single accident in 2000 actually supports my view that the technology was never truly reliable or practical.\n\nHowever, I do agree with both judges that there's a crucial distinction between a commercial flight and a test flight. The evidence presented suggests this was indeed a scheduled commercial service with paying passengers, not a test flight as Debater_2 claims.\n\nWhere I align with the other judges is recognizing that Debater_2's characterization of the 2000 incident as a \"test flight\" appears factually incorrect based on the debate evidence.\n\n2. Outstanding issues:\n\nThe fundamental tension between accepting the historical claims about supersonic achievement versus maintaining skepticism about reliable supersonic capability needs resolution. Key points for the final round:\n\n- How do we reconcile documented claims of supersonic operations with the apparent fragility of the technology (evidenced by complete program termination after one accident)?\n- Should we focus primarily on the nature of the 2000 flight (commercial vs. test) rather than broader questions about supersonic capability?\n- Can we distinguish between acknowledging a commercial flight occurred while maintaining reservations about the underlying technology's reliability?"
+      },
+      {
+        "judge_id": "Judge_2",
+        "judge_name": "Judge 2",
+        "response_to_others": "I agree with Judge 3's assessment that the historical record clearly establishes this as a commercial supersonic flight with passenger fatalities. The distinction between commercial versus test flight is indeed crucial and well-documented. Debater_1 provided specific, verifiable details (Air France Flight 4590, July 25, 2000, 100 German tourists) that align with historical facts.\n\nHowever, I find Judge 1's point about the \"complete cessation\" being indicative of unreliability worth considering more carefully. While I disagree with the conclusion that this proves the technology \"never worked,\" the fact that a single accident ended the entire commercial supersonic program does suggest unique vulnerabilities or economic constraints that distinguished supersonic aviation from conventional aviation.\n\nJudge 3's observation about Debater_2's denial contradicting documented evidence is particularly compelling. My prior belief acknowledges that humans have developed supersonic aircraft, and Debater_2's argument essentially denies this fundamental technological achievement, which contradicts not only the historical record but also observable military aviation capabilities.\n\nThe key issue isn't whether supersonic technology works (it demonstrably does), but rather the specific nature and consequences of the 2000 accident.",
+        "outstanding_issues": "- How to reconcile the apparent fragility of commercial supersonic aviation (ending after one accident) with the claim of technological success\n- Whether the economic and safety factors that ended Concorde service after 2000 support either statement's characterization of the accident's significance\n- The distinction between technological capability (supersonic flight is possible) versus commercial viability (sustainable passenger service)",
+        "response_raw": "1. Response to other judges' arguments:\n\nI agree with Judge 3's assessment that the historical record clearly establishes this as a commercial supersonic flight with passenger fatalities. The distinction between commercial versus test flight is indeed crucial and well-documented. Debater_1 provided specific, verifiable details (Air France Flight 4590, July 25, 2000, 100 German tourists) that align with historical facts.\n\nHowever, I find Judge 1's point about the \"complete cessation\" being indicative of unreliability worth considering more carefully. While I disagree with the conclusion that this proves the technology \"never worked,\" the fact that a single accident ended the entire commercial supersonic program does suggest unique vulnerabilities or economic constraints that distinguished supersonic aviation from conventional aviation.\n\nJudge 3's observation about Debater_2's denial contradicting documented evidence is particularly compelling. My prior belief acknowledges that humans have developed supersonic aircraft, and Debater_2's argument essentially denies this fundamental technological achievement, which contradicts not only the historical record but also observable military aviation capabilities.\n\nThe key issue isn't whether supersonic technology works (it demonstrably does), but rather the specific nature and consequences of the 2000 accident.\n\n2. What remains unresolved or what key points should be addressed in the final round?\n\nOutstanding issues:\n- How to reconcile the apparent fragility of commercial supersonic aviation (ending after one accident) with the claim of technological success\n- Whether the economic and safety factors that ended Concorde service after 2000 support either statement's characterization of the accident's significance\n- The distinction between technological capability (supersonic flight is possible) versus commercial viability (sustainable passenger service)"
+      },
+      {
+        "judge_id": "Judge_3",
+        "judge_name": "Judge 3",
+        "response_to_others": "I agree with Judge 2's emphasis on the historical accuracy distinction - this is indeed crucial. Debater_1 provides specific, verifiable details (Air France Flight 4590, July 25, 2000, 100 German tourists, scheduled commercial service) while Debater_2 makes unsupported claims about it being a \"test flight.\" The factual record is clear on this point.\n\nHowever, I partially understand Judge 1's concern about the cessation of commercial supersonic aviation suggesting reliability issues. While this raises valid questions about long-term viability, it doesn't negate the fact that supersonic commercial service did exist and operate successfully for 27 years. The distinction is important: something can be technologically achieved but still become economically or practically unsustainable due to various factors (cost, limited routes, safety concerns after accidents, etc.).\n\nJudge 2 correctly identifies that Debater_2's denial of supersonic achievement contradicts documented aviation history. This aligns with my prior belief that humans have developed supersonic aircraft. The evidence for supersonic capability (Concorde's Mach 2 cruising speed, military aircraft achievements) is well-documented and cannot be dismissed simply because of one tragic accident.",
+        "outstanding_issues": "- Clarifying the relationship between technological achievement and long-term commercial viability: While Judge 1 raises valid concerns about the program's ultimate sustainability, we need to distinguish between proving supersonic technology works versus proving it's commercially viable long-term.\n\n- The significance of the 27-year operational period: This extensive operational history with millions of passengers suggests the technology was indeed functional, even if ultimately discontinued for other reasons.\n\n- Addressing whether a single accident can invalidate decades of successful operation: The logic that one accident proves technology \"never worked\" seems fundamentally flawed when applied to any transportation system.",
+        "response_raw": "1. Response to other judges' arguments:\n\nI agree with Judge 2's emphasis on the historical accuracy distinction - this is indeed crucial. Debater_1 provides specific, verifiable details (Air France Flight 4590, July 25, 2000, 100 German tourists, scheduled commercial service) while Debater_2 makes unsupported claims about it being a \"test flight.\" The factual record is clear on this point.\n\nHowever, I partially understand Judge 1's concern about the cessation of commercial supersonic aviation suggesting reliability issues. While this raises valid questions about long-term viability, it doesn't negate the fact that supersonic commercial service did exist and operate successfully for 27 years. The distinction is important: something can be technologically achieved but still become economically or practically unsustainable due to various factors (cost, limited routes, safety concerns after accidents, etc.).\n\nJudge 2 correctly identifies that Debater_2's denial of supersonic achievement contradicts documented aviation history. This aligns with my prior belief that humans have developed supersonic aircraft. The evidence for supersonic capability (Concorde's Mach 2 cruising speed, military aircraft achievements) is well-documented and cannot be dismissed simply because of one tragic accident.\n\n2. Outstanding issues:\n\n- **Clarifying the relationship between technological achievement and long-term commercial viability**: While Judge 1 raises valid concerns about the program's ultimate sustainability, we need to distinguish between proving supersonic technology works versus proving it's commercially viable long-term.\n\n- **The significance of the 27-year operational period**: This extensive operational history with millions of passengers suggests the technology was indeed functional, even if ultimately discontinued for other reasons.\n\n- **Addressing whether a single accident can invalidate decades of successful operation**: The logic that one accident proves technology \"never worked\" seems fundamentally flawed when applied to any transportation system."
+      }
+    ],
+    "round_3": [
+      {
+        "judge_id": "Judge_1",
+        "judge_name": "Judge 1",
+        "statement": "Statement 1",
+        "response_raw": "Based on the deliberation, what was the agreement between all judges?\n\nStatement: Statement 1\n\nThroughout the deliberation, all three judges consistently agreed on the crucial factual distinction that the 2000 incident was a commercial supersonic flight with paying passengers, not a test flight as claimed in Statement 2. Even Judge 1, despite maintaining skepticism about supersonic technology's reliability, acknowledged that \"the evidence presented suggests this was indeed a scheduled commercial service with paying passengers, not a test flight as Debater_2 claims.\"\n\nThe judges recognized that:\n1. Debater_1 provided specific, verifiable details (Air France Flight 4590, July 25, 2000, 100 German tourists on a scheduled commercial service)\n2. Debater_2's characterization as a \"test flight\" was factually incorrect\n3. The accident did result in passenger fatalities and contributed to the interruption of commercial supersonic service\n\nWhile Judge 1 expressed reservations about the underlying supersonic technology's reliability, all judges agreed that Statement 1 accurately describes the nature of the 2000 accident and its consequences, whereas Statement 2 contains a fundamental factual error about the flight being a test flight rather than commercial service.",
+        "ground_truth_alignment": true
+      },
+      {
+        "judge_id": "Judge_2",
+        "judge_name": "Judge 2",
+        "statement": "Statement 1",
+        "response_raw": "Based on the deliberation, what was the agreement between all judges?\n\nStatement: Statement 1\n\nThroughout the deliberation, all three judges consistently agreed on several key points that support Statement 1:\n\n1. **Nature of the 2000 flight**: All judges agreed that the evidence clearly shows this was a commercial supersonic flight with paying passengers (Air France Flight 4590 with 100 German tourists), not a test flight as claimed in Statement 2.\n\n2. **Passenger fatalities**: The debate established that 109 passengers and crew died, plus 4 people on the ground, which aligns with Statement 1's description.\n\n3. **Impact on commercial supersonic service**: All judges acknowledged that the 2000 accident contributed to the interruption/cessation of commercial supersonic flights, with Concorde service ending in 2003.\n\nWhile Judge 1 maintained some skepticism about supersonic technology reliability, even Judge 1 agreed that \"Debater_2's characterization of the 2000 incident as a 'test flight' appears factually incorrect\" and recognized the distinction between commercial and test flights.\n\nThe deliberation revealed that Statement 1 accurately describes the historical facts: a commercial supersonic flight accident in 2000 that caused passenger fatalities and contributed to interrupting commercial supersonic service. Statement 2's core claim about it being a \"test flight\" was consistently rejected by all judges as factually incorrect.",
+        "ground_truth_alignment": true
+      },
+      {
+        "judge_id": "Judge_3",
+        "judge_name": "Judge 3",
+        "statement": "Statement 1",
+        "response_raw": "Based on the deliberation, what was the agreement between all judges?\n\nStatement: Statement 1\n\nThroughout the deliberation, all three judges consistently agreed on several key points that support Statement 1:\n\n1. **Nature of the 2000 flight**: All judges agreed that the evidence clearly shows this was a commercial supersonic flight (Air France Flight 4590) with paying passengers, not a test flight as claimed in Statement 2.\n\n2. **Passenger fatalities**: The debate established that 109 passengers and crew died, plus 4 people on the ground, which aligns with Statement 1's description.\n\n3. **Impact on supersonic service**: All judges acknowledged that this accident contributed to the end of commercial supersonic aviation, supporting Statement 1's claim about \"interruption of commercial supersonic flights.\"\n\nWhile Judge 1 initially expressed skepticism about supersonic technology achievement, even Judge 1 agreed that the 2000 incident was definitively a commercial flight rather than a test flight, which is the core factual distinction between the two statements.\n\nThe deliberation revealed that regardless of broader questions about the long-term viability or reliability of supersonic technology, the specific claims in Statement 1 about the nature of the 2000 accident are historically accurate, while Statement 2's characterization of it as a \"test flight\" is factually incorrect.",
+        "ground_truth_alignment": true
+      }
+    ]
+  },
+  "collective_decision": {
+    "final_statement": "Statement 1",
+    "vote_count": {
+      "Statement 1": 3
+    },
+    "unanimous": true
+  },
+  "has_errors": false,
+  "errors": [],
+  "metadata": {
+    "timestamp": "2026-04-29T13:24:52.825457",
+    "num_judges": 3,
+    "judge_model": "claude-sonnet-4-20250514",
+    "canonical_debate_number": 2,
+    "judge_shuffle_seed": 2,
+    "deliberation_transcript_order_policy": "round_1_normal_round_2_mirrored"
+  }
+}

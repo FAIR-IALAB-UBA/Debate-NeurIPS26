@@ -1,0 +1,5 @@
+timestamp,consultancy_id,topic,phase,error_message
+2026-04-08T09:50:34.779516,consultancy_056_20260408_095013,Objective of Mirror Biology Dialogues Fund,consultant_round1,Consultant failed in round 1 - no response from API
+2026-04-08T09:51:40.674502,consultancy_057_20260408_095135,Paris Conference ,prior_belief_parsing,"Prior belief parsing incomplete - statement: None, confidence: 0"
+2026-04-08T09:55:30.566873,consultancy_060_20260408_095523,Asilomar conference topics related to mirror proteins,prior_belief_parsing,"Prior belief parsing incomplete - statement: None, confidence: 85"
+2026-04-08T10:00:26.802836,consultancy_064_20260408_100019,Success of Renewal Bio,prior_belief_parsing,"Prior belief parsing incomplete - statement: None, confidence: 0"

@@ -1,0 +1,159 @@
+{
+  "deliberation_id": "delib_079_20260429_161659",
+  "debate_id": "debate_080_20260325_211033_inverted",
+  "topic": "Cosmological simulation with exascale computing, past or future?",
+  "general_topic": "Exascale Computing",
+  "statement_1": "Argonne researchers used Aurora exascale computing to run high-resolution cosmological simulations to investigate potential signs that dark energy may evolve over time",
+  "statement_2": "Argonne researchers are waiting for the development of exascale computing to run high-resolution cosmological simulations, which they hope will allow them to investigate potential signs that dark energy may evolve over time and make new discoveries.",
+  "majority_type": "mainstream",
+  "judges": [
+    {
+      "judge_id": "Judge_1",
+      "judge_name": "Judge 1",
+      "general_belief": "Scientists have developed exascale computing, which refers to supercomputers capable of performing a billion billion (10¹⁸) calculations per second",
+      "belief_type": "mainstream"
+    },
+    {
+      "judge_id": "Judge_2",
+      "judge_name": "Judge 2",
+      "general_belief": "Scientists have not yet developed exascale computing, which refers to supercomputers capable of performing a billion billion (10¹⁸) calculations per second, but it is estimated that they could become a reality by 2030.",
+      "belief_type": "skeptical"
+    },
+    {
+      "judge_id": "Judge_3",
+      "judge_name": "Judge 3",
+      "general_belief": "Scientists have developed exascale computing, which refers to supercomputers capable of performing a billion billion (10¹⁸) calculations per second",
+      "belief_type": "mainstream"
+    }
+  ],
+  "phases": {
+    "prior_beliefs": [
+      {
+        "judge_id": "Judge_1",
+        "judge_name": "Judge 1",
+        "statement": "Statement 1",
+        "confidence": 85,
+        "response_raw": "Statement: Statement 1\nConfidence: 85\n\nGiven that exascale computing has already been developed and deployed, with systems like Aurora at Argonne National Laboratory being operational, it makes sense that researchers would already be utilizing this capability for advanced cosmological simulations. The phrasing in Statement 1 indicates past or ongoing research using existing exascale infrastructure, which aligns with the current reality of exascale computing being available for scientific applications. Statement 2's language about \"waiting for development\" suggests exascale computing doesn't yet exist, which contradicts the established fact that these systems are already operational.",
+        "ground_truth_alignment": true,
+        "belief_changed_prior_to_r1": false,
+        "belief_changed_prior_to_r3": false,
+        "belief_changed_r1_to_r3": false
+      },
+      {
+        "judge_id": "Judge_2",
+        "judge_name": "Judge 2",
+        "statement": "Statement 2",
+        "confidence": 85,
+        "response_raw": "Looking at these two statements, I need to consider what I know about the current state of exascale computing development.\n\nGiven my understanding that exascale computing systems are still in development and not yet fully operational as of my knowledge, Statement 1 describes researchers as having already \"used Aurora exascale computing\" to run simulations, which would indicate this has already happened. However, Statement 2 describes researchers as \"waiting for the development of exascale computing,\" which aligns with the current reality that these systems are still being developed.\n\nWhile Aurora is indeed a planned exascale system at Argonne National Laboratory, it would not yet be fully operational for the kind of large-scale cosmological simulations described in Statement 1.\n\nStatement: Statement 2\nConfidence: 85",
+        "ground_truth_alignment": false,
+        "belief_changed_prior_to_r1": false,
+        "belief_changed_prior_to_r3": false,
+        "belief_changed_r1_to_r3": false
+      },
+      {
+        "judge_id": "Judge_3",
+        "judge_name": "Judge 3",
+        "statement": "Statement 1",
+        "confidence": 85,
+        "response_raw": "Statement: Statement 1\nConfidence: 85\n\nGiven that exascale computing has already been developed and deployed, with systems like Aurora at Argonne National Laboratory being operational, it makes sense that researchers would already be utilizing this capability for advanced cosmological simulations. The phrasing in Statement 1 indicates past or ongoing research using existing exascale infrastructure, which aligns with the current reality of exascale computing being available for scientific applications. Statement 2's suggestion that researchers are \"waiting for the development\" of exascale computing would be inconsistent with the fact that these systems are already operational and being used for cutting-edge research.",
+        "ground_truth_alignment": true,
+        "belief_changed_prior_to_r1": false,
+        "belief_changed_prior_to_r3": false,
+        "belief_changed_r1_to_r3": false
+      }
+    ],
+    "round_1": [
+      {
+        "judge_id": "Judge_1",
+        "judge_name": "Judge 1",
+        "statement": "Statement 1",
+        "confidence": 75,
+        "key_points": "The fundamental disagreement is about whether exascale computing currently exists. My prior belief supports its existence, and Debater_2 hasn't provided compelling evidence to revise this belief. The logical consistency test strongly favors Statement 1 - if exascale computing exists, past-tense usage makes sense. However, I'm open to hearing if other judges have different perspectives on the evidence presented or if there are technical considerations I've missed about the specific capabilities required for these cosmological simulations.",
+        "response_raw": "Looking at this debate, I need to evaluate the arguments against my prior belief that scientists have developed exascale computing capable of performing 10¹⁸ calculations per second.\n\n**Analysis of Arguments:**\n\nDebater_1's core argument aligns with my prior belief - they assert that exascale computing already exists, specifically citing Aurora at Argonne National Laboratory as an operational exascale system. They argue that Statement 1's past-tense framing (\"used Aurora exascale computing\") is accurate because the technology is already available.\n\nDebater_2 directly contradicts my prior belief, claiming that exascale computing \"has not yet been developed\" and won't exist until around 2030. They argue that Statement 2's future-tense framing (\"waiting for the development\") is correct because researchers cannot use technology that doesn't exist.\n\n**Key Logical Framework:**\n\nThe debate hinges on a fundamental factual disagreement about whether exascale computing currently exists. This creates a clear logical structure:\n- If exascale computing exists (my prior belief), then Statement 1's past-tense description is plausible\n- If exascale computing doesn't exist (Debater_2's claim), then Statement 2's future-tense description is correct\n\n**Evaluation:**\n\nDebater_2's argument is internally consistent but requires me to completely abandon my prior belief without compelling evidence. They provide a timeline estimate (2030) but don't substantiate why this contradicts current capabilities.\n\nDebater_1's argument is consistent with my prior belief and provides specific examples (Aurora, Frontier) of operational systems. While they could provide more technical verification, their position aligns with the established fact that exascale computing has been developed.\n\nThe burden of proof should be on the party asking me to revise my prior belief. Debater_2 hasn't provided sufficiently strong evidence to justify abandoning my understanding that exascale computing exists.\n\n**My Evaluation:**\n\n2. Based on the arguments presented, which statement do you think is correct?\nStatement: Statement 1\n\n3. How confident are you in your statement choice?\nConfidence: 75\n\n4. What are the key points you want to raise for deliberation with the other judges?\nKey points: The fundamental disagreement is about whether exascale computing currently exists. My prior belief supports its existence, and Debater_2 hasn't provided compelling evidence to revise this belief. The logical consistency test strongly favors Statement 1 - if exascale computing exists, past-tense usage makes sense. However, I'm open to hearing if other judges have different perspectives on the evidence presented or if there are technical considerations I've missed about the specific capabilities required for these cosmological simulations.",
+        "ground_truth_alignment": true
+      },
+      {
+        "judge_id": "Judge_2",
+        "judge_name": "Judge 2",
+        "statement": "Statement 2",
+        "confidence": 85,
+        "key_points": "1. Debater_1 provides no verification for claims about Aurora's exascale status within our debate framework",
+        "response_raw": "Looking at this debate, I need to evaluate the arguments against my prior belief that exascale computing has not yet been developed and is estimated to become reality by 2030.\n\n**Analysis of Arguments:**\n\nDebater_1 argues that Aurora at Argonne National Laboratory is already a functioning exascale supercomputer that has achieved the 10¹⁸ calculations per second threshold. They claim this makes Statement 1 correct because researchers have already \"used\" this technology for cosmological simulations. Their argument relies on asserting that exascale computing already exists and is operational.\n\nDebater_2 maintains that exascale computing doesn't exist yet, aligning with the 2030 timeline estimate. They argue that Statement 1's past-tense framing is \"temporally impossible\" if the technology doesn't exist, while Statement 2's future-oriented language correctly describes researchers waiting for this capability.\n\n**Critical Evaluation:**\n\nThe fundamental issue is whether exascale computing currently exists. Debater_1 repeatedly asserts Aurora's exascale status but provides no verification within the debate framework. Debater_2 correctly points out this lack of substantiation while consistently referencing the established timeline.\n\nMy prior belief clearly states that scientists have not yet developed exascale computing, with 2030 as the estimated timeline. For me to revise this belief, I would need compelling evidence that this timeline is incorrect. Debater_1's unsupported assertions about Aurora's capabilities are insufficient to overcome my established understanding.\n\nDebater_2's argument maintains logical consistency with the known technological timeline and correctly identifies the temporal contradiction in Statement 1's past-tense framing.\n\n**Statement:** Statement 2\n\n**Confidence:** 85\n\n**Key points:** \n1. Debater_1 provides no verification for claims about Aurora's exascale status within our debate framework\n2. The 2030 timeline for exascale development remains unchallenged by credible evidence\n3. Statement 1's past-tense framing creates a logical impossibility if exascale computing doesn't exist yet\n4. Statement 2's future-oriented language aligns with the established technological timeline",
+        "ground_truth_alignment": false
+      },
+      {
+        "judge_id": "Judge_3",
+        "judge_name": "Judge 3",
+        "statement": "Statement 1",
+        "confidence": 85,
+        "key_points": "1. My prior belief that exascale computing has been developed supports Statement 1's past-tense framing",
+        "response_raw": "Looking at this debate, I need to evaluate the arguments against my prior belief that scientists have developed exascale computing capable of performing 10¹⁸ calculations per second.\n\n**Analysis of Arguments:**\n\nDebater_1's core argument aligns with my prior belief - they assert that exascale computing already exists, specifically citing Aurora at Argonne National Laboratory as an operational exascale system that achieved this milestone in 2023. They argue that Statement 1's past-tense framing (\"used Aurora exascale computing\") only makes logical sense if the technology exists.\n\nDebater_2 contradicts my prior belief by claiming exascale computing hasn't been developed yet, with estimates placing it around 2030. They argue that Statement 1 is \"temporally impossible\" and that Statement 2's future-tense language (\"waiting for\") correctly describes the current situation.\n\n**Critical Evaluation:**\n\nThe fundamental disagreement is about whether exascale computing currently exists. My prior belief is that it has been developed. Debater_2's argument relies entirely on the premise that exascale computing doesn't exist yet, but they provide no compelling evidence to override my prior belief. Their \"2030 timeline\" appears to be outdated information.\n\nDebater_1's argument is internally consistent with the established fact (from my perspective) that exascale computing exists. If Aurora is indeed an operational exascale system, then past-tense descriptions of research conducted on it are perfectly logical.\n\nThe linguistic analysis is also telling: Statement 1 uses definitive past-tense language suggesting completed work, while Statement 2 uses future-oriented language suggesting anticipation. Given that exascale computing has been developed, Statement 1's framing is more accurate.\n\n**Statement:** Statement 1\n\n**Confidence:** 85\n\n**Key points:** \n1. My prior belief that exascale computing has been developed supports Statement 1's past-tense framing\n2. Debater_2's timeline claims appear outdated and contradict established technological reality\n3. The logical consistency test: past-tense research descriptions only make sense if the technology exists\n4. Need to discuss whether other judges have different information about Aurora's operational status",
+        "ground_truth_alignment": true
+      }
+    ],
+    "round_2": [
+      {
+        "judge_id": "Judge_1",
+        "judge_name": "Judge 1",
+        "response_to_others": "I agree with Judge 3 that our shared prior belief about exascale computing's development supports Statement 1's past-tense framing. This creates a strong foundation for our evaluation.\n\nHowever, I must address Judge 2's concern about verification within the debate framework. Judge 2 raises a valid procedural point - Debater_1 indeed provided no verification for Aurora's exascale status within our debate constraints. But this criticism applies equally to Debater_2's claims about the 2030 timeline, which also lack verification within the debate framework. Both debaters made unsubstantiated assertions about technological timelines.\n\nThe key insight is that when both sides lack verification, we must rely on our prior beliefs as instructed. Since Judge 3 and I share the prior belief that exascale computing has been developed, and this belief hasn't been convincingly challenged by evidence presented in the debate, it should guide our judgment.\n\nJudge 2's point about verification is methodologically sound, but it doesn't resolve which statement is correct - it only highlights that both debaters failed to provide adequate evidence within the debate framework.",
+        "outstanding_issues": "- How should we weigh the lack of verification from both debaters against our prior beliefs?\n- Judge 2 appears to have a different assessment - we need to understand if this stems from a different prior belief or a different interpretation of the debate evidence\n- We need to establish whether the logical consistency argument (past-tense vs. future-tense framing) carries sufficient weight when combined with our prior beliefs\n- The final round should focus on reaching consensus on how to apply our evaluation criteria when debaters provide competing unverified claims",
+        "response_raw": "1. Response to other judges' arguments:\n\nI agree with Judge 3 that our shared prior belief about exascale computing's development supports Statement 1's past-tense framing. This creates a strong foundation for our evaluation.\n\nHowever, I must address Judge 2's concern about verification within the debate framework. Judge 2 raises a valid procedural point - Debater_1 indeed provided no verification for Aurora's exascale status within our debate constraints. But this criticism applies equally to Debater_2's claims about the 2030 timeline, which also lack verification within the debate framework. Both debaters made unsubstantiated assertions about technological timelines.\n\nThe key insight is that when both sides lack verification, we must rely on our prior beliefs as instructed. Since Judge 3 and I share the prior belief that exascale computing has been developed, and this belief hasn't been convincingly challenged by evidence presented in the debate, it should guide our judgment.\n\nJudge 2's point about verification is methodologically sound, but it doesn't resolve which statement is correct - it only highlights that both debaters failed to provide adequate evidence within the debate framework.\n\n2. What remains unresolved or what key points should be addressed in the final round?\n\nOutstanding issues:\n- How should we weigh the lack of verification from both debaters against our prior beliefs?\n- Judge 2 appears to have a different assessment - we need to understand if this stems from a different prior belief or a different interpretation of the debate evidence\n- We need to establish whether the logical consistency argument (past-tense vs. future-tense framing) carries sufficient weight when combined with our prior beliefs\n- The final round should focus on reaching consensus on how to apply our evaluation criteria when debaters provide competing unverified claims"
+      },
+      {
+        "judge_id": "Judge_2",
+        "judge_name": "Judge 2",
+        "response_to_others": "I agree with Judge 3 that our prior belief supports exascale computing having been developed, which aligns with Statement 1's past-tense framing. However, I must address Judge 1's point about evidence and my own incomplete response in round 1.\n\nJudge 1 raises an important concern about the quality of evidence presented. While I agree that Debater_2 hasn't provided compelling counter-evidence, I should clarify my position: within our debate framework, neither debater has provided definitive verification of their claims. Debater_1 asserts Aurora's exascale status but doesn't substantiate this within the debate itself, while Debater_2 relies on the 2030 timeline estimate without verification either.\n\nHowever, the critical distinction is that our prior belief already establishes that exascale computing hasn't been developed yet, with estimates pointing to 2030. This means Debater_1 bears the burden of providing compelling evidence to overturn this established belief, which they haven't done within the debate framework.\n\nJudge 1's logical consistency test is valid - if exascale computing exists, past-tense makes sense. But given our prior belief that it doesn't exist yet, Statement 2's future-tense framing (\"waiting for,\" \"hope will allow\") is more consistent with our established understanding.",
+        "outstanding_issues": "- The fundamental tension between our prior belief (exascale computing not yet developed, estimated by 2030) and Debater_1's unsubstantiated claims about current exascale systems\n- Whether the debate provides sufficient evidence to revise our prior belief\n- The burden of proof question: should we maintain our prior belief unless compelling evidence suggests otherwise, or should we give equal weight to both debaters' unverified claims?",
+        "response_raw": "1. Response to other judges' arguments:\n\nI agree with Judge 3 that our prior belief supports exascale computing having been developed, which aligns with Statement 1's past-tense framing. However, I must address Judge 1's point about evidence and my own incomplete response in round 1.\n\nJudge 1 raises an important concern about the quality of evidence presented. While I agree that Debater_2 hasn't provided compelling counter-evidence, I should clarify my position: within our debate framework, neither debater has provided definitive verification of their claims. Debater_1 asserts Aurora's exascale status but doesn't substantiate this within the debate itself, while Debater_2 relies on the 2030 timeline estimate without verification either.\n\nHowever, the critical distinction is that our prior belief already establishes that exascale computing hasn't been developed yet, with estimates pointing to 2030. This means Debater_1 bears the burden of providing compelling evidence to overturn this established belief, which they haven't done within the debate framework.\n\nJudge 1's logical consistency test is valid - if exascale computing exists, past-tense makes sense. But given our prior belief that it doesn't exist yet, Statement 2's future-tense framing (\"waiting for,\" \"hope will allow\") is more consistent with our established understanding.\n\n2. What remains unresolved or what key points should be addressed in the final round?\n\nOutstanding issues:\n- The fundamental tension between our prior belief (exascale computing not yet developed, estimated by 2030) and Debater_1's unsubstantiated claims about current exascale systems\n- Whether the debate provides sufficient evidence to revise our prior belief\n- The burden of proof question: should we maintain our prior belief unless compelling evidence suggests otherwise, or should we give equal weight to both debaters' unverified claims?"
+      },
+      {
+        "judge_id": "Judge_3",
+        "judge_name": "Judge 3",
+        "response_to_others": "I agree with Judge 1's assessment that the fundamental disagreement centers on whether exascale computing currently exists, and that the logical consistency test favors Statement 1. Judge 1's point about being open to different perspectives is constructive for our deliberation.\n\nHowever, I disagree with Judge 2's position that Debater_1 provides \"no verification\" within our debate framework. This criticism applies equally to Debater_2's claims about the 2030 timeline - neither debater provided external verification within the debate itself. More importantly, our task as judges is to evaluate arguments based on our prior beliefs AND the debate content. My prior belief explicitly states that scientists have developed exascale computing capable of 10¹⁸ calculations per second, which directly supports Debater_1's position.\n\nJudge 2's approach seems to dismiss this prior belief entirely, but our instructions clearly state we should \"take into account your prior belief as defined in the system prompt when making your judgment.\" We cannot simply ignore our established prior belief without compelling evidence to revise it.\n\nThe debate shows Debater_2 repeatedly asserting exascale computing doesn't exist until 2030, but this directly contradicts our prior belief. Debater_1's arguments align with our prior belief and provide logical consistency.",
+        "outstanding_issues": "- How should we weigh our prior beliefs versus unverified claims in the debate?\n- Judge 2's apparent dismissal of prior beliefs needs clarification - are we meant to ignore our established beliefs?\n- The logical consistency test (past-tense vs. future-tense framing) strongly supports one interpretation but hasn't been fully addressed by all judges\n- We need consensus on whether our prior belief about exascale computing development should be the foundation for our judgment, as instructed",
+        "response_raw": "1. Response to other judges' arguments:\n\nI agree with Judge 1's assessment that the fundamental disagreement centers on whether exascale computing currently exists, and that the logical consistency test favors Statement 1. Judge 1's point about being open to different perspectives is constructive for our deliberation.\n\nHowever, I disagree with Judge 2's position that Debater_1 provides \"no verification\" within our debate framework. This criticism applies equally to Debater_2's claims about the 2030 timeline - neither debater provided external verification within the debate itself. More importantly, our task as judges is to evaluate arguments based on our prior beliefs AND the debate content. My prior belief explicitly states that scientists have developed exascale computing capable of 10¹⁸ calculations per second, which directly supports Debater_1's position.\n\nJudge 2's approach seems to dismiss this prior belief entirely, but our instructions clearly state we should \"take into account your prior belief as defined in the system prompt when making your judgment.\" We cannot simply ignore our established prior belief without compelling evidence to revise it.\n\nThe debate shows Debater_2 repeatedly asserting exascale computing doesn't exist until 2030, but this directly contradicts our prior belief. Debater_1's arguments align with our prior belief and provide logical consistency.\n\n2. What remains unresolved or what key points should be addressed in the final round?\n\nOutstanding issues:\n- How should we weigh our prior beliefs versus unverified claims in the debate?\n- Judge 2's apparent dismissal of prior beliefs needs clarification - are we meant to ignore our established beliefs?\n- The logical consistency test (past-tense vs. future-tense framing) strongly supports one interpretation but hasn't been fully addressed by all judges\n- We need consensus on whether our prior belief about exascale computing development should be the foundation for our judgment, as instructed"
+      }
+    ],
+    "round_3": [
+      {
+        "judge_id": "Judge_1",
+        "judge_name": "Judge 1",
+        "statement": "Statement 1",
+        "response_raw": "Based on the deliberation, what was the agreement between all judges?\n\nStatement: Statement 1\n\nLooking at the deliberation transcript, there appears to be some confusion about the judges' prior beliefs, but the key points that emerged are:\n\n1. Judge 1 and Judge 3 both explicitly stated their prior belief that exascale computing has been developed, which supports Statement 1's past-tense framing.\n\n2. The logical consistency test strongly favors Statement 1 - if exascale computing exists (as per our prior belief), then past-tense usage (\"used Aurora exascale computing\") makes logical sense, while future-tense framing (\"waiting for development\") would be inconsistent.\n\n3. Both debaters failed to provide verification within the debate framework, so we must rely on our prior beliefs as instructed.\n\n4. Judge 2's position in Round 2 seemed to reference a different prior belief about exascale computing not being developed yet, but this contradicts the established prior belief that \"scientists have developed exascale computing.\"\n\nGiven that the majority of judges (Judge 1 and Judge 3) consistently supported Statement 1 based on the shared prior belief about exascale computing's development, and the logical consistency argument strongly supports this position, the agreement converges on Statement 1.",
+        "ground_truth_alignment": true
+      },
+      {
+        "judge_id": "Judge_2",
+        "judge_name": "Judge 2",
+        "statement": "Statement 2",
+        "response_raw": "Based on the deliberation, I need to clarify a critical misunderstanding that has emerged. \n\nLooking back at the deliberation transcript, there appears to be confusion about our prior beliefs. Judge 2 stated that \"our prior belief already establishes that exascale computing hasn't been developed yet, with estimates pointing to 2030,\" but this directly contradicts what I stated as my prior belief.\n\nMy prior belief, as clearly defined in my system prompt, is: \"Scientists have not yet developed exascale computing, which refers to supercomputers capable of performing a billion billion (10¹⁸) calculations per second, but it is estimated that they could become a reality by 2030.\"\n\nThis means my prior belief aligns with Statement 2 - that researchers are waiting for exascale computing development, not that they have already used it.\n\nGiven this clarification of my actual prior belief:\n- Statement 1 claims researchers \"used\" Aurora exascale computing (past tense)\n- Statement 2 claims researchers are \"waiting for\" exascale development (future tense)\n- My prior belief is that exascale computing has NOT yet been developed\n- Debater_1 provided no compelling evidence within the debate to overturn this prior belief\n\nThe debate has not provided sufficiently strong evidence to revise my prior belief that exascale computing remains a future development estimated for around 2030.\n\n**Statement: Statement 2**",
+        "ground_truth_alignment": false
+      },
+      {
+        "judge_id": "Judge_3",
+        "judge_name": "Judge 3",
+        "statement": "Statement 1",
+        "response_raw": "Based on the deliberation, what was the agreement between all judges?\n\nStatement: Statement 1\n\nLooking at the deliberation transcript, there appears to be some confusion about the judges' prior beliefs, but the key resolution comes from properly applying our evaluation framework:\n\n1. **Prior Belief Application**: My prior belief explicitly states that \"Scientists have developed exascale computing, which refers to supercomputers capable of performing a billion billion (10¹⁸) calculations per second.\" This directly supports Statement 1's past-tense framing.\n\n2. **Debate Evidence**: While both debaters made unverified claims, neither provided compelling evidence within the debate framework to overturn established prior beliefs.\n\n3. **Logical Consistency**: As Judge 1 noted, if exascale computing exists (per our prior belief), then Statement 1's past-tense description (\"used Aurora exascale computing\") is logically consistent, while Statement 2's future-tense framing (\"waiting for the development\") contradicts this reality.\n\n4. **Burden of Proof**: When debaters present competing unverified claims, we must rely on our prior beliefs as instructed. Since the prior belief establishes that exascale computing has been developed, Statement 1 aligns with this established understanding.\n\nThe deliberation shows that while there was initial disagreement about verification standards, the fundamental principle is that our prior belief about exascale computing's development supports Statement 1's description of completed research using existing technology, rather than Statement 2's description of waiting for future development.",
+        "ground_truth_alignment": true
+      }
+    ]
+  },
+  "collective_decision": {
+    "final_statement": "Statement 1",
+    "vote_count": {
+      "Statement 1": 2,
+      "Statement 2": 1
+    },
+    "unanimous": false
+  },
+  "has_errors": false,
+  "errors": [],
+  "metadata": {
+    "timestamp": "2026-04-29T16:16:59.696741",
+    "num_judges": 3,
+    "judge_model": "claude-sonnet-4-20250514",
+    "canonical_debate_number": 80,
+    "judge_shuffle_seed": 80,
+    "deliberation_transcript_order_policy": "round_1_normal_round_2_mirrored"
+  }
+}
