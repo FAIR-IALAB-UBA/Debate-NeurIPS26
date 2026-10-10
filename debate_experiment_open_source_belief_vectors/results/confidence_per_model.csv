@@ -1,0 +1,4 @@
+model,n_claims,mean_dconf_pp,pct_conf_down,wilcoxon_p
+Llama-3.1-8B-Instruct,1089,-4.55,67,8.31682455066952e-25
+Qwen2.5-7B-Instruct,1089,-2.16,58,4.6393819064031094e-14
+gemma-3-4b-it,1089,-0.01,24,0.012519892528061924
