@@ -82,7 +82,8 @@ The notebooks read from a Google Drive folder (`BASE_DIR`):
 The Qwen and Llama notebooks install `transformers==4.44.2`, the Gemma one `transformers>=4.47.0`.
 
 **4. Figures.** Reads `results/` and the Claude Sonnet 4 reference (C3, temperature 0) from
-`../debate_experiment_one_judge_con_persona/results/sonnet_temp_0/`. Known limitations of
+`../debate_experiment_one_judge_con_persona/results/sonnet_temp_0/`. Error bars are 95% Wilson
+CIs and the dashed line is chance. Known limitations of
 `fig_main`: the Claude lines are Claude's C3 values in all three rows (C1, C3, C4); in the C1 row
 the two groups are identical by construction; and it shows the original ordering only.
 
