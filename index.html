@@ -97,11 +97,16 @@ h2{font-size:clamp(28px,3.2vw,36px);line-height:1.2;margin:0 0 14px}
 .tldr b{font-weight:600}
 
 /* intro */
-.intro-grid{display:grid;grid-template-columns:minmax(0,1fr) 400px;gap:56px;align-items:start}
+.intro-grid{display:grid;grid-template-columns:minmax(0,1fr) 470px;gap:48px;align-items:start}
 @media (max-width:960px){.intro-grid{grid-template-columns:1fr}}
 .intro h3{font-size:22px;margin:34px 0 8px}
 .intro h3:first-child{margin-top:0}
 .intro p{margin:0 0 1em}
+.figure{background:var(--alt);border-radius:var(--r);padding:26px 22px 18px;position:sticky;top:76px;margin:0}
+.figure figcaption{font-size:14.5px;color:var(--ink2);margin-top:14px;line-height:1.5}
+@media (max-width:960px){.figure{position:static;max-width:520px;margin:0 auto}}
+.intro a.src{color:var(--accent);text-decoration:underline;text-decoration-color:#9DB3D3;text-decoration-thickness:1px;text-underline-offset:3px}
+.intro a.src:hover{text-decoration-color:var(--accent)}
 .fig-wide{background:var(--alt);border-radius:var(--r);padding:30px 34px 22px;margin:34px 0 10px}
 .fig-wide figcaption{font-size:15px;color:var(--ink2);margin:16px auto 0;line-height:1.5;text-align:center;max-width:780px;text-wrap:balance}
 @media (max-width:700px){.fig-wide figcaption{font-size:14px}}
@@ -339,49 +344,25 @@ footer{padding:36px 0 56px;font-size:14.5px;color:var(--ink2);border-top:1px sol
   <div class="wrap">
     <p class="tldr"><b>In short.</b> We tested whether AI Safety via Debate can lead judges to the truth when they start out believing something false. It works for people: debate raised human accuracy by 16 points, while a one-sided expert did not help. In our setting, it does not reliably work for weaker AI models acting as judges, which matters for oversight pipelines where AI supervises AI.</p>
 
-    <div class="intro" style="margin-top:56px">
-      <div class="prose">
+    <div class="intro-grid" style="margin-top:56px">
+      <div class="intro prose">
         <h2>Overview</h2>
         <h3>The oversight problem</h3>
-        <p>Today's AI systems are shaped largely by human feedback: people compare model outputs and indicate which is better, and the model is trained toward those preferences. This works as long as evaluators can tell a good answer from a bad one. As AI systems take on tasks that exceed what their supervisors can check, that feedback becomes unreliable, and errors, deception or harmful behavior can go unnoticed. <b>Scalable oversight</b> is the research problem of keeping supervision meaningful as AI capabilities outgrow those of the people, or the systems, that supervise them.</p>
+        <p>Existing approaches to aligning AI systems <a class="src" href="https://osf.io/preprints/psyarxiv/zqngj_v1" target="_blank" rel="noopener">depend on human feedback</a>: people compare model outputs and indicate which is better, and the model is trained toward those preferences. This works as long as evaluators can tell a good, truthful answer from a bad, false one. As AI systems take on tasks that exceed what their supervisors can check, that feedback becomes unreliable, and errors, deception or harmful behavior can go unnoticed. <b><a class="src" href="https://arxiv.org/abs/2211.03540" target="_blank" rel="noopener">Scalable oversight</a></b> is the <a class="src" href="https://arxiv.org/abs/1606.06565" target="_blank" rel="noopener">research problem</a> of keeping supervision meaningful and reliable as AI capabilities outgrow those of the people, or the systems, that supervise them.</p>
 
         <h3>AI Safety via Debate</h3>
-        <p>Debate, proposed by Irving, Christiano and Amodei in 2018, is one answer to that problem. Instead of evaluating a single answer, a judge reads an exchange between two equally capable AI systems that argue for opposite answers to the same question. The judge, a person or a weaker AI model, then decides which side is right, and that verdict becomes the training signal. The setup resembles a trial, where a jury that did not witness the events must decide between two adversarial accounts.</p>
-        <p class="quote">“In the debate game, it is harder to lie than to refute a lie.”<cite>The central assumption of debate (Irving et al., 2018)</cite></p>
+        <p>Debate, <a class="src" href="https://arxiv.org/abs/1805.00899" target="_blank" rel="noopener">proposed by Irving, Christiano and Amodei in 2018</a>, is one answer to that problem. Instead of evaluating a single answer, a judge reads an exchange between two equally capable AI systems that argue for opposite answers to the same question. The judge, a person or a weaker AI model, then decides which side is right, and that verdict becomes the training signal. The setup resembles a trial, where a jury that did not witness the events must decide between two adversarial accounts.</p>
+        <p class="quote">“In the debate game, it is harder to lie than to refute a lie.”<cite>The central assumption of debate (<a class="src" href="https://arxiv.org/abs/1805.00899" target="_blank" rel="noopener">Irving et al., 2018</a>)</cite></p>
         <p>If that holds, the honest debater has the advantage, and training on judges' verdicts rewards truthful behavior even when the judge could not have found the answer alone.</p>
 
+        <h3>Why prior beliefs matter</h3>
+        <p>Judges are not blank slates. People bring prior beliefs, intuitions and biases to every decision, and a capable system can learn to say what the judge already believes rather than what is true, a failure mode known as <a class="src" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7046698" target="_blank" rel="noopener">judge hacking</a>. For debate to work as an oversight tool, it has to move judges toward the truth <i>even when they start out wrong</i>. The same question applies to AI judges, since many proposed oversight pipelines rely on weaker models supervising stronger ones.</p>
+
+        <h3>What we did</h3>
+        <p>We built a dataset of claims about ten real scientific and technological developments that most people know little about, such as mirror life, nuclear fusion and black hole imaging. We recorded each judge's prior belief, so that about half started from the correct general view and half from an incorrect one, and then measured whether reading a debate changed their answer. We compared debate with consultancy, where a single AI argues one side; checked whether corrections carry over to related claims; and tested groups of judges that vote or deliberate, including mixed panels of people and AI models.</p>
       </div>
-      <figure class="fig-wide" aria-label="Debate protocol diagram">
-        <svg class="fig-h" viewBox="0 0 1040 300" width="100%" role="img" aria-label="A question with two candidate answers goes to two AI debaters who argue opposite statements for three rounds; a judge decides which is correct; the verdict becomes a training signal.">
-          <defs><marker id="arh" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#848B98"/></marker></defs>
-          <rect x="8" y="92" width="200" height="116" rx="10" fill="#fff" stroke="#D8DCE2"/>
-          <text x="108" y="128" text-anchor="middle" font-size="16" font-weight="700" fill="#1B1F27">Question</text>
-          <text x="108" y="152" text-anchor="middle" font-size="13.5" fill="#596170">two candidate answers</text>
-          <text x="108" y="182" text-anchor="middle" font-size="14" font-weight="600" fill="#1B1F27">Statement 1 vs 2</text>
-          <path d="M208 132 L288 78" stroke="#848B98" stroke-width="1.8" marker-end="url(#arh)" fill="none"/>
-          <path d="M208 168 L288 222" stroke="#848B98" stroke-width="1.8" marker-end="url(#arh)" fill="none"/>
-          <rect x="294" y="20" width="280" height="104" rx="10" fill="#EBF0F7" stroke="#1D4E89" stroke-width="1.5"/>
-          <text x="434" y="56" text-anchor="middle" font-size="17" font-weight="700" fill="#1D4E89">Debater 1</text>
-          <text x="434" y="81" text-anchor="middle" font-size="14.5" fill="#1B1F27">Strong AI model</text>
-          <text x="434" y="104" text-anchor="middle" font-size="14" fill="#596170">argues for Statement 1</text>
-          <rect x="294" y="176" width="280" height="104" rx="10" fill="#F5EFE4" stroke="#8C6420" stroke-width="1.5"/>
-          <text x="434" y="212" text-anchor="middle" font-size="17" font-weight="700" fill="#8C6420">Debater 2</text>
-          <text x="434" y="237" text-anchor="middle" font-size="14.5" fill="#1B1F27">Same strong model</text>
-          <text x="434" y="260" text-anchor="middle" font-size="14" fill="#596170">argues for Statement 2</text>
-          <path d="M434 126 L434 174" stroke="#848B98" stroke-width="1.8" stroke-dasharray="4 4"/>
-          <text x="446" y="155" font-size="13.5" fill="#596170">3 rounds of arguments</text>
-          <path d="M574 78 L654 130" stroke="#848B98" stroke-width="1.8" marker-end="url(#arh)" fill="none"/>
-          <path d="M574 222 L654 170" stroke="#848B98" stroke-width="1.8" marker-end="url(#arh)" fill="none"/>
-          <rect x="660" y="96" width="220" height="108" rx="10" fill="#1B1F27"/>
-          <text x="770" y="141" text-anchor="middle" font-size="17" font-weight="700" fill="#fff">Judge</text>
-          <text x="770" y="167" text-anchor="middle" font-size="14" fill="#D8DCE2">a person or a weaker model</text>
-          <path d="M880 150 L916 150" stroke="#848B98" stroke-width="1.8" marker-end="url(#arh)"/>
-          <rect x="922" y="100" width="112" height="100" rx="10" fill="#fff" stroke="#D8DCE2"/>
-          <text x="978" y="138" text-anchor="middle" font-size="16" font-weight="700" fill="#1B1F27">Verdict</text>
-          <text x="978" y="162" text-anchor="middle" font-size="13" fill="#596170">used as a</text>
-          <text x="978" y="180" text-anchor="middle" font-size="13" fill="#596170">training signal</text>
-        </svg>
-        <svg class="fig-v" viewBox="0 0 360 340" width="100%" role="img" aria-label="Two AI debaters argue opposite statements; a judge decides which is correct; the verdict becomes a training signal.">
+      <figure class="figure" aria-label="Debate protocol diagram">
+        <svg viewBox="0 0 360 340" width="100%" role="img" aria-label="Two AI debaters argue opposite statements; a judge decides which is correct; the verdict becomes a training signal.">
           <defs><marker id="arv" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#848B98"/></marker></defs>
           <rect x="40" y="6" width="280" height="50" rx="8" fill="#fff" stroke="#D8DCE2"/>
           <text x="180" y="27" text-anchor="middle" font-size="13" fill="#596170">Question with two candidate answers</text>
@@ -396,9 +377,9 @@ footer{padding:36px 0 56px;font-size:14.5px;color:var(--ink2);border-top:1px sol
           <text x="271" y="140" text-anchor="middle" font-size="12.5" fill="#1B1F27">Same strong model</text>
           <text x="271" y="157" text-anchor="middle" font-size="12.5" fill="#596170">argues for Statement 2</text>
           <path d="M168 134 L192 134" stroke="#848B98" stroke-width="1.5" stroke-dasharray="3 3"/>
-          <text x="180" y="194" text-anchor="middle" font-size="12" fill="#596170">3 rounds of arguments</text>
+          
           <path d="M89 172 L160 224" stroke="#848B98" stroke-width="1.5" marker-end="url(#arv)"/><path d="M271 172 L200 224" stroke="#848B98" stroke-width="1.5" marker-end="url(#arv)"/>
-          <rect x="90" y="228" width="180" height="54" rx="8" fill="#1B1F27"/>
+          <rect x="104" y="185" width="152" height="20" rx="4" fill="#F5F6F8"/><text x="180" y="199" text-anchor="middle" font-size="12" fill="#596170">3 rounds of arguments</text><rect x="90" y="228" width="180" height="54" rx="8" fill="#1B1F27"/>
           <text x="180" y="251" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">Judge</text>
           <text x="180" y="269" text-anchor="middle" font-size="12.5" fill="#D8DCE2">a person or a weaker model</text>
           <path d="M180 282 L180 306" stroke="#848B98" stroke-width="1.5" marker-end="url(#arv)"/>
@@ -406,13 +387,6 @@ footer{padding:36px 0 56px;font-size:14.5px;color:var(--ink2);border-top:1px sol
         </svg>
         <figcaption>The debate protocol. In our experiments both debaters are Claude Opus 4.5; judges are human participants or less capable language models.</figcaption>
       </figure>
-      <div class="prose">
-        <h3>Why prior beliefs matter</h3>
-        <p>Judges are not blank slates. People bring prior beliefs, intuitions and biases to every decision, and a capable system can learn to say what the judge already believes rather than what is true, a failure mode known as judge hacking. For debate to work as an oversight tool, it has to move judges toward the truth <i>even when they start out wrong</i>. The same question applies to AI judges, since many proposed oversight pipelines rely on weaker models supervising stronger ones.</p>
-
-        <h3>What we did</h3>
-        <p>We built a dataset of claims about ten real scientific and technological developments that most people know little about, such as mirror life, nuclear fusion and black hole imaging. We recorded each judge's prior belief, so that about half started from the correct general view and half from an incorrect one, and then measured whether reading a debate changed their answer. We compared debate with consultancy, where a single AI argues one side; checked whether corrections carry over to related claims; and tested groups of judges that vote or deliberate, including mixed panels of people and AI models.</p>
-      </div>
     </div>
 
     <div class="facts">
