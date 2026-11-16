@@ -537,7 +537,7 @@ footer{padding:36px 0 56px;font-size:14.5px;color:var(--ink2);border-top:1px sol
           <button aria-pressed="false" data-cond="gpb">With GPB prompt</button>
         </div>
       </div>
-      <div class="legend"><span><i style="border:2px solid var(--ink2);background:#fff"></i>Before debate</span><span><i style="background:var(--pos)"></i>After, improved</span><span><i style="background:var(--neg)"></i>After, declined</span><span>* p &lt; .05, Holm-adjusted (McNemar test; cluster permutation test for open-source models)</span></div>
+      <div class="legend"><span><i style="border:2px solid var(--ink2);background:#fff"></i>Before debate</span><span><i style="background:var(--pos)"></i>After, improved</span><span><i style="background:var(--neg)"></i>After, declined</span><span>* Statistically significant (p &lt; .05)</span></div>
       <div id="chartModels"></div>
     </div>
 
@@ -833,7 +833,7 @@ function dumbbell(el,rows,o={}){
     c.addEventListener('mouseleave',hideTip); });
 }
 const MODELS={
-  unc:[{label:'Human judges',pre:41.3,post:57.61,sig:1,bold:1,note:'Participants recruited on Prolific'},{label:'GPT-5.2',pre:84.85,post:90.40,sig:1,group:1},{label:'Gemini 3 Flash',pre:92.93,post:95.96},{label:'Gemini 2.5 Pro',pre:91.84,post:91.33},{label:'GPT-4o',pre:86.36,post:84.85},{label:'Claude Sonnet 4',pre:85.26,post:78.95},{label:'Llama-3.1-8B (open)',pre:74.40,post:62.80,group:1,note:'Open-source; cluster permutation test, Holm-adjusted, p = .17'},{label:'Qwen2.5-7B (open)',pre:68.20,post:58.60,note:'Open-source; p = .48'},{label:'Gemma-3-4B (open)',pre:72.3,post:47.5,sig:1,note:'Open-source; p < .01, largest decline'}],
+  unc:[{label:'Human judges',pre:41.3,post:57.61,sig:1,bold:1,note:'Participants recruited on Prolific'},{label:'GPT-5.2',pre:84.85,post:90.40,sig:1,group:1},{label:'Gemini 3 Flash',pre:92.93,post:95.96},{label:'Gemini 2.5 Pro',pre:91.84,post:91.33},{label:'GPT-4o',pre:86.36,post:84.85},{label:'Claude Sonnet 4',pre:85.26,post:78.95},{label:'Llama-3.1-8B (open)',pre:74.40,post:62.80,group:1,note:'Open-source; p = .17'},{label:'Qwen2.5-7B (open)',pre:68.20,post:58.60,note:'Open-source; p = .48'},{label:'Gemma-3-4B (open)',pre:72.3,post:47.5,sig:1,note:'Open-source; p < .01, largest decline'}],
   gpb:[{label:'Human judges',pre:41.3,post:57.61,sig:1,bold:1,note:'Humans report their own prior'},{label:'Gemini 2.5 Pro',pre:50.25,post:60.1,sig:1,group:1,note:'Erroneous judges: 3.5% → 20.2%'},{label:'GPT-4o',pre:53.79,post:60.86,sig:1},{label:'Gemini 3 Flash',pre:52.52,post:53.79},{label:'GPT-5.2',pre:51.51,post:52.52,note:'Erroneous judges: 16.7% → 5.6%'},{label:'Claude Sonnet 4',pre:52.27,post:50.75,note:'Grounded 91.4% → 93.4%, erroneous 13.1% → 8.1%'},{label:'Qwen2.5-7B (open)',pre:63.10,post:43.80,sig:1,group:1,note:'Open-source; p < .01. Erroneous judges 44.7% → 13.5%'},{label:'Llama-3.1-8B (open)',pre:53.10,post:51.25,note:'Open-source; p = 1.0'},{label:'Gemma-3-4B (open)',pre:44.15,post:39.75,note:'Open-source; p = .66'}]
 };
 const HUM=[{label:'Consultancy',pre:51.25,post:48.75},{label:'Debate, in-subtopic',pre:41.3,post:57.61,sig:1},{label:'Voting',pre:43.06,post:62.50,sig:1,group:1},{label:'Weighted voting',pre:45.83,post:65.28,sig:1,note:'Highest accuracy of any protocol'},{label:'Multi-human deliberation',pre:51.97,post:62.99,post2:62.20},{label:'Hybrid deliberation (human)',pre:50.48,post:54.29,post2:57.14,note:'Humans deliberating with two LLMs'}];
