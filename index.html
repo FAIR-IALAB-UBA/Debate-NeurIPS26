@@ -312,9 +312,9 @@ footer{padding:36px 0 56px;font-size:14.5px;color:var(--ink2);border-top:1px sol
     <ul>
       <li><a href="#overview">Overview</a></li>
       <li><a href="#method">Method</a></li>
-      <li><a href="#transfer">Transfer</a></li>
       <li><a href="#arena">Try it</a></li>
       <li><a href="#results">Results</a></li>
+      <li><a href="#transfer">Transfer</a></li>
       <li><a href="#cite">Cite</a></li>
     </ul>
   </div>
@@ -434,36 +434,8 @@ footer{padding:36px 0 56px;font-size:14.5px;color:var(--ink2);border-top:1px sol
     <dl class="terms">
       <div><dt>Grounded and erroneous judges</dt><dd>Judges whose general prior belief is correct or incorrect. Human judges report their own; LLM judges are assigned one through the system prompt or persona techniques.</dd></div>
       <div><dt>Consultancy</dt><dd>A baseline in which a single AI argues for one answer while the judge asks questions. It stands in for standard training from human feedback.</dd></div>
-      <div><dt>Cross-subtopic test</dt><dd>A variant of step 4 in which judges are asked about a different claim from the one debated. <a href="#transfer">See the next section</a>.</dd></div>
+      <div><dt>Cross-subtopic test</dt><dd>A variant of step 4 in which judges are asked about a different claim from the one debated. <a href="#transfer">See the dedicated section below</a>.</dd></div>
     </dl>
-  </div>
-</section>
-
-<section id="transfer">
-  <div class="wrap">
-    <h2>Cross-subtopic debate: does a correction carry over?</h2>
-    <p class="lede">Debate studies usually ask judges about the same claim that was just debated. We also asked about a different claim on the same topic, to see whether debate changes the judge's underlying belief and not only their answer to one question. To our knowledge, this is the first test of its kind.</p>
-    <div class="xfer-grid">
-      <div class="xfer-left">
-        <div class="xfer-flow" aria-label="Example of the cross-subtopic test">
-          <div class="xcard"><span class="xk">Debated</span><b>U.S. policy on supersonic flight in the 1970s</b><p>Did it constrain an existing market, or fund exploratory research on aircraft that did not yet exist?</p></div>
-          <div class="xarrow" aria-hidden="true"><span>same general topic, different question</span></div>
-          <div class="xcard ask"><span class="xk">Asked afterwards</span><b>The accident in 2000</b><p>Was it a commercial flight that disrupted the market, or a test flight that showed such aircraft were infeasible?</p></div>
-        </div>
-        <p class="xnote">Debaters defend the same general stance across every debate within a topic. A judge who is persuaded that supersonic airliners existed should therefore also answer the second question correctly. If they do, the correction has reached the general belief.</p>
-      </div>
-      <div class="chart-card xfer-chart">
-        <div class="chart-top"><div><h3>Accuracy before and after debate</h3><p>Before: the debated claim. After: the related claim, except in the reference row. Hover over a point for exact values.</p></div></div>
-        <div class="legend"><span><i style="border:2px solid var(--ink2);background:#fff"></i>Before debate</span><span><i style="background:var(--pos)"></i>After, improved</span><span><i style="background:var(--neg)"></i>After, declined</span></div>
-        <div id="chartTransfer"></div>
-      </div>
-    </div>
-    <div class="findings xfer-findings">
-      <div class="finding"><span class="who h">Human judges</span><h4>The effect transfers</h4><p>Accuracy on the related claim reached 58.4%, nearly identical to the 57.6% of in-subtopic debate. It is above chance, although not significantly so (95% CI 49% to 67%).</p></div>
-      <div class="finding"><span class="who h">Human judges</span><h4>Wrong priors get corrected</h4><p>Judges who started from an erroneous general view rose from 31.3% to 47.9%. Changes from false to true (20.2%) outnumbered changes from true to false (12.4%).</p></div>
-      <div class="finding"><span class="who m">LLM judges</span><h4>AI judges polarize instead</h4><p>With Claude Sonnet 4 as judge, grounded judges improved (88.9% to 96.5%) while erroneous judges got worse (14.7% to 5.6%). It is the only debate condition where both shifts are significant: debate reinforced each prior rather than correcting it.</p></div>
-      <div class="finding"><span class="who n">Why it matters</span><h4>Oversight needs beliefs, not answers</h4><p>A supervisor who only learns the answer to one question gains little. If debate updates the broader belief, its benefit extends to questions that were never debated.</p></div>
-    </div>
   </div>
 </section>
 
@@ -530,6 +502,34 @@ footer{padding:36px 0 56px;font-size:14.5px;color:var(--ink2);border-top:1px sol
       <summary>Read the paper abstract</summary>
       <p>How can we effectively oversee AI systems that surpass human intelligence? AI Safety via Debate proposes that two AI systems argue opposing positions and a judge, either a human or a weaker model, decides which is correct. By facilitating supervisors in providing high-quality training signals, debate aims to encourage truthful and safe behavior from AI systems whose capabilities exceed our own. However, human judgment is not neutral: people often rely on biases which advanced AI systems may learn to exploit. Drawing on insights from collective intelligence and social cognition, this paper investigates whether debate can guide human and LLM supervisors toward the truth despite their prior beliefs. We evaluate several protocol configurations, varying (i) the type of judge (open-source and proprietary LLMs, and human participants, N = 507), (ii) the method for eliciting priors, and (iii) the specific claims debated, paired with different related claims subsequently evaluated for belief updating, to test whether corrections generalize across related subtopics. We also explore setups inspired by the wisdom of the crowd such as the number and diversity of judges, as well as interaction mechanisms including deliberation and voting. Overall, we find that debate increases accuracy relative to prior beliefs for human judges (from 41.3% to 57.6%, p = .028), whereas the consultancy baseline, in which a single expert argues for one answer, does not. For weaker language models, however, the results are mixed: debate provides no comparable gains in most settings and can even reduce accuracy. Among multi-judge protocols, weighted voting produces the highest accuracy for human supervisors (45.8% to 65.3%, p = .028), whereas for LLMs none of them significantly improves group accuracy, even as the number of judges increases. Notably, the behavior of minority judges in non-diverse deliberation protocols suggests that, under symmetric settings, incorrect positions could be more persuasive than correct ones. These findings support debate as a viable path toward scalable human oversight, but cast doubt on its benefits for weaker AI supervisors, raising concerns about fully automated training and control pipelines in high-stakes settings.</p>
     </details>
+  </div>
+</section>
+
+<section id="transfer">
+  <div class="wrap">
+    <h2>Cross-subtopic debate: does a correction carry over?</h2>
+    <p class="lede">Debate studies usually ask judges about the same claim that was just debated. We also asked about a different claim on the same topic, to see whether debate changes the judge's underlying belief and not only their answer to one question. To our knowledge, this is the first test of its kind.</p>
+    <div class="xfer-grid">
+      <div class="xfer-left">
+        <div class="xfer-flow" aria-label="Example of the cross-subtopic test">
+          <div class="xcard"><span class="xk">Debated</span><b>U.S. policy on supersonic flight in the 1970s</b><p>Did it constrain an existing market, or fund exploratory research on aircraft that did not yet exist?</p></div>
+          <div class="xarrow" aria-hidden="true"><span>same general topic, different question</span></div>
+          <div class="xcard ask"><span class="xk">Asked afterwards</span><b>The accident in 2000</b><p>Was it a commercial flight that disrupted the market, or a test flight that showed such aircraft were infeasible?</p></div>
+        </div>
+        <p class="xnote">Debaters defend the same general stance across every debate within a topic. A judge who is persuaded that supersonic airliners existed should therefore also answer the second question correctly. If they do, the correction has reached the general belief.</p>
+      </div>
+      <div class="chart-card xfer-chart">
+        <div class="chart-top"><div><h3>Accuracy before and after debate</h3><p>Before: the debated claim. After: the related claim, except in the reference row. Hover over a point for exact values.</p></div></div>
+        <div class="legend"><span><i style="border:2px solid var(--ink2);background:#fff"></i>Before debate</span><span><i style="background:var(--pos)"></i>After, improved</span><span><i style="background:var(--neg)"></i>After, declined</span></div>
+        <div id="chartTransfer"></div>
+      </div>
+    </div>
+    <div class="findings xfer-findings">
+      <div class="finding"><span class="who h">Human judges</span><h4>The effect transfers</h4><p>Accuracy on the related claim reached 58.4%, nearly identical to the 57.6% of in-subtopic debate. It is above chance, although not significantly so (95% CI 49% to 67%).</p></div>
+      <div class="finding"><span class="who h">Human judges</span><h4>Wrong priors get corrected</h4><p>Judges who started from an erroneous general view rose from 31.3% to 47.9%. Changes from false to true (20.2%) outnumbered changes from true to false (12.4%).</p></div>
+      <div class="finding"><span class="who m">LLM judges</span><h4>AI judges polarize instead</h4><p>With Claude Sonnet 4 as judge, grounded judges improved (88.9% to 96.5%) while erroneous judges got worse (14.7% to 5.6%). It is the only debate condition where both shifts are significant: debate reinforced each prior rather than correcting it.</p></div>
+      <div class="finding"><span class="who n">Why it matters</span><h4>Oversight needs beliefs, not answers</h4><p>A supervisor who only learns the answer to one question gains little. If debate updates the broader belief, its benefit extends to questions that were never debated.</p></div>
+    </div>
   </div>
 </section>
 
@@ -765,7 +765,7 @@ const MODELS={
   unc:[{label:'Human judges',pre:41.3,post:57.61,sig:1,bold:1,note:'Participants recruited on Prolific'},{label:'GPT-5.2',pre:84.85,post:90.40,sig:1,group:1},{label:'Gemini 3 Flash',pre:92.93,post:95.96},{label:'Gemini 2.5 Pro',pre:91.84,post:91.33},{label:'GPT-4o',pre:86.36,post:84.85},{label:'Claude Sonnet 4',pre:85.26,post:78.95},{label:'Gemma-3-4B-IT',pre:72.3,post:47.5,sig:1,note:'Largest decline among open-source judges'}],
   gpb:[{label:'Human judges',pre:41.3,post:57.61,sig:1,bold:1,note:'Humans report their own prior'},{label:'Gemini 2.5 Pro',pre:50.25,post:60.1,sig:1,group:1,note:'Erroneous judges: 3.5% → 20.2%'},{label:'GPT-4o',pre:53.79,post:60.86,sig:1},{label:'Gemini 3 Flash',pre:52.52,post:53.79},{label:'GPT-5.2',pre:51.51,post:52.52,note:'Erroneous judges: 16.7% → 5.6%'},{label:'Claude Sonnet 4',pre:52.27,post:50.75,note:'Grounded 91.4% → 93.4%, erroneous 13.1% → 8.1%'}]
 };
-const HUM=[{label:'Consultancy',pre:51.25,post:48.75},{label:'Debate, in-subtopic',pre:41.3,post:57.61,sig:1},{label:'Debate, cross-subtopic',pre:50.56,post:58.43,note:'Post-debate asks about a related subtopic'},{label:'Voting',pre:43.06,post:62.50,sig:1,group:1},{label:'Weighted voting',pre:45.83,post:65.28,sig:1,note:'Highest accuracy of any protocol'},{label:'Multi-human deliberation',pre:51.97,post:62.99,post2:62.20},{label:'Hybrid deliberation (human)',pre:50.48,post:54.29,post2:57.14,note:'Humans deliberating with two LLMs'}];
+const HUM=[{label:'Consultancy',pre:51.25,post:48.75},{label:'Debate, in-subtopic',pre:41.3,post:57.61,sig:1},{label:'Voting',pre:43.06,post:62.50,sig:1,group:1},{label:'Weighted voting',pre:45.83,post:65.28,sig:1,note:'Highest accuracy of any protocol'},{label:'Multi-human deliberation',pre:51.97,post:62.99,post2:62.20},{label:'Hybrid deliberation (human)',pre:50.48,post:54.29,post2:57.14,note:'Humans deliberating with two LLMs'}];
 const XFER=[{label:'Humans, same claim',pre:41.3,post:57.61,sig:1,note:'In-subtopic debate, for reference'},{label:'Humans, related claim',pre:50.56,post:58.43,bold:1,note:'Above chance, not significant (95% CI 49 to 67%)'},{label:'Humans, erroneous',pre:31.25,post:47.92},{label:'Humans, grounded',pre:73.17,post:70.73},{label:'Sonnet 4, grounded',pre:88.89,post:96.46,sig:1,group:1,note:'Claude Sonnet 4, GPB system prompt, p = .035'},{label:'Sonnet 4, erroneous',pre:14.65,post:5.56,sig:1,note:'Claude Sonnet 4, GPB system prompt, p = .032'}];
 let cond='unc';
 function drawAll(){
@@ -792,7 +792,7 @@ try{ drawAll(); }catch(e){ console.error(e) } let rt; addEventListener('resize',
 
 const F=[
  ['h','Debate helps; consultancy does not','In-subtopic debate raised accuracy from 41.3% to 57.6%. A single persuasive consultant left it flat (51.3% to 48.8%).'],
- ['h','The correction transfers','Asked about a different subtopic after the debate, judges reached 58.4%, nearly identical to in-subtopic debate.'],
+ ['h','A single advocate breeds overconfidence','In consultancy, confidence rose from 57.4 to 73.4 while accuracy fell slightly. Debate raised confidence together with accuracy.'],
  ['h','Confidence after debate is a useful signal','Keeping only judgments with post-debate confidence of at least 75 raised accuracy from 61.3% to 74.0%.'],
  ['h','Weighted voting is the best crowd rule','Confidence-weighted voting reached 65.3%. Deliberation after debate added nothing measurable.'],
  ['m','Weaker models rarely gain','Without conditioning, only GPT-5.2 improved significantly. Claude Sonnet 4 and the open-source judges lost accuracy.'],
