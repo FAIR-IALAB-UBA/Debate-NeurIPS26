@@ -881,7 +881,7 @@ function conformity(el){
   G.forEach((g,i)=>{ const cx=20+gw*i+gw/2;
     [[g[1],'#A63D3A','Grounded minority → incorrect'],[g[2],'#2E7458','Erroneous minority → correct']].forEach((b,j)=>{ const x=cx+(j?6:-6-bw);
       s+='<rect x="'+x+'" y="'+Y(b[0])+'" width="'+bw+'" height="'+(Y(0)-Y(b[0]))+'" rx="5" fill="'+b[1]+'" data-t="'+g[0]+'|'+b[2]+': '+b[0]+'%"/><text x="'+(x+bw/2)+'" y="'+(Y(b[0])-6)+'" font-size="13" font-weight="700" text-anchor="middle" fill="'+b[1]+'">'+b[0]+'</text>'; });
-    s+='<text x="'+cx+'" y="'+(H-22)+'" font-size="'+(W<600?11:13.5)+'" text-anchor="middle" fill="#1B1F27" font-weight="600">'+g[0].split(', ')[0]+'</text><text x="'+cx+'" y="'+(H-6)+'" font-size="12" text-anchor="middle" fill="#596170">'+g[0].split(', ')[1]+'</text>'; });
+    s+='<text x="'+cx+'" y="'+(H-22)+'" font-size="'+(W<600?11:13.5)+'" text-anchor="middle" fill="#1B1F27" font-weight="600">'+(W<500&&g[0].startsWith('Homogeneous')?'Homog.':g[0].split(', ')[0])+'</text><text x="'+cx+'" y="'+(H-6)+'" font-size="12" text-anchor="middle" fill="#596170">'+g[0].split(', ')[1]+'</text>'; });
   s+='</svg>'; el.innerHTML=s;
   el.querySelectorAll('rect[data-t]').forEach(c=>{ c.addEventListener('mousemove',e=>{const p=c.dataset.t.split('|');showTip(e,'<b>'+p[0]+'</b><br>'+p[1])}); c.addEventListener('mouseleave',hideTip) });
 }
