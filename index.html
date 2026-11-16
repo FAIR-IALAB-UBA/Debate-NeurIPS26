@@ -667,7 +667,8 @@ document.querySelectorAll('.meter-track').forEach(el=>{
 });
 
 /* ---------- arena store (prototype: this browser only) ---------- */
-const KEY='debate-arena-v1';
+const KEY='debate-arena-v2';
+try{ localStorage.removeItem('debate-arena-v1') }catch(e){}
 let mem=[];
 const store={
   all(){ try{ return JSON.parse(localStorage.getItem(KEY)||'[]') }catch(e){ return mem } },
