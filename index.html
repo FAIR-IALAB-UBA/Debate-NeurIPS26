@@ -301,6 +301,11 @@ h2{font-size:clamp(28px,3.2vw,36px);line-height:1.2;margin:0 0 14px}
 .xfer-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:28px;align-items:start}
 @media (max-width:960px){.xfer-grid{grid-template-columns:1fr}}
 .xfer-flow{display:grid;gap:0}
+.xgen{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;margin-bottom:14px}
+.xgen .xk{display:block;font-size:13px;font-weight:600;color:var(--ink2);margin-bottom:4px}
+.xgen b{display:block;font-size:17px;font-weight:600;margin-bottom:8px}
+.xgen-o{font-size:15px;line-height:1.45;margin-top:6px;display:flex;gap:10px;align-items:baseline}
+.xgen-o .pill{flex:none;font-size:12px}
 .xcard{background:var(--a-soft);border:1px solid #C9D6EA;border-radius:var(--r);padding:18px 20px}
 .xcard.ask{background:var(--b-soft);border-color:#E3D3B4}
 .xcard .xk{display:block;font-size:13px;font-weight:600;color:var(--a);margin-bottom:4px}
@@ -594,27 +599,24 @@ footer{padding:36px 0 56px;font-size:14.5px;color:var(--ink2);border-top:1px sol
 <section id="transfer">
   <div class="wrap">
     <h2>Cross-subtopic debate: does a correction carry over?</h2>
-    <p class="lede">Debate studies usually ask judges about the same claim that was just debated. We also asked about a different claim on the same topic, to see whether debate changes the judge's underlying belief and not only their answer to one question. To our knowledge, this is the first test of its kind.</p>
+    <p class="lede" style="max-width:820px">Debate studies usually ask judges about the same claim that was just debated. We also asked about a different claim on the same topic, to see whether debate changes the judge's underlying belief about the general topic and not only their answer to one question. This tests the robustness of debate as an oversight tool: a supervisor who only learns the answer to one question gains little, but if debate updates the broader belief, its benefit extends to questions that were never debated.</p>
     <div class="xfer-grid">
       <div class="xfer-left">
+        <div class="xgen"><span class="xk">Underlying belief, general topic</span><b>Were supersonic passenger aircraft ever developed?</b>
+          <div class="xgen-o"><span class="pill ok">Grounded</span>Yes, humans developed supersonic aircraft.</div>
+          <div class="xgen-o"><span class="pill no">Erroneous</span>No, they were never reliably developed.</div></div>
         <div class="xfer-flow" aria-label="Example of the cross-subtopic test">
           <div class="xcard"><span class="xk">Debated</span><b>U.S. policy on supersonic flight in the 1970s</b><p>Did it constrain an existing market, or fund exploratory research on aircraft that did not yet exist?</p></div>
           <div class="xarrow" aria-hidden="true"><span>same general topic, different question</span></div>
           <div class="xcard ask"><span class="xk">Asked afterwards</span><b>The accident in 2000</b><p>Was it a commercial flight that disrupted the market, or a test flight that showed such aircraft were infeasible?</p></div>
         </div>
-        <p class="xnote">Debaters defend the same general stance across every debate within a topic. A judge who is persuaded that supersonic airliners existed should therefore also answer the second question correctly. If they do, the correction has reached the general belief.</p>
+        <p class="xnote">Both questions depend on the same underlying belief, and debaters defend the same general stance in every debate on a topic. A judge persuaded that supersonic airliners existed should therefore also answer the second question correctly.</p>
       </div>
       <div class="chart-card xfer-chart">
-        <div class="chart-top"><div><h3>Accuracy before and after debate</h3><p>Before: the debated claim. After: the related claim, except in the reference row. Hover over a point for exact values.</p></div></div>
-        <div class="legend"><span><i style="border:2px solid var(--ink2);background:#fff"></i>Before debate</span><span><i style="background:var(--pos)"></i>After, improved</span><span><i style="background:var(--neg)"></i>After, declined</span></div>
+        <div class="chart-top"><div><h3>Accuracy before and after debate</h3><p>For each judge, the first row asks again about the debated claim (in-subtopic, shown for reference). The second row asks about a related claim (cross-subtopic).</p></div></div>
+        <div class="legend"><span><i style="border:2px solid var(--ink2);background:#fff"></i>Before debate</span><span><i style="background:var(--pos)"></i>After, improved</span><span><i style="background:var(--neg)"></i>After, declined</span><span>* Statistically significant (p &lt; .05)</span></div>
         <div id="chartTransfer"></div>
       </div>
-    </div>
-    <div class="findings xfer-findings">
-      <div class="finding"><span class="who h">Human judges</span><h4>The effect transfers</h4><p>Accuracy on the related claim reached 58.4%, nearly identical to the 57.6% of in-subtopic debate. It is above chance, although not significantly so (95% CI 49% to 67%).</p></div>
-      <div class="finding"><span class="who h">Human judges</span><h4>Wrong priors get corrected</h4><p>Judges who started from an erroneous general view rose from 31.3% to 47.9%. Changes from false to true (20.2%) outnumbered changes from true to false (12.4%).</p></div>
-      <div class="finding"><span class="who m">LLM judges</span><h4>AI judges polarize instead</h4><p>With Claude Sonnet 4 as judge, grounded judges improved (88.9% to 96.5%) while erroneous judges got worse (14.7% to 5.6%). It is the only debate condition where both shifts are significant: debate reinforced each prior rather than correcting it.</p></div>
-      <div class="finding"><span class="who n">Why it matters</span><h4>Oversight needs beliefs, not answers</h4><p>A supervisor who only learns the answer to one question gains little. If debate updates the broader belief, its benefit extends to questions that were never debated.</p></div>
     </div>
   </div>
 </section>
@@ -856,7 +858,7 @@ const MODELS={
   gpb:[{label:'Human judges',pre:41.3,post:57.61,sig:1,bold:1,note:'Humans report their own prior'},{label:'Gemini 2.5 Pro',pre:50.25,post:60.1,sig:1,group:1,note:'Erroneous judges: 3.5% → 20.2%'},{label:'GPT-4o',pre:53.79,post:60.86,sig:1},{label:'Gemini 3 Flash',pre:52.52,post:53.79},{label:'GPT-5.2',pre:51.51,post:52.52,note:'Erroneous judges: 16.7% → 5.6%'},{label:'Claude Sonnet 4',pre:52.27,post:50.75,note:'Grounded 91.4% → 93.4%, erroneous 13.1% → 8.1%'},{label:'Qwen2.5-7B',pre:63.10,post:43.80,sig:1,group:1,note:'p < .01. Erroneous judges 44.7% → 13.5%'},{label:'Llama-3.1-8B',pre:53.10,post:51.25,note:'p = 1.0'},{label:'Gemma-3-4B',pre:44.15,post:39.75,note:'p = .66'}]
 };
 const HUM=[{label:'Consultancy',pre:51.25,post:48.75},{label:'Debate, in-subtopic',pre:41.3,post:57.61,sig:1},{label:'Voting',pre:43.06,post:62.50,sig:1,group:1},{label:'Weighted voting',pre:45.83,post:65.28,sig:1,note:'Highest accuracy of any protocol'},{label:'Multi-human deliberation',pre:51.97,post:62.99,post2:62.20},{label:'Hybrid deliberation (human)',pre:50.48,post:54.29,post2:57.14,note:'Humans deliberating with two LLMs'}];
-const XFER=[{label:'Humans, same claim',pre:41.3,post:57.61,sig:1,note:'In-subtopic debate, for reference'},{label:'Humans, related claim',pre:50.56,post:58.43,bold:1,note:'Above chance, not significant (95% CI 49 to 67%)'},{label:'Humans, erroneous',pre:31.25,post:47.92},{label:'Humans, grounded',pre:73.17,post:70.73},{label:'Sonnet 4, grounded',pre:88.89,post:96.46,sig:1,group:1,note:'Claude Sonnet 4, GPB system prompt, p = .035'},{label:'Sonnet 4, erroneous',pre:14.65,post:5.56,sig:1,note:'Claude Sonnet 4, GPB system prompt, p = .032'}];
+const XFER=[{label:'Humans, same claim',pre:41.3,post:57.61,sig:1,note:'In-subtopic debate, p = .028'},{label:'Humans, related claim',pre:50.56,post:58.43,bold:1,note:'Cross-subtopic; above chance, not significant (95% CI 49% to 67%)'},{label:'Sonnet 4, same claim',pre:52.27,post:50.75,group:1,note:'Claude Sonnet 4 with GPB system prompt, in-subtopic, p = 1.0'},{label:'Sonnet 4, related claim',pre:51.77,post:51.01,bold:1,note:'Cross-subtopic, p = 1.0'}];
 const PANELS={
   '3':[{label:'Voting',pre:50.51,post:53.79,note:'Group decision, p = 1.0'},{label:'Weighted voting',pre:52.53,post:55.30,note:'Group decision, p = 1.0'},{label:'Deliberation',pre:51.09,post:50.51,post2:50.00,lab:'-0.5',note:'Deliberation stage: 50.5% to 50.0%, p = 1.0'},{label:'With consensus',pre:50.78,post:48.96,post2:44.04,lab:'-4.9',sig:1,note:'Deliberation stage: 49.0% to 44.0%, p = .022'},{label:'Diverse panel',pre:59.85,post:59.51,post2:63.13,lab:'+3.6',group:1,note:'Mixed models and personas; p = .14'}],
   '7':[{label:'Voting',pre:52.53,post:56.31,note:'Group decision'},{label:'Weighted voting',pre:63.13,post:62.12,note:'Group decision; starts higher than with 3 judges'},{label:'Deliberation',pre:50.54,post:50.94,post2:48.09,lab:'-2.9',note:'Deliberation stage: 50.9% to 48.1%, p = .13'},{label:'Diverse panel',pre:61.26,post:58.26,post2:64.29,lab:'+6.0',sig:1,group:1,note:'Deliberation stage: 58.3% to 64.3%, p = .006'}]};
@@ -866,7 +868,7 @@ let cond='unc';
 function drawAll(){
   dumbbell($('#chartModels'),MODELS[cond],{label:'Accuracy before and after debate by judge'});
   dumbbell($('#chartHumans'),HUM,{label:'Human accuracy by protocol'});
-  dumbbell($('#chartTransfer'),XFER,{label:'Cross-subtopic accuracy',lw:($('#chartTransfer').clientWidth<600?120:170)});
+  dumbbell($('#chartTransfer'),XFER,{label:'Cross-subtopic accuracy',lw:($('#chartTransfer').clientWidth<600?120:170),min:30,max:70,ticks:[30,40,50,60,70]});
   conformity($('#chartConformity'));
   drawPanels();
 }
