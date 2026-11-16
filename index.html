@@ -342,7 +342,7 @@ svg text{font-family:var(--sans)}
 .finding h4{margin:0 0 4px;font-size:18px}
 .finding p{margin:0;font-size:16px;line-height:1.55;color:var(--ink2)}
 .finding .who{font-size:12.5px;font-weight:600;display:inline-block;margin-bottom:8px;border-radius:999px;padding:2px 10px}
-.who.h{background:#EFEAF6;color:#5E4B8B}.who.n{background:var(--alt);color:var(--ink2)}.who.m{background:#E9EBEE;color:#3D424C}
+.who.h{background:#EFEAF6;color:#5E4B8B}.who.n{background:var(--alt);color:var(--ink2)}.who.m{background:#FDE9D8;color:#B4500F}
 
 /* institutions, funders, cite */
 .logos{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
@@ -888,16 +888,16 @@ function conformity(el){
 try{ drawAll(); }catch(e){ console.error(e) } let rt; addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(drawAll,150)});
 
 const F=[
- ['h','Debate helps; consultancy does not','In-subtopic debate raised accuracy from 41.3% to 57.6%. A single persuasive consultant left it flat (51.3% to 48.8%).'],
- ['h','A single advocate breeds overconfidence','In consultancy, confidence rose from 57.4 to 73.4 while accuracy fell slightly. Debate raised confidence together with accuracy.'],
+ ['h','Debate helps; consultancy does not','In-subtopic debate raised accuracy from 41.3% to 57.6% (p&nbsp;=&nbsp;.028). A single persuasive consultant left it flat (51.3% to 48.8%, p&nbsp;=&nbsp;1.0).'],
+ ['h','A single advocate breeds overconfidence','In consultancy, confidence rose from 57.4 to 73.4 (p&nbsp;&lt;&nbsp;.001) while accuracy fell slightly. Debate raised confidence (58.2 to 67.9, p&nbsp;&lt;&nbsp;.001) together with accuracy.'],
  ['h','Confidence after debate is a useful signal','Keeping only judgments with post-debate confidence of at least 75 raised accuracy from 61.3% to 74.0%.'],
- ['h','Weighted voting is the best crowd rule','Confidence-weighted voting reached 65.3%. Deliberation after debate added nothing measurable.'],
- ['h','Unsure judges gain the most','Judges with low confidence before the debate improved about 4 percentage points more than confident ones, in every split we tested. The direction is stable, although not statistically significant.'],
- ['m','Weaker models rarely gain','Without conditioning, only GPT-5.2 improved significantly. Claude Sonnet 4 and the open-source judges lost accuracy.'],
- ['m','Bigger panels do not help','Going from three to seven LLM judges changed final accuracy in no protocol. Composition and aggregation rule matter more than size.'],
- ['m','Forced consensus hurts','Deliberation with a consensus requirement cut accuracy from 49.0% to 44.0%, mostly in panels whose majority was right.'],
- ['m','Only diverse panels benefit from deliberating','Mixing models and personas turned deliberation positive (58.3% to 64.3% with seven judges), while homogeneous panels conformed to the majority.'],
- ['m','Small open models favor whoever speaks first','Qwen, Llama and Gemma were far more accurate when the correct argument came first. Grounded Gemma judges reached 94.8% in that order but fell to 29.3% when it came second. Claude Sonnet 4 showed no such effect.']
+ ['h','Unsure judges gain the most','Judges with low confidence before the debate improved about 4 percentage points more than confident ones, in every split we tested. The direction is stable, although not statistically significant (all p&nbsp;&gt;&nbsp;.15).'],
+ ['h','Weighted voting is the best crowd rule','Confidence-weighted voting rose from 45.8% to 65.3% (p&nbsp;=&nbsp;.028). Deliberation after debate added nothing measurable (63.0% to 62.2%, p&nbsp;=&nbsp;1.0).'],
+ ['m','Weaker models rarely gain','Without conditioning, only GPT-5.2 improved significantly (84.8% to 90.4%, p&nbsp;=&nbsp;.044). Claude Sonnet 4 (p&nbsp;=&nbsp;.068) and the open-source judges lost accuracy, significantly only Gemma (p&nbsp;&lt;&nbsp;.01).'],
+ ['m','Small open models favor whoever speaks first','Qwen, Llama and Gemma were far more accurate when the correct argument came first (all p&nbsp;&lt;&nbsp;.01). Grounded Gemma judges reached 94.8% in that order but fell to 29.3% when it came second. Claude Sonnet 4 showed no such effect.'],
+ ['m','Forced consensus hurts','Deliberation with a consensus requirement cut accuracy from 49.0% to 44.0% (p&nbsp;=&nbsp;.022), mostly in panels whose majority was right.'],
+ ['m','Only diverse panels benefit from deliberating','Mixing models and personas turned deliberation positive (58.3% to 64.3% with seven judges, p&nbsp;=&nbsp;.006), while homogeneous panels conformed to the majority.'],
+ ['m','Bigger panels do not help','Going from three to seven LLM judges changed final accuracy in no protocol. Composition and aggregation rule matter more than size.']
 ];
 $('#findings').innerHTML=F.map(f=>'<div class="finding"><span class="who '+f[0]+'">'+(f[0]==='h'?'Human judges':'LLM judges')+'</span><h4>'+f[1]+'</h4><p>'+f[2]+'</p></div>').join('');
 
