@@ -315,6 +315,11 @@ h2{font-size:clamp(28px,3.2vw,36px);line-height:1.2;margin:0 0 14px}
 .xfer-chart{margin-bottom:0}
 .xfer-findings{margin-top:34px}
 /* charts */
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:stretch;margin-bottom:22px}
+.duo .chart-card{margin-bottom:0}
+@media (max-width:1000px){.duo{grid-template-columns:1fr}}
+.cnote{font-size:13px;color:var(--ink3);margin:6px 0 0}
+
 .chart-card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px 28px;margin-bottom:22px}
 @media (max-width:640px){.chart-card{padding:18px 14px}}
 .chart-top{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;flex-wrap:wrap;margin-bottom:8px}
@@ -552,15 +557,32 @@ footer{padding:36px 0 56px;font-size:14.5px;color:var(--ink2);border-top:1px sol
       <div id="chartHumans"></div>
     </div>
 
-    <div class="chart-card">
-      <div class="chart-top">
-        <div>
-          <h3>In homogeneous AI panels, the incorrect view tends to prevail</h3>
-          <p>Share of minority judges who change their answer during deliberation. When all judges are the same model, correct minorities give up more often than incorrect minorities are persuaded. Diverse panels reverse this.</p>
+    <div class="duo">
+      <div class="chart-card">
+        <div class="chart-top">
+          <div>
+            <h3>AI panels: no protocol reliably helps</h3>
+            <p>Claude Sonnet 4 judges with the GPB system prompt, in panels. Voting adds small, non-significant gains; seeking consensus lowers accuracy. Only diverse panels gain from deliberating.</p>
+          </div>
+          <div class="seg" role="group" aria-label="Panel size">
+            <button aria-pressed="true" data-size="3">3 judges</button>
+            <button aria-pressed="false" data-size="7">7 judges</button>
+          </div>
         </div>
+        <div class="legend"><span><i style="border:2px solid var(--ink2);background:#fff"></i>Before debate</span><span><i style="background:var(--pos)"></i>After debate</span><span><i style="background:var(--accent)"></i>After deliberation</span></div>
+        <div id="chartPanels"></div>
+        <p class="cnote">Numbers show the change at the last stage: debate for voting, deliberation for deliberation. Voting rows are group decisions.</p>
       </div>
-      <div class="legend"><span><i style="background:var(--neg)"></i>Grounded minority switches to the incorrect answer</span><span><i style="background:var(--pos)"></i>Erroneous minority switches to the correct answer</span></div>
-      <div id="chartConformity"></div>
+      <div class="chart-card">
+        <div class="chart-top">
+          <div>
+            <h3>In homogeneous panels, the incorrect view tends to prevail</h3>
+            <p>Share of minority judges who change their answer during deliberation. When all judges are the same model, correct minorities give up more often than incorrect minorities are persuaded. Diverse panels reverse this.</p>
+          </div>
+        </div>
+        <div class="legend"><span><i style="background:var(--neg)"></i>Grounded minority switches to the incorrect answer</span><span><i style="background:var(--pos)"></i>Erroneous minority switches to the correct answer</span></div>
+        <div id="chartConformity"></div>
+      </div>
     </div>
 
     <h3 class="sub-h">Key findings</h3>
@@ -809,9 +831,9 @@ function hideTip(){ tip.style.opacity=0 }
 
 function dumbbell(el,rows,o={}){
   const W=el.clientWidth||900, lw=o.lw||(W<600?120:210), rh=44, pad=30, H=rows.length*rh+pad+18;
-  const x0=lw, x1=W-24, X=v=>x0+(x1-x0)*v/100;
+  const x0=lw, x1=W-24, lo=o.min||0, hi=o.max||100, X=v=>x0+(x1-x0)*(v-lo)/(hi-lo);
   let s='<svg viewBox="0 0 '+W+' '+H+'" width="100%" height="'+H+'" role="img" aria-label="'+esc(o.label||'chart')+'">';
-  (W<600?[0,50,100]:[0,25,50,75,100]).forEach(v=>{ s+='<line x1="'+X(v)+'" x2="'+X(v)+'" y1="12" y2="'+(H-18)+'" stroke="'+(v===50?'#848B98':'#E8EBEF')+'" '+(v===50?'stroke-dasharray="4 4"':'')+'/><text x="'+X(v)+'" y="'+(H-2)+'" font-size="12" fill="#596170" text-anchor="middle">'+v+'%'+(v===50&&W>=600?' chance':'')+'</text>' });
+  (o.ticks||(W<600?[0,50,100]:[0,25,50,75,100])).forEach(v=>{ s+='<line x1="'+X(v)+'" x2="'+X(v)+'" y1="12" y2="'+(H-18)+'" stroke="'+(v===50?'#848B98':'#E8EBEF')+'" '+(v===50?'stroke-dasharray="4 4"':'')+'/><text x="'+X(v)+'" y="'+(H-2)+'" font-size="12" fill="#596170" text-anchor="middle">'+v+'%'+(v===50&&W>=600?' chance':'')+'</text>' });
   rows.forEach((r,i)=>{
     const y=pad+i*rh, col=r.post>=r.pre?'#2E7458':'#A63D3A';
     if(r.group) s+='<line x1="0" x2="'+W+'" y1="'+(y-rh/2)+'" y2="'+(y-rh/2)+'" stroke="#D8DCE2"/>';
@@ -821,7 +843,8 @@ function dumbbell(el,rows,o={}){
     s+='<circle cx="'+X(r.pre)+'" cy="'+y+'" r="7" fill="#fff" stroke="#596170" stroke-width="2" data-t="'+esc(r.label)+'|Before: '+r.pre.toFixed(2)+'%"/>';
     s+='<circle cx="'+X(r.post)+'" cy="'+y+'" r="8.5" fill="'+(o.postColor||col)+'" data-t="'+esc(r.label)+'|After: '+r.post.toFixed(2)+'% ('+(r.post-r.pre>=0?'+':'')+(r.post-r.pre).toFixed(1)+' pp)'+(r.note?'|'+esc(r.note):'')+'"/>';
     const lx=Math.max(X(r.pre),X(r.post),r.post2!=null?X(r.post2):0)+14;
-    if(lx<W-40) s+='<text x="'+lx+'" y="'+(y+5)+'" font-size="13" fill="'+col+'" font-weight="700">'+(r.post-r.pre>=0?'+':'')+(r.post-r.pre).toFixed(1)+(r.sig?' *':'')+'</text>';
+    const lcol=r.lab!=null?(String(r.lab).trim().startsWith('-')?'#A63D3A':'#2E7458'):col;
+    if(lx<W-40) s+='<text x="'+lx+'" y="'+(y+5)+'" font-size="13" fill="'+lcol+'" font-weight="700">'+(r.lab!=null?r.lab:((r.post-r.pre>=0?'+':'')+(r.post-r.pre).toFixed(1)))+(r.sig?' *':'')+'</text>';
   });
   s+='</svg>'; el.innerHTML=s;
   el.querySelectorAll('circle[data-t]').forEach(c=>{ c.style.cursor='default';
@@ -834,14 +857,21 @@ const MODELS={
 };
 const HUM=[{label:'Consultancy',pre:51.25,post:48.75},{label:'Debate, in-subtopic',pre:41.3,post:57.61,sig:1},{label:'Voting',pre:43.06,post:62.50,sig:1,group:1},{label:'Weighted voting',pre:45.83,post:65.28,sig:1,note:'Highest accuracy of any protocol'},{label:'Multi-human deliberation',pre:51.97,post:62.99,post2:62.20},{label:'Hybrid deliberation (human)',pre:50.48,post:54.29,post2:57.14,note:'Humans deliberating with two LLMs'}];
 const XFER=[{label:'Humans, same claim',pre:41.3,post:57.61,sig:1,note:'In-subtopic debate, for reference'},{label:'Humans, related claim',pre:50.56,post:58.43,bold:1,note:'Above chance, not significant (95% CI 49 to 67%)'},{label:'Humans, erroneous',pre:31.25,post:47.92},{label:'Humans, grounded',pre:73.17,post:70.73},{label:'Sonnet 4, grounded',pre:88.89,post:96.46,sig:1,group:1,note:'Claude Sonnet 4, GPB system prompt, p = .035'},{label:'Sonnet 4, erroneous',pre:14.65,post:5.56,sig:1,note:'Claude Sonnet 4, GPB system prompt, p = .032'}];
+const PANELS={
+  '3':[{label:'Voting',pre:50.51,post:53.79,note:'Group decision, p = 1.0'},{label:'Weighted voting',pre:52.53,post:55.30,note:'Group decision, p = 1.0'},{label:'Deliberation',pre:51.09,post:50.51,post2:50.00,lab:'-0.5',note:'Deliberation stage: 50.5% to 50.0%, p = 1.0'},{label:'With consensus',pre:50.78,post:48.96,post2:44.04,lab:'-4.9',sig:1,note:'Deliberation stage: 49.0% to 44.0%, p = .022'},{label:'Diverse panel',pre:59.85,post:59.51,post2:63.13,lab:'+3.6',group:1,note:'Mixed models and personas; p = .14'}],
+  '7':[{label:'Voting',pre:52.53,post:56.31,note:'Group decision'},{label:'Weighted voting',pre:63.13,post:62.12,note:'Group decision; starts higher than with 3 judges'},{label:'Deliberation',pre:50.54,post:50.94,post2:48.09,lab:'-2.9',note:'Deliberation stage: 50.9% to 48.1%, p = .13'},{label:'Diverse panel',pre:61.26,post:58.26,post2:64.29,lab:'+6.0',sig:1,group:1,note:'Deliberation stage: 58.3% to 64.3%, p = .006'}]};
+let psize='3';
+function drawPanels(){ const el=$('#chartPanels'); dumbbell(el,PANELS[psize],{label:'LLM panel accuracy',lw:el.clientWidth<600?118:140,min:35,max:75,ticks:[40,50,60,70]}); }
 let cond='unc';
 function drawAll(){
   dumbbell($('#chartModels'),MODELS[cond],{label:'Accuracy before and after debate by judge'});
   dumbbell($('#chartHumans'),HUM,{label:'Human accuracy by protocol'});
   dumbbell($('#chartTransfer'),XFER,{label:'Cross-subtopic accuracy',lw:($('#chartTransfer').clientWidth<600?120:170)});
   conformity($('#chartConformity'));
+  drawPanels();
 }
-document.querySelectorAll('.seg button').forEach(b=>b.onclick=()=>{ cond=b.dataset.cond; document.querySelectorAll('.seg button').forEach(x=>x.setAttribute('aria-pressed',x===b)); dumbbell($('#chartModels'),MODELS[cond],{}) });
+document.querySelectorAll('.seg button[data-cond]').forEach(b=>b.onclick=()=>{ cond=b.dataset.cond; document.querySelectorAll('.seg button[data-cond]').forEach(x=>x.setAttribute('aria-pressed',x===b)); dumbbell($('#chartModels'),MODELS[cond],{}) });
+document.querySelectorAll('.seg button[data-size]').forEach(b=>b.onclick=()=>{ psize=b.dataset.size; document.querySelectorAll('.seg button[data-size]').forEach(x=>x.setAttribute('aria-pressed',x===b)); drawPanels() });
 
 function conformity(el){
   const G=[['Homogeneous, 3 judges',25.8,17.7],['Homogeneous, 7 judges',16.5,8.6],['Diverse, 3 judges',18.7,25.8],['Diverse, 7 judges',11.1,27.8]];
