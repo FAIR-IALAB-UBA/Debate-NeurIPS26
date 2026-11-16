@@ -341,8 +341,8 @@ svg text{font-family:var(--sans)}
 @media (max-width:760px){.finding:nth-child(odd){border-right:0}.finding:nth-child(even){padding-left:0}}
 .finding h4{margin:0 0 4px;font-size:18px}
 .finding p{margin:0;font-size:16px;line-height:1.55;color:var(--ink2)}
-.finding .who{font-size:13px;font-weight:600;display:inline-block;margin-bottom:6px}
-.who.h{color:var(--a)}.who.n{color:var(--ink2)}.who.m{color:var(--b)}
+.finding .who{font-size:12.5px;font-weight:600;display:inline-block;margin-bottom:8px;border-radius:999px;padding:2px 10px}
+.who.h{background:#EFEAF6;color:#5E4B8B}.who.n{background:var(--alt);color:var(--ink2)}.who.m{background:#E9EBEE;color:#3D424C}
 
 /* institutions, funders, cite */
 .logos{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
@@ -892,10 +892,12 @@ const F=[
  ['h','A single advocate breeds overconfidence','In consultancy, confidence rose from 57.4 to 73.4 while accuracy fell slightly. Debate raised confidence together with accuracy.'],
  ['h','Confidence after debate is a useful signal','Keeping only judgments with post-debate confidence of at least 75 raised accuracy from 61.3% to 74.0%.'],
  ['h','Weighted voting is the best crowd rule','Confidence-weighted voting reached 65.3%. Deliberation after debate added nothing measurable.'],
+ ['h','Unsure judges gain the most','Judges with low confidence before the debate improved about 4 percentage points more than confident ones, in every split we tested. The direction is stable, although not statistically significant.'],
  ['m','Weaker models rarely gain','Without conditioning, only GPT-5.2 improved significantly. Claude Sonnet 4 and the open-source judges lost accuracy.'],
  ['m','Bigger panels do not help','Going from three to seven LLM judges changed final accuracy in no protocol. Composition and aggregation rule matter more than size.'],
  ['m','Forced consensus hurts','Deliberation with a consensus requirement cut accuracy from 49.0% to 44.0%, mostly in panels whose majority was right.'],
- ['m','Only diverse panels benefit from deliberating','Mixing models and personas turned deliberation positive (58.3% to 64.3% with seven judges), while homogeneous panels conformed to the majority.']
+ ['m','Only diverse panels benefit from deliberating','Mixing models and personas turned deliberation positive (58.3% to 64.3% with seven judges), while homogeneous panels conformed to the majority.'],
+ ['m','Small open models favor whoever speaks first','Qwen, Llama and Gemma were far more accurate when the correct argument came first. Grounded Gemma judges reached 94.8% in that order but fell to 29.3% when it came second. Claude Sonnet 4 showed no such effect.']
 ];
 $('#findings').innerHTML=F.map(f=>'<div class="finding"><span class="who '+f[0]+'">'+(f[0]==='h'?'Human judges':'LLM judges')+'</span><h4>'+f[1]+'</h4><p>'+f[2]+'</p></div>').join('');
 
