@@ -788,7 +788,7 @@ function renderBoard(){
   const all=store.all(), n=all.length, B=$('#board');
   const pct=(arr,k)=>arr.length?Math.round(100*arr.filter(r=>r[k]).length/arr.length):0;
   let h='<h3>Running tally</h3><p class="sub">Accuracy of visitors who judged a debate on this page</p>';
-  if(!n){ h+='<p class="empty">No verdicts yet. Judge a debate and your result appears here, alongside the results of the paper\'s participants.</p>'; }
+  if(!n){ h+='<p class="empty">No verdicts yet. Judge a debate and your result appears here.</p>'; }
   else{
     const pre=pct(all,'preOk'), post=pct(all,'postOk');
     const corr=all.filter(r=>!r.preOk&&r.postOk).length, mis=all.filter(r=>r.preOk&&!r.postOk).length, keepOk=all.filter(r=>r.preOk&&r.postOk).length, keepNo=all.filter(r=>!r.preOk&&!r.postOk).length;
