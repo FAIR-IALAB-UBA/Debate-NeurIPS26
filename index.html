@@ -697,7 +697,9 @@ const correct=p=>{ const r=read(p); return r.side===sideOf(deb().truth) };
 function renderSteps(){
   $('#steps').innerHTML=STEPS.map((s,i)=>'<li class="'+(i===S.step?'on':i<S.step?'done':'')+'"><span class="n">'+(i<S.step?'✓':i+1)+'</span>'+s+'</li>').join('');
 }
-function go(n){ S.step=n; renderSteps(); render(); }
+// Keep the participant's view on the arena when a step changes height
+function focusStage(){ const st=document.querySelector('#arena .stage'); if(!st) return; const navH=(document.querySelector('.nav')||{offsetHeight:0}).offsetHeight; const top=st.getBoundingClientRect().top; if(top<navH||top>innerHeight*0.6){ const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches; scrollTo({top:top+scrollY-navH-12,behavior:reduce?'auto':'smooth'}); } }
+function go(n){ S.step=n; renderSteps(); render(); focusStage(); }
 
 function tugHTML(id,val){
   const d=deb();
@@ -761,7 +763,7 @@ function render(){
     $('#submit').onclick=()=>{
       const pr=read(S.pre), po=read(S.post);
       store.add({topic:S.topic,debate:S.deb,gpb:S.gpb,preOk:correct(S.pre),preC:pr.conf,postOk:correct(S.post),postC:po.conf,ts:Date.now()});
-      S.saved=true; renderBoard(); render();
+      S.saved=true; renderBoard(); render(); focusStage();
     };
   } else if(S.step===5 && S.saved){
     const d=deb(), pr=read(S.pre), po=read(S.post), a=correct(S.pre), b=correct(S.post);
