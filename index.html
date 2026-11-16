@@ -291,7 +291,7 @@ h2{font-size:clamp(28px,3.2vw,36px);line-height:1.2;margin:0 0 14px}
 .flows{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:16px}
 .flow{background:var(--alt);border-radius:var(--r);padding:10px 12px}
 .flow b{font-size:22px;display:block}
-.flow span{font-size:13px;color:var(--ink2)}
+.flow span{display:block;font-size:13px;line-height:1.35;color:var(--ink2);margin-top:2px}
 .board .note{font-size:13px;color:var(--ink3);margin:16px 0 0;line-height:1.45}
 .board .empty{font-size:16px;color:var(--ink2);line-height:1.5}
 .ref{margin-top:16px;border-top:1px solid var(--line2);padding-top:12px;font-size:14px;color:var(--ink2);line-height:1.55}
@@ -789,11 +789,11 @@ function renderBoard(){
   if(!n){ h+='<p class="empty">No verdicts yet. Judge a debate and your result appears here, alongside the results of the paper\'s participants.</p>'; }
   else{
     const pre=pct(all,'preOk'), post=pct(all,'postOk');
-    const corr=all.filter(r=>!r.preOk&&r.postOk).length, mis=all.filter(r=>r.preOk&&!r.postOk).length;
+    const corr=all.filter(r=>!r.preOk&&r.postOk).length, mis=all.filter(r=>r.preOk&&!r.postOk).length, keepOk=all.filter(r=>r.preOk&&r.postOk).length, keepNo=all.filter(r=>!r.preOk&&!r.postOk).length;
     h+='<div class="big"><strong>'+n+'</strong><span>'+(n===1?'verdict':'verdicts')+'</span></div>'+
       '<div class="bmeter"><div class="lab"><span>Before debate</span><b>'+pre+'%</b></div><div class="bbar"><i style="width:'+pre+'%;background:#A3A9B4"></i></div></div>'+
       '<div class="bmeter"><div class="lab"><span>After debate</span><b>'+post+'%</b></div><div class="bbar"><i style="width:'+post+'%;background:'+(post>=pre?'#2E7458':'#A63D3A')+'"></i></div></div>'+
-      '<div class="flows"><div class="flow"><b>'+corr+'</b><span>corrected by the debate</span></div><div class="flow"><b>'+mis+'</b><span>misled by the debate</span></div></div>';
+      '<div class="flows"><div class="flow"><b class="up">'+corr+'</b><span>corrected: wrong before, right after</span></div><div class="flow"><b class="down">'+mis+'</b><span>misled: right before, wrong after</span></div><div class="flow"><b>'+keepOk+'</b><span>stayed right</span></div><div class="flow"><b>'+keepNo+'</b><span>stayed wrong</span></div></div>';
     const byT=DATA.map(t=>{const r=all.filter(x=>x.topic===t.id);return r.length?'<div class="bmeter"><div class="lab"><span>'+esc(t.name)+' ('+r.length+')</span><b>'+pct(r,'preOk')+'% → '+pct(r,'postOk')+'%</b></div></div>':''}).join('');
     if(byT) h+='<div style="margin-top:14px">'+byT+'</div>';
   }
